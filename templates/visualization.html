@@ -1,0 +1,49 @@
+{% extends 'home.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .content {
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .visualization {
+                margin-bottom: 40px;
+            }
+            .visualization img {
+                width: 100%; /* Adjust image size to fit the container */
+                max-width: 600px; /* Set a max width to ensure images are not too large */
+                height: auto;
+                margin-top: 20px;
+            }
+            h3 {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h2>Data Visualizations</h2>
+    
+            <div class="visualization">
+                <h3>Visualization 1: Distribution of Priority Levels</h3>
+                <img src="data:image/png;base64,{{ image1 }}" alt="Visualization 1" />
+            </div>
+    
+            <div class="visualization">
+                <h3>Visualization 2: Task Status vs. Business Impact</h3>
+                <img src="data:image/png;base64,{{ image2 }}" alt="Visualization 2" />
+            </div>
+    
+            <div class="visualization">
+                <h3>Visualization 3: Estimated Effort by Priority Level</h3>
+                <img src="data:image/png;base64,{{ image3 }}" alt="Visualization 3" />
+            </div>
+        </div>
+    </body>
+    
+{% endblock %}

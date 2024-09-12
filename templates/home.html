@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Enhanced Project Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .logo {
+            background-color: #4a90e2;
+            color: white;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        header h1 {
+            text-align: center;
+            flex: 1;
+            font-size: 24px;
+            color: #333;
+            margin: 0 20px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-right: 2px solid #ddd;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #4a90e2;
+            color: white;
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+            background-color: #ffffff;
+            border-left: 2px solid #ddd;
+        }
+
+        .content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-top: 2px solid #ddd;
+            margin-top: 20px;
+        }
+
+        /* Media Query for smaller screens */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 2px solid #ddd;
+            }
+
+            .content {
+                margin-left: 0;
+                border-left: none;
+            }
+
+            header h1 {
+                font-size: 20px;
+            }
+
+            .logo {
+                width: 60px;
+                height: 60px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">LOGO1</div>
+        <h1>AI-Enhanced Project Management System</h1>
+        <div class="logo">LOGO2</div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="{% url 'task_prioritization' %}">Task Prioritization</a></li>
+                <li><a href="#">Resource Allocation</a></li>
+                <li><a href="#">Risk Management</a></li>
+                <li><a href="{% url 'upload' %}">Upload Files</a></li>
+                <li><a href="{% url 'visualization' %}">Visualization</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            {% block content %}
+            <h2>Welcome to my apps</h2>
+            <!-- Dynamic content will be loaded here -->
+            {% endblock %}
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 AI-Enhanced Project Management System</p>
+    </footer>
+
+</body>
+</html>

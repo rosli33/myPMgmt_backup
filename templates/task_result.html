@@ -1,0 +1,56 @@
+{% extends 'home.html' %}
+
+{% block content %}
+
+<h2>Task Prioritization Results</h2>
+
+<!-- Check if 'df' (DataFrame) is available, which means it's a CSV upload -->
+{% if df %}
+    <h3>CSV Results</h3>
+    {{ df|safe }}
+
+    <!-- Add the note for task priority meanings -->
+    <p><strong>Note:</strong> Task Priority values represent the following:</p>
+    <ul>
+        <li><strong>0</strong> - Low Priority</li>
+        <li><strong>1</strong> - Medium Priority</li>
+        <li><strong>2</strong> - High Priority</li>
+    </ul>
+
+    <!-- Visualization only appears for CSV uploads -->
+    <h3>Visualization 1: Distribution of Task Priorities</h3>
+    <img src="data:image/png;base64,{{ image4 }}" alt="Distribution of Task Priorities">
+
+    <h3>Visualization 2: Task Status vs. Business Impact</h3>
+    <img src="data:image/png;base64,{{ image5 }}" alt="Average Estimated Effort by Business Impact">
+
+    <h3>Visualization 3: Estimated Effort by Priority Level</h3>
+    <img src="data:image/png;base64,{{ image6 }}" alt="Estimated Effort by Priority Level">
+
+<!-- This block will only be shown when a single task's priority is predicted -->
+{% elif priority %}
+    <p><strong>Predicted Task Priority</strong><br>
+    The predicted task priority is: {{ priority }}</p>
+
+    <p><strong>Note:</strong> Task Priority values represent the following:</p>
+    <ul>
+        <li><strong>0</strong> - Low Priority</li>
+        <li><strong>1</strong> - Medium Priority</li>
+        <li><strong>2</strong> - High Priority</li>
+    </ul>
+
+    <!-- Display visualizations based on ManualTask data -->
+    <h3>Visualization 1: Distribution of Task Priorities</h3>
+    <img src="data:image/png;base64,{{ image4 }}" alt="Distribution of Task Priorities">
+
+    <h3>Visualization 2: Business Impact vs Estimated Effort</h3>
+    <img src="data:image/png;base64,{{ image5 }}" alt="Average Estimated Effort by Business Impact">
+
+    <h3>Visualization 3: Estimated Effort by Priority Level</h3>
+    <img src="data:image/png;base64,{{ image6 }}" alt="Estimated Effort by Priority Level">
+
+{% else %}
+    <p>No task data available.</p>
+{% endif %}
+
+{% endblock %}

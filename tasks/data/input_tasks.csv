@@ -1,0 +1,21 @@
+task_title,task_type,current_status,business_impact,estimated_effort,priority_level,deadline
+Develop Contract Management Plan,Certificate of Acceptance (CoA),To Do,Medium,13,Medium,14/9/2024
+Present Control Reports to Stakeholders,Portal,In Progress,Low,38,Medium,10/9/2024
+Design the data backup strategy.,User Authentication and Access Control,In Progress,Medium,25,Medium,27/9/2024
+Develop asset lifecycle management features.,Finalization and Integration,To Do,Low,9,Medium,1/11/2024
+Conduct integration testing to ensure seamless operation.,Customer Relationship Management (CRM),In Progress,High,23,Medium,16/10/2024
+Monitor Contract Compliance Across Projects,Finalization and Integration,In Progress,High,6,Medium,28/10/2024
+Develop asset lifecycle management features.,Data Management and Storage,Completed,High,26,High,20/9/2024
+Test the risk management module for completeness and usability.,Communication and Collaboration Tools,Completed,High,24,High,17/10/2024
+Develop Project Monitoring Templates,Data Management and Storage,Completed,Low,28,Low,22/10/2024
+Compile detailed documentation for each module.,Workflow Management,In Progress,Medium,31,Medium,9/10/2024
+Develop Enterprise Architecture Roadmap,Contract Documentation,In Progress,Medium,8,Low,26/10/2024
+Develop payment processing for multiple gateways.,Transfer of Knowledge (TOK),Completed,Medium,31,Medium,6/10/2024
+"Develop CRUD (Create, Read, Update, Delete) operations for data entities.",Training Management,Completed,Low,13,Low,25/9/2024
+Implement task assignment and progress tracking.,Human Resource Management (HRM),In Progress,Medium,29,Low,16/10/2024
+Design the payment gateway integration architecture.,Inventory Management,To Do,Medium,21,Low,24/10/2024
+Implement Change Communication Strategies,Project Management,In Progress,Low,34,High,13/10/2024
+Develop Project Closure Report Template,Reporting and Analytics,To Do,High,39,Medium,12/9/2024
+Schedule and Conduct User Training Sessions,Certificate of Acceptance (CoA),In Progress,High,14,Medium,28/10/2024
+Develop subscription upgrade and cancellation workflows.,Workflow Management,To Do,High,29,High,5/9/2024
+Design the overall UI framework and components.,Training Management,Completed,Low,5,High,12/10/2024

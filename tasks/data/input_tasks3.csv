@@ -1,0 +1,28 @@
+task_title,task_type,current_status,business_impact,estimated_effort,priority_level,deadline
+Implement secure storage of audit logs.,Project Closure Report,Completed,Medium,3,Low,10/10/2024
+Develop data recovery procedures.,Inventory Management,Completed,Medium,7,Low,6/9/2024
+Develop payment processing for multiple gateways.,Notification System,In Progress,Medium,9,High,7/10/2024
+Design the asset tracking interface.,Transfer of Technology (TOT),Completed,Low,23,High,20/10/2024
+"Implement ticket creation, assignment, and tracking.",Monitoring & Control Reports,To Do,High,28,Medium,3/10/2024
+Automate Deployment Processes in DevOps,Payment Gateway Integration,Completed,Medium,18,Low,19/10/2024
+Monitor Change Adoption Across the Organization,Training Management,In Progress,Low,4,Medium,29/10/2024
+"Develop CRUD (Create, Read, Update, Delete) operations for data entities.",Payment Gateway Integration,To Do,Low,36,Medium,5/9/2024
+Design the messaging system architecture.,Audit and Compliance,In Progress,Medium,21,Medium,29/10/2024
+Test the approval process for accuracy and efficiency.,Project Management,To Do,Low,25,High,24/10/2024
+Document Project Lessons Learned,Finalization and Integration,Completed,High,14,Medium,20/9/2024
+Monitor User Engagement with LMS,Payment Gateway Integration,Completed,Medium,5,Medium,29/10/2024
+Test the notification center for performance and user engagement.,Communication and Collaboration Tools,Completed,Medium,2,Medium,8/9/2024
+Develop Sub-module 1 for Module 1: User Permissions Management,Workflow Management,Completed,Low,25,High,30/10/2024
+Implement resource allocation and task assignment.,Notification System,In Progress,Low,11,High,7/9/2024
+"Develop CRUD (Create, Read, Update, Delete) operations for data entities.",Project Management Information System (PMIS),In Progress,High,24,Medium,6/10/2024
+Integrate CRM with marketing and support tools.,User Interface and User Experience (UI/UX),In Progress,Low,12,High,8/10/2024
+Implement EA Best Practices Across Projects,Portal Learning Management System (LMS),To Do,Low,13,Low,26/9/2024
+Integrate audit logs with compliance reporting tools.,Project Management Information System (PMIS),To Do,Low,26,Medium,14/9/2024
+"Implement file upload, download, and versioning.",Workflow Management,To Do,Low,22,Low,6/9/2024
+Design the subscription management system.,Project Management,Completed,Medium,31,Low,6/9/2024
+Develop employee profiles and attendance tracking.,Project Management,To Do,Medium,25,Medium,29/10/2024
+Implement notification filtering and search.,Project Management Information System (PMIS),To Do,Low,17,Low,5/9/2024
+Monitor Data Ingestion into Data Lake,Transfer of Technology (TOT),In Progress,Medium,31,Low,30/9/2024
+Monitor Data Ingestion into Data Lake,Certificate of Acceptance (CoA),To Do,High,21,Medium,9/10/2024
+Develop real-time data refresh mechanisms.,Communication and Collaboration Tools,In Progress,Medium,16,Medium,22/9/2024
+Design and Develop New Portal Features,Human Resource Management (HRM),In Progress,Medium,8,Medium,27/9/2024

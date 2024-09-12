@@ -1,0 +1,24 @@
+{% extends 'home.html' %}
+
+{% block content %}
+
+<h2>Task Prioritization</h2>
+
+<!-- Manual Task Input Form -->
+<form method="post">
+    {% csrf_token %}
+    {{ task_form.as_p }}
+    <button type="submit" name="submit_task">Submit Task</button>
+</form>
+
+<hr>
+
+<!-- CSV Upload Form -->
+<h3>Or upload a CSV file</h3>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ upload_form.as_p }}
+    <button type="submit" name="upload_csv">Upload CSV</button>
+</form>
+
+{% endblock %}

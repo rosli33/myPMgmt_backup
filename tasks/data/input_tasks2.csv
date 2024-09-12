@@ -1,0 +1,25 @@
+task_title,task_type,current_status,business_impact,estimated_effort,priority_level,deadline
+Monitor PMIS Performance and User Feedback,Business Continuity Plan (BCP),In Progress,Medium,35,High,20/9/2024
+Develop feedback and appraisal workflows.,Training Management,To Do,Low,20,High,6/10/2024
+Develop customer profiles and interaction tracking.,User Authentication and Access Control,Completed,Medium,3,High,4/10/2024
+Conduct Post-Renovation Quality Checks,Notification System,Completed,Medium,33,Low,25/10/2024
+"Develop CRUD (Create, Read, Update, Delete) operations for data entities.",Project Closure Report,In Progress,Low,34,Low,14/9/2024
+Compile detailed documentation for each module.,Project Closure Report,Completed,Medium,1,Medium,10/9/2024
+Monitor Renovation Progress Against Schedule,User Authentication and Access Control,To Do,Low,1,Medium,12/10/2024
+Conduct Change Impact Assessments,User Authentication and Access Control,In Progress,Medium,10,High,11/10/2024
+Test the notification center for performance and user engagement.,Data Services & Management,To Do,Medium,28,Medium,6/9/2024
+Develop employee profiles and attendance tracking.,User Interface and User Experience (UI/UX),In Progress,Medium,18,Low,17/10/2024
+Document Technology Transfer Processes,Customer Relationship Management (CRM),In Progress,Medium,12,Medium,10/9/2024
+Design the support ticketing system.,User Authentication and Access Control,Completed,Low,22,Low,11/10/2024
+Develop knowledge base integration with support tickets.,Project Management Information System (PMIS),Completed,Low,24,Low,10/10/2024
+Develop notification and escalation mechanisms.,Workflow Management,To Do,Medium,23,Low,25/10/2024
+Design the audit logging architecture.,Audit and Compliance,Completed,Medium,6,Medium,27/10/2024
+Develop CoA Criteria and Guidelines,Reporting and Analytics,Completed,Low,25,High,23/9/2024
+Conduct Knowledge Sharing Sessions,Portal,In Progress,High,36,Low,15/10/2024
+Design the overall UI framework and components.,Human Resource Management (HRM),In Progress,Medium,15,High,14/9/2024
+Implement password recovery and reset features.,Data Lake & Data Warehouse Operation,Completed,High,36,Medium,18/10/2024
+Test the support ticketing system for responsiveness.,Human Resource Management (HRM),In Progress,High,14,Medium,27/9/2024
+Develop inter-module communication protocols.,Business Continuity Plan (BCP),Completed,Medium,27,High,10/10/2024
+Implement accessibility features for diverse users.,Payment Gateway Integration,In Progress,Medium,36,High,11/9/2024
+Design the reporting engine architecture.,Inventory Management,To Do,Low,3,Medium,9/9/2024
+Integrate notifications with user actions across modules.,Communication and Collaboration Tools,In Progress,Low,3,Medium,4/10/2024
