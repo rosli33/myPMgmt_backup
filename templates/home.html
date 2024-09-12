@@ -1,9 +1,12 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI-Enhanced Project Management System</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <style>
         * {
             margin: 0;
@@ -135,10 +138,17 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo">LOGO1</div>
-        <h1>AI-Enhanced Project Management System</h1>
-        <div class="logo">LOGO2</div>
+    <!-- Your content here -->
+    <header class="d-flex justify-content-between align-items-center">
+        <div class="logo-left">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'images/crest.png' %}" class="img-fluid" alt="Logo 1" width="120" height="120">
+            </a>
+        </div>
+        <h1 class="text-center flex-grow-1">AI-Enhanced Project Management System</h1>
+        <div class="logo-right">
+            <img src="{% static 'images/niise.png' %}" class="img-fluid" alt="Logo 2" width="180" height="80">
+        </div>
     </header>
 
     <div class="container">
@@ -154,10 +164,16 @@
 
         <div class="content">
             {% block content %}
-            <h2>Welcome to my apps</h2>
-            <!-- Dynamic content will be loaded here -->
-            {% endblock %}
+
+            <div class="objective-section">
+                <h2>Objective</h2>
+                <p>The primary objective of this project is to develop an AI-powered project management system that enhances productivity and efficiency by leveraging advanced machine learning and natural language processing technologies. This system aims to optimize task prioritization, resource allocation, risk management, and team collaboration, ultimately leading to more successful project outcomes and higher user satisfaction.</p>
+            </div>
+
+            {% endblock %} 
         </div>
+
+
     </div>
 
     <footer>

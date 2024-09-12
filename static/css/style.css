@@ -1,0 +1,42 @@
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+header {
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo-left, .logo-right {
+    display: inline-block;
+}
+
+.logo-left img, .logo-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.objective-section {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 30px; /* Padding for spacing around the text */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px 0; /* Margin for vertical spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a subtle lift */
+}
+
+.objective-section h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 28px; /* Larger font for heading */
+    font-weight: 700; /* Bold heading */
+    color: #333; /* Darker text color for contrast */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.objective-section p {
+    font-family: 'Georgia', serif;
+    font-size: 18px; /* Professional size for the body text */
+    line-height: 1.6; /* Increased line-height for readability */
+    color: #555; /* Slightly lighter text color for a clean look */
+    text-align: justify; /* Justified text for a more formal presentation */
+}
