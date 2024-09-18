@@ -55,13 +55,13 @@ BUSINESS_IMPACT_CHOICES = [
     ]
 
 class TaskInputForm(forms.Form):
-    task_title = forms.CharField(max_length=200, label="Task Title")
-    task_type = forms.ChoiceField(choices=TASK_TYPE_CHOICES, label="Task Type")
-    current_status = forms.ChoiceField(choices=STATUS_CHOICES, label="Current Status")
-    business_impact = forms.ChoiceField(choices=BUSINESS_IMPACT_CHOICES, label="Business Impact")
-    estimated_effort = forms.FloatField(label="Estimated Effort")
-    priority = forms.ChoiceField(choices=PRIORITY_CHOICES, label="Priority")
-    deadline = forms.DateField(widget=forms.SelectDateWidget, label="Deadline")
-    
+    task_title = forms.CharField(max_length=200, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    task_type = forms.ChoiceField(choices=TASK_TYPE_CHOICES, widget=forms.Select(attrs={'class': 'form-control'}))
+    current_status = forms.ChoiceField(choices=STATUS_CHOICES, widget=forms.Select(attrs={'class': 'form-control'}))
+    business_impact = forms.ChoiceField(choices=BUSINESS_IMPACT_CHOICES, widget=forms.Select(attrs={'class': 'form-control'}))
+    estimated_effort = forms.FloatField(widget=forms.NumberInput(attrs={'class': 'form-control'}))
+    priority = forms.ChoiceField(choices=PRIORITY_CHOICES, widget=forms.Select(attrs={'class': 'form-control'}))
+    deadline = forms.DateField(widget=forms.SelectDateWidget(attrs={'class': 'form-control'}))
+
 class UploadTaskForm(forms.Form):
-    csv_file = forms.FileField()
+    csv_file = forms.FileField(widget=forms.FileInput(attrs={'class': 'form-control'}))

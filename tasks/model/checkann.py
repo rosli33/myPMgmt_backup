@@ -1,20 +1,22 @@
 import os
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
 from imblearn.over_sampling import SMOTE
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import classification_report
-import joblib
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.utils import to_categorical
 from django.conf import settings
+import joblib
 
-def train_model():
+def train_ann_model():
     print("Loading data...")
-    
+
     # Construct the correct file path
-    # data_path = os.path.join(settings.BASE_DIR, 'tasks', 'data', 'cleaned_tasks.csv')
-    data_path='C:\\Users\\CIKLEE\\Documents\\myPMgmt\\tasks\\model\\cleaned_tasks.csv'
+    data_path = 'C:\\Users\\CIKLEE\\Documents\\myPMgmt\\tasks\\model\\synthetic_data.csv'
     try:
         # Load the data
         tasks_df = pd.read_csv(data_path)
@@ -42,8 +44,11 @@ def train_model():
         tasks_df['Log_Estimated_Effort'] = np.log1p(tasks_df['Estimated Effort (Hours)'])
 
         # Select features for model training
-        X = tasks_df[['Task Type', 'Current Status', 'Business Impact', 'Days Until Deadline', 'Impact_Effort', 'Log_Estimated_Effort']]
+        X = tasks_df[['Task Type', 'Current Status', 'Business Impact', 'Days Until Deadline']]
         y = tasks_df['Priority Level Encoded']
+
+        # One-hot encode the target variable
+        y = to_categorical(y)
 
         # Split the data into training and testing sets
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -52,22 +57,32 @@ def train_model():
         smote = SMOTE(random_state=42)
         X_train_balanced, y_train_balanced = smote.fit_resample(X_train, y_train)
 
-        # Define a RandomForest model
-        rf_model = RandomForestClassifier(class_weight='balanced', random_state=42)
+        # Build the ANN model
+        model = Sequential()
+        model.add(Dense(64, input_dim=X_train_balanced.shape[1], activation='relu'))
+        model.add(Dropout(0.5))  # Dropout to reduce overfitting
+        model.add(Dense(128, activation='relu'))
+        model.add(Dropout(0.5))
+        model.add(Dense(y_train_balanced.shape[1], activation='softmax'))  # Output layer
 
-        # Train the RandomForest model
-        rf_model.fit(X_train_balanced, y_train_balanced)
+        # Compile the model
+        model.compile(optimizer=Adam(learning_rate=0.01), loss='categorical_crossentropy', metrics=['accuracy'])
 
-        # Make predictions on the test set
-        y_pred = rf_model.predict(X_test)
+        # Train the model
+        model.fit(X_train_balanced, y_train_balanced, epochs=500, batch_size=64, validation_data=(X_test, y_test))
+
+        # Evaluate the model
+        y_pred = model.predict(X_test)
+        y_pred_classes = np.argmax(y_pred, axis=1)
+        y_test_classes = np.argmax(y_test, axis=1)
 
         # Generate a classification report
-        report = classification_report(y_test, y_pred, target_names=priority_le.classes_)
+        report = classification_report(y_test_classes, y_pred_classes, target_names=priority_le.classes_)
         print(report)
 
         # Save the model
-        model_path = os.path.join(settings.BASE_DIR, 'tasks', 'model', 'final_rf_model.pkl')
-        joblib.dump(rf_model, model_path)
+        model_path = os.path.join(settings.BASE_DIR, 'tasks', 'model', 'final_ann_model.h5')
+        model.save(model_path)
         print(f"Model trained and saved to {model_path} successfully!")
 
     except FileNotFoundError as e:
@@ -75,4 +90,4 @@ def train_model():
     except Exception as e:
         print(f"An error occurred: {e}")
 
-train_model()
+train_ann_model()

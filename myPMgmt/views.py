@@ -12,8 +12,11 @@ from tasks.models import Task, ManualTask
 from tasks.forms import TaskInputForm, UploadTaskForm
 import joblib
 from django.conf import settings
-from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import StandardScaler, LabelEncoder
 from django.http import HttpResponseBadRequest
+from tensorflow.keras.models import load_model
+# Function to load the model and make predictions
+from tensorflow.keras.optimizers import Adam
 
 def generate_visualization_images():  # For visualization.html
     # Retrieve the task data from the database
@@ -85,20 +88,23 @@ def visualization(request):
         print(f"Error generating visualizations: {e}")
         return render(request, 'visualization.html', {'error': str(e)})
         
-# Handle unseen labels dynamically
-def handle_unseen_labels(label_encoder, values):
-    unseen_values = [val for val in values if val not in label_encoder.classes_]
-    if unseen_values:
-        # Dynamically add the unseen labels to the encoder's classes
-        label_encoder.classes_ = np.append(label_encoder.classes_, unseen_values)
-    return label_encoder.transform(values)
-
+# Handle unseen labels by returning a default or fallback index
+def handle_unseen_labels(le, value):
+    # Check if value is in classes_, if not, return a default class index (e.g., 0)
+    if value in le.classes_:
+        return le.transform([value])[0]
+    else:
+        # You can decide on the default class, such as the first one (e.g., 'coa')
+        return le.transform([le.classes_[0]])[0]
+    
 # Function to load the model and make predictions
 def predict_task_priority(df_task):
+    # Load the ANN model
+    MODEL_PATH = 'tasks/model/best_ann_model.h5'
+    model = load_model(MODEL_PATH)
 
-    # Load the model
-    MODEL_PATH = 'tasks/model/final_rf_model.pkl'
-    model = joblib.load(MODEL_PATH)
+    # Compile the model to add metrics for evaluation
+    model.compile(optimizer=Adam(learning_rate=0.001), loss='categorical_crossentropy', metrics=['accuracy'])
 
     # Predefined LabelEncoders for each column used during training
     task_type_le = LabelEncoder()
@@ -116,43 +122,43 @@ def predict_task_priority(df_task):
     current_status_le.classes_ = np.array(['todo', 'progress', 'completed'])  # Statuses
     business_impact_le.classes_ = np.array(['Low', 'Medium', 'High'])  # Business Impact
 
-
     # Rename columns to match what the model was trained on
     df_task = df_task.rename(columns={
-        'task_type': 'Task Type',
-        'current_status': 'Current Status',
-        'business_impact': 'Business Impact',
+        'task_type': 'Task_Type',
+        'current_status': 'Current_Status',
+        'business_impact': 'Business_Impact',
         'estimated_effort': 'Estimated Effort (Hours)',
         'priority': 'Impact_Effort',
         'deadline': 'Days Until Deadline'
     })
 
-    # Encode categorical columns using LabelEncoders
-    df_task['Task Type'] = handle_unseen_labels(task_type_le, df_task['Task Type'])
-    df_task['Current Status'] = handle_unseen_labels(current_status_le, df_task['Current Status'])
-    df_task['Business Impact'] = handle_unseen_labels(business_impact_le, df_task['Business Impact'])
+    # Handle unseen labels in your LabelEncoder
+    df_task['Task_Type'] = df_task['Task_Type'].apply(lambda x: handle_unseen_labels(task_type_le, x))
+    df_task['Current_Status'] = df_task['Current_Status'].apply(lambda x: handle_unseen_labels(current_status_le, x))
+    df_task['Business_Impact'] = df_task['Business_Impact'].apply(lambda x: handle_unseen_labels(business_impact_le, x))
 
     # Calculate Days Until Deadline
     def calculate_days_until_deadline(deadline):
         # Handle date parsing explicitly
-        deadline = pd.to_datetime(deadline, format='%d/%m/%Y', dayfirst=True)
+        deadline = pd.to_datetime(deadline, format='%Y-%m-%d')
         return (deadline - pd.to_datetime(datetime.now())).days
-
 
     df_task['Days Until Deadline'] = df_task['Days Until Deadline'].apply(calculate_days_until_deadline)
 
     # Log-transform Estimated Effort (apply log1p)
     df_task['Log_Estimated_Effort'] = np.log1p(df_task['Estimated Effort (Hours)'])
 
-    # Feature engineering - create the Impact_Effort feature
-    df_task['Impact_Effort'] = df_task['Business Impact'] * df_task['Estimated Effort (Hours)']
-
     # Reorder columns to match the order used during training
-    df_task = df_task[['Task Type', 'Current Status', 'Business Impact', 'Days Until Deadline', 'Impact_Effort', 'Log_Estimated_Effort']]
+    df_task = df_task[['Task_Type', 'Current_Status', 'Business_Impact', 'Days Until Deadline', 'Log_Estimated_Effort']]
+
+    # Convert DataFrame to numpy array for model input
+    input_data = df_task.values
 
     # Make predictions
-    predictions = model.predict(df_task)
-    return predictions
+    predictions = model.predict(input_data)
+    predicted_classes = np.argmax(predictions, axis=1)
+
+    return predicted_classes
 
 # Task Prioritization View
 def task_prioritization(request):
@@ -163,16 +169,16 @@ def task_prioritization(request):
         # Manual task input
         if 'submit_task' in request.POST and task_form.is_valid():
             try:
-                                # Get the displayed values (index 1) for choice fields
                 task_data = {
                     'task_title': task_form.cleaned_data['task_title'],
-                    'task_type': dict(TASK_TYPE_CHOICES).get(task_form.cleaned_data['task_type']),  # Get display value
-                    'current_status': dict(STATUS_CHOICES).get(task_form.cleaned_data['current_status']),  # Get display value
-                    'business_impact': dict(BUSINESS_IMPACT_CHOICES).get(task_form.cleaned_data['business_impact']),  # Get display value
+                    'task_type': task_form.cleaned_data['task_type'],  # Already mapped correctly
+                    'current_status': task_form.cleaned_data['current_status'],  # Already mapped correctly
+                    'business_impact': task_form.cleaned_data['business_impact'],  # Already mapped correctly
                     'estimated_effort': task_form.cleaned_data['estimated_effort'],
-                    'priority_level': dict(PRIORITY_CHOICES).get(task_form.cleaned_data['priority']),  # Get display value
+                    'priority_level': task_form.cleaned_data['priority'],  # Already mapped correctly
                     'deadline': task_form.cleaned_data['deadline'] if 'deadline' in task_form.cleaned_data else None
                 }
+
                 # Save the task to the ManualTask table
                 ManualTask.objects.create(**task_data)
 
@@ -187,7 +193,7 @@ def task_prioritization(request):
 
                 # Pass the predicted priority and visualizations to the template
                 context = {
-                    'priority': prediction[0],
+                    'priority': prediction[0],  # Ensure you handle predictions properly
                     'image4': image4_base64,
                     'image5': image5_base64,
                     'image6': image6_base64
@@ -198,7 +204,6 @@ def task_prioritization(request):
             except Exception as e:
                 return HttpResponseBadRequest(f"Error processing task input: {e}")
 
-
         # CSV file upload for bulk task input
         elif 'upload_csv' in request.POST and upload_form.is_valid():
             try:
@@ -208,14 +213,12 @@ def task_prioritization(request):
                 # Handle date conversion for the 'deadline' column
                 if 'deadline' in df.columns:
                     try:
-                        # Explicitly handle dates in day/month/year format using dayfirst=True
                         df['deadline'] = pd.to_datetime(df['deadline'], dayfirst=True, errors='coerce')
 
                         # Check if there are any invalid dates
                         invalid_dates = df['deadline'].isna().sum()
                         if invalid_dates > 0:
                             return HttpResponseBadRequest(f"{invalid_dates} invalid date(s) found. Please check your CSV.")
-
                     except Exception as e:
                         return HttpResponseBadRequest(f"Error processing dates in CSV: {e}")
 
@@ -223,6 +226,7 @@ def task_prioritization(request):
                 if 'deadline' not in df.columns:
                     df['deadline'] = None
 
+                # Make predictions
                 predictions = predict_task_priority(df)
                 df['Predicted Priority'] = predictions
 
@@ -239,7 +243,7 @@ def task_prioritization(request):
                     )
 
                 # Generate visualizations from the ManualTask table
-                manual_tasks = ManualTask.objects.all().values()  # Fetch all data from ManualTask
+                manual_tasks = ManualTask.objects.all().values()
                 manual_tasks_df = pd.DataFrame(manual_tasks)
                 image4_base64, image5_base64, image6_base64 = generate_visualizations(manual_tasks_df)
 

@@ -40,3 +40,10 @@ header {
     color: #555; /* Slightly lighter text color for a clean look */
     text-align: justify; /* Justified text for a more formal presentation */
 }
+
+.objective-box {
+    background-color: #1ca7e7; /* Light blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(26, 227, 221, 0.1);
+}

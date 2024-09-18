@@ -1,24 +1,104 @@
 {% extends 'home.html' %}
 
 {% block content %}
+<div class="container mt-5">
+    <!-- Task Prioritization Header -->
+    <div class="text-center mb-4">
+        <h1 class="display-5">Task Prioritization</h1>
+    </div>
 
-<h2>Task Prioritization</h2>
+    <!-- Navigation Tabs (Manual Form & Upload File) -->
+    <ul class="nav nav-tabs justify-content-center" id="taskTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="manual-tab" data-bs-toggle="tab" data-bs-target="#manualForm" type="button" role="tab" aria-controls="manualForm" aria-selected="true">
+                Manual Form
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="upload-tab" data-bs-toggle="tab" data-bs-target="#uploadFile" type="button" role="tab" aria-controls="uploadFile" aria-selected="false">
+                Upload File
+            </button>
+        </li>
+    </ul>
 
-<!-- Manual Task Input Form -->
-<form method="post">
-    {% csrf_token %}
-    {{ task_form.as_p }}
-    <button type="submit" name="submit_task">Submit Task</button>
-</form>
+    <!-- Tab Content for Manual Form & CSV Upload -->
+    <div class="tab-content mt-4">
+        <!-- Manual Form Tab -->
+        <div class="tab-pane fade show active" id="manualForm" role="tabpanel" aria-labelledby="manual-tab">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <form method="post" class="form-horizontal">
+                                {% csrf_token %}
+                                <div class="form-group mb-3">
+                                    <label for="task_title" class="form-label">Task Title</label>
+                                    {{ task_form.task_title }}
+                                </div>
+                                
+                                <div class="form-group mb-3">
+                                    <label for="task_type" class="form-label">Task Type</label>
+                                    {{ task_form.task_type }}
+                                </div>
+                                
+                                <div class="form-group mb-3">
+                                    <label for="current_status" class="form-label">Current Status</label>
+                                    {{ task_form.current_status }}
+                                </div>
+                                
+                                <div class="form-group mb-3">
+                                    <label for="business_impact" class="form-label">Business Impact</label>
+                                    {{ task_form.business_impact }}
+                                </div>
 
-<hr>
+                                <div class="form-group mb-3">
+                                    <label for="estimated_effort" class="form-label">Estimated Effort (Hours)</label>
+                                    {{ task_form.estimated_effort }}
+                                </div>
 
-<!-- CSV Upload Form -->
-<h3>Or upload a CSV file</h3>
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ upload_form.as_p }}
-    <button type="submit" name="upload_csv">Upload CSV</button>
-</form>
+                                <div class="form-group mb-3">
+                                    <label for="priority" class="form-label">Priority</label>
+                                    {{ task_form.priority }}
+                                </div>
 
+                                <div class="form-group mb-3">
+                                    <label for="deadline" class="form-label">Deadline</label>
+                                    {{ task_form.deadline }}
+                                </div>
+
+                                <div class="form-group text-center mt-4">
+                                    <button type="submit" name="submit_task" class="btn btn-success">Submit Task</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upload File Tab -->
+        <div class="tab-pane fade" id="uploadFile" role="tabpanel" aria-labelledby="upload-tab">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Upload a CSV file</h5>
+                            <form method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <div class="form-group mb-3">
+                                    <label for="csv_file" class="form-label">CSV File</label>
+                                    {{ upload_form.csv_file }}
+                                </div>
+                                
+                                <div class="form-group text-center">
+                                    <button type="submit" name="upload_csv" class="btn btn-primary">Upload CSV</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
