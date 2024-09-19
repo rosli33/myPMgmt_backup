@@ -98,6 +98,7 @@ def handle_unseen_labels(le, value):
         return le.transform([le.classes_[0]])[0]
     
 # Function to load the model and make predictions
+# Predict Task Priority
 def predict_task_priority(df_task):
     # Load the ANN model
     MODEL_PATH = 'tasks/model/best_ann_model.h5'
@@ -113,12 +114,12 @@ def predict_task_priority(df_task):
 
     # Load the original training label encoders from the model training phase
     task_type_le.classes_ = np.array(['coa', 'portal', 'auth_control', 'finalization_integration', 'crm', 'data_storage', 
-                                    'comm_collab', 'workflow_management', 'contract_documentation', 'tok', 
-                                    'training_management', 'hrm', 'inventory_management', 'project_management', 
-                                    'reporting_analytics', 'tot', 'ea', 'payment_gateway', 'change_management', 
-                                    'notification_system', 'audit_compliance', 'devops', 'management_plans', 
-                                    'monitoring_reports', 'ui_ux', 'data_lake_warehouse', 'data_services', 
-                                    'closure_report', 'bcp', 'office_renovation', 'portal_lms', 'pmis'])  # Task Types
+                                      'comm_collab', 'workflow_management', 'contract_documentation', 'tok', 
+                                      'training_management', 'hrm', 'inventory_management', 'project_management', 
+                                      'reporting_analytics', 'tot', 'ea', 'payment_gateway', 'change_management', 
+                                      'notification_system', 'audit_compliance', 'devops', 'management_plans', 
+                                      'monitoring_reports', 'ui_ux', 'data_lake_warehouse', 'data_services', 
+                                      'closure_report', 'bcp', 'office_renovation', 'portal_lms', 'pmis'])  # Task Types
     current_status_le.classes_ = np.array(['todo', 'progress', 'completed'])  # Statuses
     business_impact_le.classes_ = np.array(['Low', 'Medium', 'High'])  # Business Impact
 
@@ -171,11 +172,11 @@ def task_prioritization(request):
             try:
                 task_data = {
                     'task_title': task_form.cleaned_data['task_title'],
-                    'task_type': task_form.cleaned_data['task_type'],  # Already mapped correctly
-                    'current_status': task_form.cleaned_data['current_status'],  # Already mapped correctly
-                    'business_impact': task_form.cleaned_data['business_impact'],  # Already mapped correctly
+                    'task_type': dict(TASK_TYPE_CHOICES).get(task_form.cleaned_data['task_type']),  # Get display value
+                    'current_status': dict(STATUS_CHOICES).get(task_form.cleaned_data['current_status']),  # Get display value
+                    'business_impact': dict(BUSINESS_IMPACT_CHOICES).get(task_form.cleaned_data['business_impact']),  # Get display value
                     'estimated_effort': task_form.cleaned_data['estimated_effort'],
-                    'priority_level': task_form.cleaned_data['priority'],  # Already mapped correctly
+                    'priority_level': dict(PRIORITY_CHOICES).get(task_form.cleaned_data['priority']),  # Get display value
                     'deadline': task_form.cleaned_data['deadline'] if 'deadline' in task_form.cleaned_data else None
                 }
 

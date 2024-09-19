@@ -5,6 +5,7 @@
     <!-- Task Prioritization Header -->
     <div class="text-center mb-4">
         <h1 class="display-5">Task Prioritization</h1>
+        <p class="lead">Manage your tasks by either filling the manual form or uploading a CSV file.</p>
     </div>
 
     <!-- Navigation Tabs (Manual Form & Upload File) -->
@@ -27,7 +28,10 @@
         <div class="tab-pane fade show active" id="manualForm" role="tabpanel" aria-labelledby="manual-tab">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Manual Task Input</h5>
+                        </div>
                         <div class="card-body">
                             <form method="post" class="form-horizontal">
                                 {% csrf_token %}
@@ -35,17 +39,17 @@
                                     <label for="task_title" class="form-label">Task Title</label>
                                     {{ task_form.task_title }}
                                 </div>
-                                
+
                                 <div class="form-group mb-3">
                                     <label for="task_type" class="form-label">Task Type</label>
                                     {{ task_form.task_type }}
                                 </div>
-                                
+
                                 <div class="form-group mb-3">
                                     <label for="current_status" class="form-label">Current Status</label>
                                     {{ task_form.current_status }}
                                 </div>
-                                
+
                                 <div class="form-group mb-3">
                                     <label for="business_impact" class="form-label">Business Impact</label>
                                     {{ task_form.business_impact }}
@@ -67,7 +71,7 @@
                                 </div>
 
                                 <div class="form-group text-center mt-4">
-                                    <button type="submit" name="submit_task" class="btn btn-success">Submit Task</button>
+                                    <button type="submit" name="submit_task" class="btn btn-success btn-lg">Submit Task</button>
                                 </div>
                             </form>
                         </div>
@@ -80,18 +84,20 @@
         <div class="tab-pane fade" id="uploadFile" role="tabpanel" aria-labelledby="upload-tab">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0">Upload a CSV File</h5>
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title text-center">Upload a CSV file</h5>
                             <form method="post" enctype="multipart/form-data">
                                 {% csrf_token %}
                                 <div class="form-group mb-3">
                                     <label for="csv_file" class="form-label">CSV File</label>
                                     {{ upload_form.csv_file }}
                                 </div>
-                                
+
                                 <div class="form-group text-center">
-                                    <button type="submit" name="upload_csv" class="btn btn-primary">Upload CSV</button>
+                                    <button type="submit" name="upload_csv" class="btn btn-primary btn-lg">Upload CSV</button>
                                 </div>
                             </form>
                         </div>
