@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'upload',
     'tasks',
-    # 'resource',
+    'risk',
+    'resource',
+    'visualization',
     # 'bootstrap5',
 ]
 

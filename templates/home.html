@@ -201,7 +201,7 @@
                 <li class="{% if request.path == '/resource_allocation/' %}active{% endif %}">
                     <a href="{% url 'resource_allocation' %}">Resource Allocation</a>
                 </li>
-                <li><a href="#">Risk Management</a></li>
+                <li><a href="{% url 'risk_management' %}">Risk Management</a></li>
                 <li><a href="{% url 'upload' %}">Data Integration</a></li>
                 <li><a href="{% url 'visualization' %}">Data Analysis</a></li>
             </ul>

@@ -14,22 +14,20 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-# myPMgmt/urls.py
 from django.contrib import admin
 from django.urls import path, include
-from .views import home, profile_analytics
-# from .views import visualization  # Import your views
-from . import views  # This will import views from the current app
-
+from .views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home, name='home'),  # Home page
-    path('upload/', include('upload.urls')),  # Include the upload app
-    path('resource_allocation/', views.resource_allocation, name='resource_allocation'),
-    path('visualization/', profile_analytics, name='visualization'),  # New visualization page
-    path('task_prioritization/', views.task_prioritization, name='task_prioritization'),
+    path('', home, name='home'),  # Main home page
+    path('tasks/', include('tasks.urls')),  # Route tasks app under /tasks
+    path('resource/', include('resource.urls')),  # Route resource app under /resource
+    path('risk/', include('risk.urls')),  # Route risk app under /risk
+    path('upload/', include('upload.urls')),  # Route upload app under /upload
+    path('visualization/', include('visualization.urls')),  # Route visualization app under /visualization
 ]
+
 
 
 

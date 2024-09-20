@@ -1,92 +1,27 @@
 import matplotlib
-matplotlib.use('Agg')  # Use non-interactive backend for web rendering
-from tasks.forms import TASK_TYPE_CHOICES, STATUS_CHOICES, PRIORITY_CHOICES, BUSINESS_IMPACT_CHOICES
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-from datetime import datetime
+from tasks.forms import TASK_TYPE_CHOICES, STATUS_CHOICES, PRIORITY_CHOICES, BUSINESS_IMPACT_CHOICES
 from io import BytesIO
 import base64
 from django.shortcuts import render
 from tasks.models import Task, ManualTask
 from tasks.forms import TaskInputForm, UploadTaskForm
-import joblib
 from django.conf import settings
 from sklearn.preprocessing import StandardScaler, LabelEncoder
+from datetime import datetime
 from django.http import HttpResponseBadRequest
+import logging
 from tensorflow.keras.models import load_model
-# Function to load the model and make predictions
 from tensorflow.keras.optimizers import Adam
+import os
 
-# def generate_visualization_images():  # For visualization.html
-#     # Retrieve the task data from the database
-#     tasks = Task.objects.all().values()
-#     new_tasks_df = pd.DataFrame(tasks)
-
-#     # Visualization 1: Distribution of Priority Levels
-#     fig1, ax1 = plt.subplots(figsize=(10, 6))
-#     new_tasks_df['priority_level'].value_counts().plot(kind='bar', color='skyblue', ax=ax1)
-#     ax1.set_title('Distribution of Priority Levels')
-#     ax1.set_xlabel('Priority Level')
-#     ax1.set_ylabel('Number of Tasks')
-#     ax1.set_xticks(ax1.get_xticks())
-#     plt.xticks(rotation=45)
-
-#     # Save the first plot to a buffer
-#     buffer1 = BytesIO()
-#     fig1.savefig(buffer1, format='png')
-#     buffer1.seek(0)
-#     image1_base64 = base64.b64encode(buffer1.read()).decode('utf-8')
-#     plt.close(fig1)
-
-#     # Visualization 2: Task Status vs. Business Impact
-#     fig2, ax2 = plt.subplots(figsize=(10, 6))
-#     impact_status_counts = new_tasks_df.groupby(['current_status', 'business_impact']).size().unstack()
-#     impact_status_counts.plot(kind='bar', stacked=True, colormap='viridis', ax=ax2)
-#     ax2.set_title('Task Status vs. Business Impact')
-#     ax2.set_xlabel('Task Status')
-#     ax2.set_ylabel('Number of Tasks')
-#     plt.xticks(rotation=45)
-
-#     # Save the second plot to a buffer
-#     buffer2 = BytesIO()
-#     fig2.savefig(buffer2, format='png')
-#     buffer2.seek(0)
-#     image2_base64 = base64.b64encode(buffer2.read()).decode('utf-8')
-#     plt.close(fig2)
-
-#     # Visualization 3: Estimated Effort by Priority Level
-#     fig3, ax3 = plt.subplots(figsize=(10, 6))
-#     new_tasks_df.boxplot(column='estimated_effort', by='priority_level', grid=False, patch_artist=True, ax=ax3)
-#     ax3.set_title('Estimated Effort by Priority Level')
-#     ax3.set_xlabel('Priority Level')
-#     ax3.set_ylabel('Estimated Effort (Hours)')
-#     plt.suptitle('')
-
-#     # Save the third plot to a buffer
-#     buffer3 = BytesIO()
-#     fig3.savefig(buffer3, format='png')
-#     buffer3.seek(0)
-#     image3_base64 = base64.b64encode(buffer3.read()).decode('utf-8')
-#     plt.close(fig3)
-
-#     return image1_base64, image2_base64, image3_base64
-
-
-# Handle unseen labels by returning a default or fallback index
-def handle_unseen_labels(le, value):
-    # Check if value is in classes_, if not, return a default class index (e.g., 0)
-    if value in le.classes_:
-        return le.transform([value])[0]
-    else:
-        # You can decide on the default class, such as the first one (e.g., 'coa')
-        return le.transform([le.classes_[0]])[0]
-    
-# Function to load the model and make predictions
 # Predict Task Priority
 def predict_task_priority(df_task):
     # Load the ANN model
-    MODEL_PATH = 'tasks/model/best_ann_model.h5'
+    MODEL_PATH = os.path.join(settings.BASE_DIR, 'tasks', 'model', 'best_ann_model.h5')
     model = load_model(MODEL_PATH)
 
     # Compile the model to add metrics for evaluation
@@ -126,9 +61,13 @@ def predict_task_priority(df_task):
     # Calculate Days Until Deadline
     def calculate_days_until_deadline(deadline):
         # Handle date parsing explicitly
-        deadline = pd.to_datetime(deadline, format='%Y-%m-%d')
-        return (deadline - pd.to_datetime(datetime.now())).days
-
+        try:
+            deadline = pd.to_datetime(deadline, format='%Y-%m-%d')
+            return (deadline - pd.to_datetime(datetime.now())).days
+        except Exception as e:
+            logger.error(f"Error parsing deadline: {e}")
+            return None  # Or handle this more appropriately
+        
     df_task['Days Until Deadline'] = df_task['Days Until Deadline'].apply(calculate_days_until_deadline)
 
     # Log-transform Estimated Effort (apply log1p)
@@ -254,6 +193,10 @@ def task_prioritization(request):
 
 # Helper function to generate visualizations as base64 images
 def generate_visualizations(df_task):
+
+    if df_task['priority_level'].isnull().sum() > 0:
+        logger.warning("Missing priority levels in task data.")
+
     # Visualization 1: Distribution of Priority Levels
     fig1, ax1 = plt.subplots(figsize=(10, 6))
     df_task['priority_level'].value_counts().plot(kind='bar', ax=ax1, color='skyblue')
@@ -298,84 +241,27 @@ def generate_visualizations(df_task):
 
     return image4_base64, image5_base64, image6_base64
 
-def home(request):
+def visualization(request):
     try:
         # Generate visualizations
-        image4_base64, image5_base64, image6_base64 = generate_visualization_images()
-        
+        image1_base64, image2_base64, image3_base64 = generate_visualization_images()
+
         # Pass base64 images to the template
         context = {
-            'image4': image4_base64,
-            'image5': image5_base64,
-            'image6': image6_base64,
+            'image1': image1_base64,
+            'image2': image2_base64,
+            'image3': image3_base64,
         }
-        return render(request, 'home.html', context)
+        return render(request, 'visualization.html', context)
     except Exception as e:
         print(f"Error generating visualizations: {e}")
-        return render(request, 'home.html', {'error': str(e)})
+        return render(request, 'visualization.html', {'error': str(e)})
 
-# def generate_manualtask_visualizations():
-#     # Fetch data from the ManualTask table
-#     manual_tasks = ManualTask.objects.all().values()
-#     manual_tasks_df = pd.DataFrame(manual_tasks)
-
-#     # Visualization 1: Distribution of Priority Levels
-#     fig1, ax1 = plt.subplots(figsize=(10, 6))
-#     manual_tasks_df['priority_level'].value_counts().plot(kind='bar', ax=ax1, color='skyblue')
-#     ax1.set_title('Distribution of Task Priorities (Manual Tasks)')
-#     ax1.set_xlabel('Priority')
-#     ax1.set_ylabel('Number of Tasks')
-
-#     # Save the figure to a BytesIO object
-#     buffer1 = BytesIO()
-#     plt.savefig(buffer1, format='png')
-#     buffer1.seek(0)
-#     image7_base64 = base64.b64encode(buffer1.read()).decode('utf-8')
-#     plt.close(fig1)
-
-#     # Visualization 2: Business Impact vs Estimated Effort
-#     fig2, ax2 = plt.subplots(figsize=(10, 6))
-#     manual_tasks_df.groupby('business_impact')['estimated_effort'].mean().plot(kind='bar', ax=ax2, color='green')
-#     ax2.set_title('Average Estimated Effort by Business Impact (Manual Tasks)')
-#     ax2.set_xlabel('Business Impact')
-#     ax2.set_ylabel('Average Estimated Effort')
-
-#     # Save the second figure to a BytesIO object
-#     buffer2 = BytesIO()
-#     plt.savefig(buffer2, format='png')
-#     buffer2.seek(0)
-#     image8_base64 = base64.b64encode(buffer2.read()).decode('utf-8')
-#     plt.close(fig2)
-
-#     # Visualization 3: Estimated Effort by Priority Level
-#     fig3, ax3 = plt.subplots(figsize=(10, 6))
-#     manual_tasks_df.groupby('priority_level')['estimated_effort'].mean().plot(kind='bar', ax=ax3, color='blue')
-#     ax3.set_title('Estimated Effort by Priority Level (Manual Tasks)')
-#     ax3.set_xlabel('Priority Level')
-#     ax3.set_ylabel('Average Estimated Effort')
-
-#     # Save the third figure to a BytesIO object
-#     buffer3 = BytesIO()
-#     plt.savefig(buffer3, format='png')
-#     buffer3.seek(0)
-#     image9_base64 = base64.b64encode(buffer3.read()).decode('utf-8')
-#     plt.close(fig3)
-
-#     return image7_base64, image8_base64, image9_base64
-
-# def manual_task_visualization(request):
-#     try:
-#         # Generate visualizations from ManualTask data
-#         image7_base64, image8_base64, image9_base64 = generate_manualtask_visualizations()
-
-#         # Pass base64 images to the template
-#         context = {
-#             'image7': image7_base64,
-#             'image8': image8_base64,
-#             'image9': image9_base64,
-#         }
-#         return render(request, 'manual_task_visualization.html', context)
-#     except Exception as e:
-#         print(f"Error generating visualizations: {e}")
-#         return render(request, 'manual_task_visualization.html', {'error': str(e)})
-
+# Handle unseen labels by returning a default or fallback index
+def handle_unseen_labels(le, value):
+    # Check if value is in classes_, if not, return a default class index (e.g., 0)
+    if value in le.classes_:
+        return le.transform([value])[0]
+    else:
+        # You can decide on the default class, such as the first one (e.g., 'coa')
+        return le.transform([le.classes_[0]])[0]
