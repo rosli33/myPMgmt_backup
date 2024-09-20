@@ -1,0 +1,637 @@
+Risk ID,Risk Level,Risk Category,Risk Description,Action Plan,Action Plan Owner,Likelihood,Impact,Risk Rating,Status
+R001,Application and Technical,Deployment,Infrastruktur di Cawangan lewat disediakan disebabkan oleh kelewatan perolehan mengakibatkan  tidak dapat dilaksanakan di cawangan berkenaan.,"Prepare infrastructure deployment plan di cawangan JM yang merangkumi: 
+a. Pasukan deployment mengikut zon;
+b. Bilangan sumber manusia, tempoh, aktiviti deployment; dan
+c. Strategi penghantaran, pemasangan dan konfigurasi.",Tower Infrastruktur  ,3,4,12,Active
+R002,Application and Technical,Deployment,Infrastruktur di Cawangan lewat disediakan disebabkan oleh kelewatan perolehan mengakibatkan  tidak dapat dilaksanakan di cawangan berkenaan.,Menyediakan procurement plan dan menyerahkan kepada Kerajaan,Tower Infrastruktur  ,3,4,12,Active
+R003,Application and Technical,Deployment,Infrastruktur di Cawangan lewat disediakan disebabkan oleh kelewatan perolehan mengakibatkan  tidak dapat dilaksanakan di cawangan berkenaan.,"Memuktamadkan bilangan, jenis dan spesifikasi peralatan cawangan mengikut keperluan.",Tower Infrastruktur  ,3,4,12,Active
+R004,Application and Technical,Deployment,Terdapat isu teknikal aplikasi luar jangkaan sepanjang fasa pembangunan sehingga fasa pelaksanaan  (Dev-Test-Staging-Production) disebabkan oleh proses DevOps yang tidak menyeluruh dan tidak mengikut amalan terbaik industri  mengakibatkan pembangunan projek  terjejas.,"Prepare DevOps platform
+- Devops Blueprint
+- Devops Readiness
+- Devops Training
+(30 Disember 2022)",Tower Teknikal ,2,5,10,Active
+R005,Application and Technical,Deployment,Terdapat isu teknikal aplikasi luar jangkaan sepanjang fasa pembangunan sehingga fasa pelaksanaan  (Dev-Test-Staging-Production) disebabkan oleh proses DevOps yang tidak menyeluruh dan tidak mengikut amalan terbaik industri  mengakibatkan pembangunan projek  terjejas.,"Mengenal pasti individu dan skop kerja individu yang mengawal proses deployment (Change Manager dan Release Manager). Akan diperincikan dalam dokumen Master Implementation Plan (MIP). 
+(31 Disember 2022)",Tower Teknikal ,2,5,10,Active
+R006,Application and Technical,Deployment,Terdapat isu teknikal aplikasi luar jangkaan sepanjang fasa pembangunan sehingga fasa pelaksanaan  (Dev-Test-Staging-Production) disebabkan oleh proses DevOps yang tidak menyeluruh dan tidak mengikut amalan terbaik industri  mengakibatkan pembangunan projek  terjejas.,"Mengenal pasti dan memperincikan keperluan pelan-pelan yang terlibat pada peringkat pre-deployment dan post-deployment.
+(31 Oktober 2023)",Tower Teknikal ,2,5,10,Active
+R007,Application and Technical,Deployment,Terdapat isu teknikal aplikasi luar jangkaan sepanjang fasa pembangunan sehingga fasa pelaksanaan  (Dev-Test-Staging-Production) disebabkan oleh proses DevOps yang tidak menyeluruh dan tidak mengikut amalan terbaik industri  mengakibatkan pembangunan projek  terjejas.,"Menyediakan proses end-to-end (development-pengujian-deployment) di dalam satu dokumen.
+(31 Disember 2022)",Tower Teknikal ,2,5,10,Active
+R008,Application and Technical,Deployment,Terdapat isu teknikal aplikasi luar jangkaan sepanjang fasa pembangunan sehingga fasa pelaksanaan  (Dev-Test-Staging-Production) disebabkan oleh proses DevOps yang tidak menyeluruh dan tidak mengikut amalan terbaik industri  mengakibatkan pembangunan projek  terjejas.,"Membentang amalan terbaik industri
+Seperti konsep, CI/CD, Infrastruktur as Code, Collaboration and Communication, Automation, Monitoring and feedback.
+(31 Oktober 2023)",Tower Teknikal ,2,5,10,Active
+R009,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)","Infrastruktur  yang penting dan kritikal seperti DC 1, DC 2, NICC dan server di cawangan gagal diakses dari luar secara online.","Kontraktor  hendaklah menyediakan insfrastruktur  dengan mengambil kira kemampuan  untuk beroperasi secara online dan offline. 
+(30 September 2023)",Tower Infrastruktur ,1,5,5,Active
+R010,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)","Infrastruktur  yang penting dan kritikal seperti DC 1, DC 2, NICC dan server di cawangan gagal diakses dari luar secara online.","Kontraktor  hendaklah menyediakan sistem  yang berupaya untuk menyimpan data semasa mode offline dan ada fungsi untuk upload data masuk ke database apabila kembali online. 
+(30 September 2023)",Tower Infrastruktur ,1,5,5,Active
+R011,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)","Infrastruktur  yang penting dan kritikal seperti DC 1, DC 2, NICC dan server di cawangan gagal diakses dari luar secara online.","Mewujudkan worksheet keseluruhan penggunaan bandwidth .
+(30 September 2023)",Tower Infrastruktur ,1,5,5,Active
+R012,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)","Infrastruktur  yang penting dan kritikal seperti DC 1, DC 2, NICC dan server di cawangan gagal diakses dari luar secara online.","JIM (BTMR) hendaklah menyediakan perkhidmatan Network (MyGovNet) di semua lokasi yang melibatkan  sebelum fasa rollout.
+(30 September 2021)",Tower Infrastruktur ,1,5,5,Active
+R013,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)","Infrastruktur  yang penting dan kritikal seperti DC 1, DC 2, NICC dan server di cawangan gagal diakses dari luar secara online.","JIM hendaklah menyediakan genset/ panel solar di setiap lokasi yang terjejas disebabkan oleh masalah bekalan elektrik sebelum fasa pemasangan dilaksanakan.
+(15 Jun 2022)
+(30 September 2023)",Tower Infrastruktur ,1,5,5,Active
+R014,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)","Infrastruktur  yang penting dan kritikal seperti DC 1, DC 2, NICC dan server di cawangan gagal diakses dari luar secara online.","Menyediakan pelan NICC yang menyeluruh bagi memantau Network (network monitoring) dan melaporkan isu akses yang gagal dari luar secara online. 
+(31 Mei 2023)",Tower Infrastruktur ,1,5,5,Active
+R015,Application and Technical,ICT Security,Peralatan dan perisian keselamatan ICT yang akan digunakan tidak berkesan disebabkan tiada pengujian secara terperinci yang dilaksanakan mengakibatkan sistem dibolosi.,"Menyenaraikan semua ciri keselamatan dan teknologi yang akan dibekalkan untuk projek  bagi memastikan tiada pencerobohan berlaku
+(31 Ogos 2023)",Tower Infrastruktur ,3,5,15,Active
+R016,Application and Technical,ICT Security,Peralatan dan perisian keselamatan ICT yang akan digunakan tidak berkesan disebabkan tiada pengujian secara terperinci yang dilaksanakan mengakibatkan sistem dibolosi.,"Menyediakan Polisi Security Keseluruhan: 
+SPA, Dokumentasi SPA perlu disiapkan kerana ia ada hubungkait dengan kategori pengujian yang akan dilaksanakan.
+ISMS, Polisi ICT
+(31 Ogos 2023)",Tower Infrastruktur ,3,5,15,Active
+R017,Application and Technical,ICT Security,Peralatan dan perisian keselamatan ICT yang akan digunakan tidak berkesan disebabkan tiada pengujian secara terperinci yang dilaksanakan mengakibatkan sistem dibolosi.,"Melaksanakan aktiviti perolehan bagi teknologi keselamatan yang akan digunakan untuk projek .
+Contoh software: OGG, ODI, dll
+(31 Ogos 2023)",Tower Infrastruktur ,3,5,15,Active
+R018,Application and Technical,System Development,The system developed does not follow standard quality processes yang telah ditetapkan oleh pihak Kerajaan disebabkan oleh penyelarasan dokumentasi dan proses pembangunan tidak mengikut metodologi yang telah dipersetujui.,"Kontraktor  dan IV&V hendaklah membangunkan Pelan Pengurusan Kualiti (QMP) yang komprehensif dan melaksanakan pelan tersebut dengan sempurna.
+(30 Ogos 2022)",Tower Aplikasi ,4,3,12,Active
+R019,Application and Technical,System Development,The system developed does not follow standard quality processes yang telah ditetapkan oleh pihak Kerajaan disebabkan oleh penyelarasan dokumentasi dan proses pembangunan tidak mengikut metodologi yang telah dipersetujui.,"Semua deliverables perlu melalui proses serahan yang telah ditetapkan oleh Kerajaan.
+(28 Februari 2022)",Tower Aplikasi ,4,3,12,Active
+R020,Application and Technical,System Development,The system developed does not follow standard quality processes yang telah ditetapkan oleh pihak Kerajaan disebabkan oleh penyelarasan dokumentasi dan proses pembangunan tidak mengikut metodologi yang telah dipersetujui.,"Mewujudkan Task Force untuk memantau pembangunan  agar mengikut standard kualiti yang ditetapkan.
+(31 Januari 2023)",Tower Aplikasi ,4,3,12,Active
+R021,Application and Technical,System Development,The system developed does not follow standard quality processes yang telah ditetapkan oleh pihak Kerajaan disebabkan oleh penyelarasan dokumentasi dan proses pembangunan tidak mengikut metodologi yang telah dipersetujui.,Menyediakan dokumen Master Development Plan (MDP) dan mengemukakan kepada pihak Kerajaan.,Tower Aplikasi ,4,3,12,Active
+R022,Application and Technical,System Development,"Sistem tidak boleh beradaptasi dengan sebarang perubahan teknologi baru (sistem,perisian dan infra) pada masa akan datang","Memastikan Pembangunan sistem  berasaskan MicroServices Architecture (MSA). 
+(31 Disember 2022)",Tower Aplikasi ,3,4,12,Active
+R023,Application and Technical,System Development,"Sistem tidak boleh beradaptasi dengan sebarang perubahan teknologi baru (sistem,perisian dan infra) pada masa akan datang","Mengenalpasti dan menyenaraikan perkara yang hampir tamat tempoh;
+-Sistem sokongan
+-Perisian 
+-Peralatan
+(31 Disember 2022)",Tower Aplikasi ,3,4,12,Active
+R024,Application and Technical,System Development,"Sistem tidak boleh beradaptasi dengan sebarang perubahan teknologi baru (sistem,perisian dan infra) pada masa akan datang","Melaksanakan pemantauan bersepadu dan teknologi refresh bagi setiap 3 tahun dengan kaedah pemantauan berikut:
+-Mendapatkan maklumat mengenai perubahan yang perlu dibuat 
+-Membuat kajian impak terhadap perubahan diperlukan.
+-Mencadangkan perubahan yang perlu dilakukan.
+(31 Mei 2024)",Tower Aplikasi ,3,4,12,Active
+R025,Application and Technical,System Development,"Sistem tidak boleh beradaptasi dengan sebarang perubahan teknologi baru (sistem,perisian dan infra) pada masa akan datang","Pihak Kerajaan dan Kontraktor hendaklah membangunkan sistem yang configurable dan fleksible dan menggunakan work flow engine.
+(1 Ogos 2023)",Tower Aplikasi ,3,4,12,Active
+R026,Application and Technical,System Development,"Data yang dipindahkan (migrasi) dari sistem lama ke sistem baharu tidak memenuhi kualiti data disebabkan oleh aktiviti data cleansing dan harmonisation tidak mengikut proses yang telah ditetapkan mengakibatkan data transaksi, statistik dan laporan yang dikeluarkan tidak tepat.","Kontraktor  hendaklah menyediakan Pelan Migrasi Data dengan menyatakan secara jelas dan terperinci pendekatan, kaedah, proses dan senarai semak sebelum aktiviti migrasi dilaksanakan. Pelan migrasi data perlu mendapat pengesahan dan persetujuan oleh pihak Kerajaan.",Tower Teknikal ,2,5,10,Active
+R027,Application and Technical,System Development,"Data yang dipindahkan (migrasi) dari sistem lama ke sistem baharu tidak memenuhi kualiti data disebabkan oleh aktiviti data cleansing dan harmonisation tidak mengikut proses yang telah ditetapkan mengakibatkan data transaksi, statistik dan laporan yang dikeluarkan tidak tepat.","Kontraktor  hendaklah melaksanakan dengan sempurna proses migrasi data mengikut Pelan Migrasi Data yang telah dipersetujui oleh pihak kerajaan seperti 
+-Menjalankan kerja-kerja pembangunan seperti mapping, cleansing, harmonization dan sinkronisasi
+-Melibatkan data steward dan data validator yang dilantik daripada pihak kerajaan 
+-Melakukan pengujian (cleansing and harmonisation rules) migrasi dan sinkronisasi data bersama pihak kerajaan yang dilantik.",Tower Teknikal ,2,5,10,Active
+R028,Application and Technical,System Development,"Data yang dipindahkan (migrasi) dari sistem lama ke sistem baharu tidak memenuhi kualiti data disebabkan oleh aktiviti data cleansing dan harmonisation tidak mengikut proses yang telah ditetapkan mengakibatkan data transaksi, statistik dan laporan yang dikeluarkan tidak tepat.","Melaksanakan aktiviti validasi dan verifikasi data transaksi, laporan dan statistik melalui aplikasi .",Tower Teknikal ,2,5,10,Active
+R029,Application and Technical,System Development,Data yang disikronisasi di antara sistem lama dan baru tidak tepat disebabkan oleh aktiviti data transformasi 2 hala tidak mengikut proses yang ditetapkan mengakibatkan keberadaan data di sistem lama dan baru tidak konsisten.,"Kontraktor  hendaklah melaksanakan dengan sempurna proses sinkronisasi data mengikut Pelan Sikronisasi Data yang telah dipersetujui oleh pihak kerajaan seperti 
+i. Menjalankan kerja-kerja pembangunan seperti mapping, cleansing, harmonization dan sinkronisasi
+ii. Melibatkan data steward dan data validator yang dilantik daripada pihak kerajaan 
+iii. Melakukan pengujian (cleansing and harmonisation rules) sinkronisasi data bersama pihak kerajaan yang dilantik
+(31 Mei 2024)",Tower Teknikal ,3,5,15,Active
+R030,Application and Technical,Network,Keupayaan infrastruktur Network (line connectivity) tidak memenuhi keperluan capaian  disebabkan oleh bandwidth tidak mencukupi dan boleh mengakibatkan gangguan capaian .,Menyenaraikan parameter yang menyumbang kepada penggunaan bandwidth,Tower Infrastruktur ,5,5,25,Active
+R031,Application and Technical,Network,Keupayaan infrastruktur Network (line connectivity) tidak memenuhi keperluan capaian  disebabkan oleh bandwidth tidak mencukupi dan boleh mengakibatkan gangguan capaian .,Melaksanakan simulasi berdasarkan parameter yang dikenal pasti.,Tower Infrastruktur ,5,5,25,Active
+R032,Application and Technical,Network,Keupayaan infrastruktur Network (line connectivity) tidak memenuhi keperluan capaian  disebabkan oleh bandwidth tidak mencukupi dan boleh mengakibatkan gangguan capaian .,Menaik taraf Bandwidth sedia ada.,Tower Infrastruktur ,5,5,25,Active
+R033,Application and Technical,Network,Keupayaan infrastruktur Network (line connectivity) tidak memenuhi keperluan capaian  disebabkan oleh bandwidth tidak mencukupi dan boleh mengakibatkan gangguan capaian .,"Mengemukakan cadangan IPSec (Voice, Text Video).",Tower Infrastruktur ,5,5,25,Active
+R034,Application and Technical,Network,Keupayaan infrastruktur Network (line connectivity) tidak memenuhi keperluan capaian  disebabkan oleh bandwidth tidak mencukupi dan boleh mengakibatkan gangguan capaian .,Melaksanakan bandwith shaping bagi bandwidth yang terlibat,Tower Infrastruktur ,5,5,25,Active
+R035,Application and Technical,System Development,Integriti data dalam  dipertikai.,Memastikan sistem bug diselesaikan sebelum sesuatu Release.,Tower Aplikasi ,3,4,12,Active
+R036,Application and Technical,System Development,Integriti data dalam  dipertikai.,Melaksanakan Security Posture Assessment (SPA).,Tower Aplikasi ,3,4,12,Active
+R037,Application and Technical,System Development,Integriti data dalam  dipertikai.,Menyediakan fungsi Audit trail yang komprehensif bagi tujuan pemantauan setiap transaksi dalam .,Tower Aplikasi ,3,4,12,Active
+R038,Application and Technical,System Development,Integriti data dalam  dipertikai.,"Memastikan Data Migration Plan dan Data Synchonization Plan mengandungi;
+Mengandungi proses migrasi data yang menjamin completion, consistency, accuracy dan security.",Tower Aplikasi ,3,4,12,Active
+R039,Operation,Training,Training Pengguna Akhir (End User Training) tidak dapat dilaksanakan mengikut perancangan disebabkan oleh kebergantungan kepada fasa pembangunan mengakibatkan tempoh masa Training yang diperuntukan tidak mencukupi untuk melaksanakan Training serta kelewatan pembangunan dan pemuktamadan Manual Training  untuk melaksanakan Training Pengguna Akhir.,Tower Aplikasi hendaklah memastikan semua dokumentasi berkaitan modul  dibangunkan dan dimuktamadkan dengan segera.,Tower Aplikasi ,3,3,9,Active
+R040,Operation,Training,Training Pengguna Akhir (End User Training) tidak dapat dilaksanakan mengikut perancangan disebabkan oleh kebergantungan kepada fasa pembangunan mengakibatkan tempoh masa Training yang diperuntukan tidak mencukupi untuk melaksanakan Training serta kelewatan pembangunan dan pemuktamadan Manual Training  untuk melaksanakan Training Pengguna Akhir.,Modul Training Pengguna Akhir hendaklah di bangunkan dan dimuktamadkan sebelum M42 (iaitu sebelum Training Pilot).,Tower Aplikasi ,3,3,9,Active
+R041,Operation,Training,Training Pengguna Akhir (End User Training) tidak dapat dilaksanakan mengikut perancangan disebabkan oleh kebergantungan kepada fasa pembangunan mengakibatkan tempoh masa Training yang diperuntukan tidak mencukupi untuk melaksanakan Training serta kelewatan pembangunan dan pemuktamadan Manual Training  untuk melaksanakan Training Pengguna Akhir.,Kontraktor  hendaklah menyediakan persekitaran Training yang lengkap termasuk sampel data Training yang sesuai sebelum Training bermula.,Tower Aplikasi ,3,3,9,Active
+R042,Operation,Training,Training Pengguna Akhir (End User Training) tidak dapat dilaksanakan mengikut perancangan disebabkan oleh kebergantungan kepada fasa pembangunan mengakibatkan tempoh masa Training yang diperuntukan tidak mencukupi untuk melaksanakan Training serta kelewatan pembangunan dan pemuktamadan Manual Training  untuk melaksanakan Training Pengguna Akhir.,Pihak JIM perlu mewujudkan pusat Training dan infrastruktur yang mencukupi sebelum Training bermula.,Tower Aplikasi ,3,3,9,Active
+R043,Operation,Training,Ketiadaan sumber rujukan untuk pengguna  disebabkan oleh Training Manual tidak disediakan dalam bentuk hardcopy dan softcopy mengakibatkan proses kerja tidak lancar,Kontraktor  hendaklah menyediakan Training Manual dalam bentuk hardcopy (berdasarkan kepada serahan akhir) dan softcopy yang boleh diakses pada bila-bila masa apabila diperlukan,Tower Bisnes ,5,2,10,Active
+R044,Operation,Training,Ketiadaan sumber rujukan untuk pengguna  disebabkan oleh Training Manual tidak disediakan dalam bentuk hardcopy dan softcopy mengakibatkan proses kerja tidak lancar,"Kontraktor  hendaklah menyediakan garis panduan pengguna untuk mengakses User Manual dan Training Manual di dalam platform LMS.
+(30 Ogos 2023)",Tower Bisnes ,5,2,10,Active
+R045,Operation,Human Resource,Penyalahgunaan  oleh JIM dan KDN selepas sistem beroperasi dan dalam tempoh penyelenggaraan disebabkan oleh penyalahgunaan ID pegawai mengakibatkan kebocoran maklumat keselamatan negara.,"Membangunkan modul pengurusan ID sebagai salah satu modul dalam sistem . 
+URS 
+SRS 
+SDD
+TDD",Tower Aplikasi ,5,3,15,Active
+R046,Operation,Human Resource,Penyalahgunaan  oleh JIM dan KDN selepas sistem beroperasi dan dalam tempoh penyelenggaraan disebabkan oleh penyalahgunaan ID pegawai mengakibatkan kebocoran maklumat keselamatan negara.,Menetapkan access level bagi setiap pengguna di dalam dokumen IDM.,Tower Aplikasi ,5,3,15,Active
+R047,Operation,Human Resource,Penyalahgunaan  oleh JIM dan KDN selepas sistem beroperasi dan dalam tempoh penyelenggaraan disebabkan oleh penyalahgunaan ID pegawai mengakibatkan kebocoran maklumat keselamatan negara.,Mengadakan aktiviti kesedaran dari masa ke semasa.,Tower Aplikasi ,5,3,15,Active
+R048,Operation,SOP/ Process,Pengoperasian sistem  Helpdesk ICT tidak teratur disebabkan oleh pelaporan yang tidak tepat mengakibatkan SLA meja bantuan tidak tercapai sepenuhnya.,Memuktamadkan dokumen URS dan RDS ICT Helpdesk dan menyerahkan dokumen kepada Kerajaan.,Tower Infrastruktur,2,2,4,Active
+R049,Operation,SOP/ Process,Pengoperasian sistem  Helpdesk ICT tidak teratur disebabkan oleh pelaporan yang tidak tepat mengakibatkan SLA meja bantuan tidak tercapai sepenuhnya.,Memasang dan melaksanakan konfigurasi ICT helpdesk untuk penggunaan log aduan  bermula fasa pembangunan,Tower Infrastruktur,2,2,4,Active
+R050,Operation,SOP/ Process,Pengoperasian sistem  Helpdesk ICT tidak teratur disebabkan oleh pelaporan yang tidak tepat mengakibatkan SLA meja bantuan tidak tercapai sepenuhnya.,Melaksanakan pengujian Helpdesk ICT.,Tower Infrastruktur,2,2,4,Active
+R051,Operation,SOP/ Process,Pengoperasian sistem  Helpdesk ICT tidak teratur disebabkan oleh pelaporan yang tidak tepat mengakibatkan SLA meja bantuan tidak tercapai sepenuhnya.,Melaksanakan Training Helpdesk ICT.,Tower Infrastruktur,2,2,4,Active
+R052,Operation,SOP/ Process,Pengoperasian sistem  Helpdesk ICT tidak teratur disebabkan oleh pelaporan yang tidak tepat mengakibatkan SLA meja bantuan tidak tercapai sepenuhnya.,Memuktamadkan SOP pengoperasian meja bantuan ICT.,Tower Infrastruktur,2,2,4,Active
+R053,Operation,SOP/ Process,Pengoperasian sistem  Helpdesk ICT tidak teratur disebabkan oleh pelaporan yang tidak tepat mengakibatkan SLA meja bantuan tidak tercapai sepenuhnya.,Memastikan aliran proses sistem meja bantuan ICT (termasuk customization dan konfigurasi) mematuhi keperluan SLA mengikut Jadual 8 dan Jadual,Tower Infrastruktur,2,2,4,Active
+R054,Strategic,Force Majure,Ketiadaan BCP yang menyeluruh dalam menghadapi situasi luar jangka selepas  Go-live.,"Kerajaan (JIM) hendaklah menyediakan Business Continuity Plan (BCP) yang komprehensif sebagai persediaan menghadapi insiden luar jangka.  
+(1 September 2023)",Bahagian Dasar dan Perancangan Strategik JIM,1,5,5,Active
+R055,Strategic,Force Majure,Ketiadaan BCP yang menyeluruh dalam menghadapi situasi luar jangka selepas  Go-live.,"Pihak kontraktor  perlu menyediakan BCP Projek yang merangkumi 12 bulan fasa warranti.
+(30 Jun 2024)",Bahagian Dasar dan Perancangan Strategik JIM,1,5,5,Active
+R056,Strategic,Force Majure,Ketiadaan BCP yang menyeluruh dalam menghadapi situasi luar jangka selepas  Go-live.,"Sekiranya force majure/ bencana berlaku, pihak Kerajaan dan Kontraktor dengan segera hendaklah melaksanakan aktiviti projek berdasarkan prosedur dalam BCP.
+(1 September 2023)",Bahagian Dasar dan Perancangan Strategik JIM,1,5,5,Active
+R057,Application and Technical,Deployment,Pembangunan sistem secara serentak bagi kesemua 13 modul boleh melambatkan jadual pelaksanaan disebabkan oleh modul yang ada kebergantungan antara satu sama lain. Ini mengakibatkan jadual pelaksanaan keseluruhan akan terganggu dan tidak mengikut masa yang telah ditetapkan.,"Melaksanakan pelan perancangan strategi penutupan serahan seperti berikut: 
+    a. Keutamaan Serahan (Priotizize)
+    b. Human Resource
+    c. Drill Session
+    d. Subject Matter Expert
+    e. Morning Standup
+     f. Vendor Engagement",Tower Infrastruktur ,4,5,20,Active
+R058,Application and Technical,Deployment,Pembangunan sistem secara serentak bagi kesemua 13 modul boleh melambatkan jadual pelaksanaan disebabkan oleh modul yang ada kebergantungan antara satu sama lain. Ini mengakibatkan jadual pelaksanaan keseluruhan akan terganggu dan tidak mengikut masa yang telah ditetapkan.,Menyediakan pelan pembangunan dan pelaksanaan cawangan  dan mengemukakan kepada pihak Kerajaan.,Tower Infrastruktur ,4,5,20,Active
+R059,Operation,Training,Proses jemputan TOT dan TOK tidak dilaksanakan dengan sempurna disebabkan oleh ketiadaan perancangan Training secara menyeluruh mengakibatkan kehadiran yang kurang memuaskan.,"1.Pemakluman kepada pihak Kerajaan dikeluarkan 45 hari sebelum Training TOT dan TOK dilaksanakan. 
+(Sepanjang tempoh pelaksanaan projek)",Tower Bisnes ,4,5,20,Active
+R060,Operation,Training,Proses jemputan TOT dan TOK tidak dilaksanakan dengan sempurna disebabkan oleh ketiadaan perancangan Training secara menyeluruh mengakibatkan kehadiran yang kurang memuaskan.,"Memastikan kehadiran terlibat adalah 100% dan input maklum balas diambil kira bagi memastikan objektif Training dapat dicapai. 
+(Sepanjang tempoh pelaksanaan projek)",Tower Bisnes ,4,5,20,Active
+R061,Application and Technical,System Development,Source code dan artifak yang dibangunkan tidak diurus/ diselenggara dengan baik dalam Fasa Pembangunan dan Pengujian,"Mengenal pasti dan melantik Release Manager dan Configuration Manager yang berkelayakan dan berkemahiran
+(31 Disember 2022)
+
+2.Mengadakan Bengkel Dry Run.
+(31 Disember 2022)",Tower Aplikasi ,4,5,20,Active
+R062,Application and Technical,System Development,Source code dan artifak yang dibangunkan tidak diurus/ diselenggara dengan baik dalam Fasa Pembangunan dan Pengujian,"Memuktamadkan dokumen  yang berkaitan dengan pengurusan source code dan artifak 
+-DevOps Blueprint, 
+-Konfigurasi DevOps, 
+(31 Disember 2022)",Tower Aplikasi ,4,5,20,Active
+R063,Application and Technical,System Development,Source code dan artifak yang dibangunkan tidak diurus/ diselenggara dengan baik dalam Fasa Pembangunan dan Pengujian,"Perlu memuktamadkan semua tools DevOps dan konfigurasi bagi pengurusan source code dan artifak.
+(31 Disember 2022)",Tower Aplikasi ,4,5,20,Active
+R064,Application and Technical,System Development,Source code dan artifak yang dibangunkan tidak diurus/ diselenggara dengan baik dalam Fasa Pembangunan dan Pengujian,Menyediakan dokumen Laporan Kesediaan Platform DevOps (Production) dan mengemukakan kepada pihak Kerajaan.,Tower Aplikasi ,4,5,20,Active
+R065,Application and Technical,System Development,Penyelarasan keperluan sistem yang mempunyai kebergantungan antara modul tidak dilaksanakan dengan terperinci yang menyebabkan sistem yang dibangunkan tidak dapat berinteraksi mengikut keperluan yang lengkap.,"Keperluan kebergantungan antara modul perlu dikenal pasti dan direkodkan dengan terperinci dalam setiap dokumen modul yang terlibat dengan penyediaan matriks.
+(28 Februari 2023)",Tower Aplikasi ,4,3,12,Active
+R066,Application and Technical,System Development,Penyelarasan keperluan sistem yang mempunyai kebergantungan antara modul tidak dilaksanakan dengan terperinci yang menyebabkan sistem yang dibangunkan tidak dapat berinteraksi mengikut keperluan yang lengkap.,"Perbincangan dan pengesahan bersama SA dan SME setiap modul  bagi pengesahan matriks rentas modul antara Kontraktor  dan Kerajaan. 
+(30 November 2022)",Tower Aplikasi ,4,3,12,Active
+R067,Project Management,Risk,Penamatan projek  secara keseluruhan disebabkan oleh kegagalan pihak Kontraktor untuk melaksanakan projek mengikut jadual pelaksanaan mengakibatkan domino effect kepada pihak-pihak berkepentingan,"Menyelesaikan isu kekurangan Human Resource dengan mengikut jumlah yang dirancang.
+(31 Ogos 2025)",Tower Pengurusan ,5,5,25,Active
+R068,Project Management,Risk,Penamatan projek  secara keseluruhan disebabkan oleh kegagalan pihak Kontraktor untuk melaksanakan projek mengikut jadual pelaksanaan mengakibatkan domino effect kepada pihak-pihak berkepentingan,"Melaksanakan perolehan mengikut perancangan yang telah dipersetujui.
+(31 Ogos 2025)",Tower Pengurusan ,5,5,25,Active
+R069,Project Management,Risk,Penamatan projek  secara keseluruhan disebabkan oleh kegagalan pihak Kontraktor untuk melaksanakan projek mengikut jadual pelaksanaan mengakibatkan domino effect kepada pihak-pihak berkepentingan,"Membuat permohonan perlanjutan tempoh Extension of Time (EOT).
+(30 Jun 2023)",Tower Pengurusan ,5,5,25,Active
+R070,Project Management,Risk,Penamatan projek  secara keseluruhan disebabkan oleh kegagalan pihak Kontraktor untuk melaksanakan projek mengikut jadual pelaksanaan mengakibatkan domino effect kepada pihak-pihak berkepentingan,"Melantik rakan Strategic untuk mendapatkan suntikan modal tambahan.
+(30 Jun 2023)",Tower Pengurusan ,5,5,25,Active
+R071,Application and Technical,System Development,906 laporan Data Analytics Business Intelligence (DABI) yang akan dibangunkan tidak tepat disebabkan tiada perincian dalam dokumen SRS atau SDS berkenaan medan-medan yang diperlukan. Ini boleh mengakibatkan tempoh aktiviti pengujian dan pengesahan laporan bertambah panjang serta berulang-ulang seterusnya meningkatkan varian kemajuan projek.,"Memperincikan setiap 906 laporan dengan medan-medan yang dirujuk kepada dokumen sumber seperti Dokumen Master Database Design (MDD), Dokumen System Requirement Specification (SRS), Dokumen SDS DataWarehouse/ Data Lake (DWH/DL)",Tower Aplikasi ,3,4,12,Active
+R072,Application and Technical,ICT Security,"Ketiadaan dokumen yang memperincikan keseluruhan elemen keselamatan aplikasi, data, peralatan dan Network bagi Projek  mengakibatkan solusi yang dicadangkan tidak meliputi keseluruhan keperluan keselamatan Projek .","Menyediakan satu dokumen bagi memperincikan keseluruhan keperluan keselamatan dalam Projek  merangkumi keselamatan aplikasi, data, peralatan dan Network.",,3,4,12,Active
+R073,Application and Technical,ICT Security,"Ketiadaan dokumen yang memperincikan keseluruhan elemen keselamatan aplikasi, data, peralatan dan Network bagi Projek  mengakibatkan solusi yang dicadangkan tidak meliputi keseluruhan keperluan keselamatan Projek .","Dokumen tersebut perlu disemak dan disahkan oleh kesemua Tower iaitu daripada pihak JIM, BTMR, PPK, IPM dan IV&V.",,3,4,12,Active
+R074,Application and Technical,ICT Security,"Ketiadaan dokumen yang memperincikan keseluruhan elemen keselamatan aplikasi, data, peralatan dan Network bagi Projek  mengakibatkan solusi yang dicadangkan tidak meliputi keseluruhan keperluan keselamatan Projek .",Mengemukakan dokumen tersebut kepada pihak Kerajaan mengikut tarikh yang telah dipersetujui.,,3,4,12,Active
+R075,Application and Technical,ICT Security,"Ketiadaan dokumen yang memperincikan keseluruhan elemen keselamatan aplikasi, data, peralatan dan Network bagi Projek  mengakibatkan solusi yang dicadangkan tidak meliputi keseluruhan keperluan keselamatan Projek .",Menyediakan Human Resource yang kompeten bagi penyediaan dokumen.,,3,4,12,Active
+R076,Project Management,Human Resource,Penempatan ahli pasukan projek kurang pengetahuan dan berkemahiran dalam bidang yang berkaitan.,PPK/ IPM hendaklah menyediakan program Training dan pendedahan yang mantap kepada ahli pasukan projek.,Tower Project Management ,3,4,12,Closed
+R077,Project Management,Human Resource,Penempatan ahli pasukan projek kurang pengetahuan dan berkemahiran dalam bidang yang berkaitan.,PPK/ IPM hendaklah menetapkan peranan dan tanggungjawab dengan jelas sebelum projek bermula.,Tower Project Management ,3,4,12,Closed
+R078,Project Management,Human Resource,Penempatan ahli pasukan projek kurang pengetahuan dan berkemahiran dalam bidang yang berkaitan.,PPK/ IPM hendaklah menyemak peranan dan tanggungjawab dari semasa ke semasa dan membuat penambahbaikan (cth: pelan-pelan pengurusan) sekiranya perlu.,Tower Project Management ,3,4,12,Closed
+R079,Project Management,Human Resource,Pertukaran ahli pasukan projek di pihak Kerajaan.,PPK/ IPM hendaklah mewujudkan Repositori Pengetahuan (Knowledge Repository),Tower Project Management ,4,4,16,Closed
+R080,Project Management,Human Resource,Tambahan perjawatan untuk pasukan projek Kerajaan tidak diluluskan.,PPK hendaklah membuat rayuan semula perjawatan yang diperlukan.,Tower Project Management ,3,4,12,Closed
+R081,Project Management,Human Resource,Tambahan perjawatan untuk pasukan projek Kerajaan tidak diluluskan.,PPK hendaklah mencari alternatif jika rayuan ditolak.,Tower Project Management ,3,4,12,Closed
+R082,Strategic,Policy,Peruntukan tahunan tidak mencukupi untuk membiayai Cost projek .,"Sekiranya peruntukan tahunan tidak mencukupi pihak Kerajaan hendaklah:  
+a. menukar kaedah pembiayaan projek kepada model PFI(Private Financial Initiative).
+b.  mengecilkan skop projek.
+c.  melaksanakan pembangunan modul mengikut keutamaan keperluan semasa pihak JIM.
+d. menggunakan sistem sedia ada (MyIMMS) yang telah dipertingkatkan keupayaannya.",Tower Project Management ,1,5,5,Closed
+R083,Project Management,Cost,Kontraktor tidak mempunyai kemampuan kewangan yang mencukupi.,Pihak Kerajaan (Bahagian Perolehan KDN) hendaklah melakukan penilaian kedudukan kewangan yang teliti semasa proses pemilihan.,Tower Project Management ,2,4,8,Closed
+R084,Project Management,Cost,Kontraktor tidak mempunyai kemampuan kewangan yang mencukupi.,Kontraktor  hendaklah memaklumkan kepada KDN keadaan kewangan daripada masa ke semasa untuk dipantau kedudukan kewangan supaya tidak menjejaskan pelaksanaan projek.,Tower Project Management ,2,4,8,Closed
+R085,Project Management,Cost,Kontraktor tidak mempunyai kemampuan kewangan yang mencukupi.,Pihak Kerajaan (Tower Project Management) hendaklah memasukkan klausa-klausa yang berkaitan (cth: penamatan kontrak disebabkan kedudukan kewangan) dalam kontrak kontraktor pada fasa penyediaan kontrak.,Tower Project Management ,2,4,8,Closed
+R086,Project Management,Cost,Kontraktor tidak mempunyai kemampuan kewangan yang mencukupi.,Pihak Kerajaan (Tower Project Management) hendaklah memulakan proses penamatan jika perlu.,Tower Project Management ,2,4,8,Closed
+R087,Strategic,Policy,Jumlah ahli pasukan projek yang tidak bersesuaian dengan kompleksiti dan keperluan projek.,Pihak Kerajaan (PPK) hendaklah menyediakan Pelan Pengurusan Sumber yang terperinci dan komprehensif sebelum projek bermula.,Tower Project Management ,4,5,20,Closed
+R088,Strategic,Policy,Jumlah ahli pasukan projek yang tidak bersesuaian dengan kompleksiti dan keperluan projek.,Penyumber luaran peranan pemantauan kepada pihak ketiga sekiranya jumlah ahli pasukan yang bersesuaian tidak dapat disediakan oleh pihak Kerajaan.,Tower Project Management ,4,5,20,Closed
+R089,Strategic,Reputation,Kontraktor tidak berwibawa dan kompeten.,Pihak Kerajaan (Bahagian Perolehan KDN) hendaklah mencadangkan/menasihati Lembaga Tender supaya memilih syarikat yang memenuhi spesifikasi teknikal dan kewangan semasa proses pemilihan kontraktor.,Bahagian Perolehan KDN,2,5,10,Closed
+R090,Strategic,Reputation,Kontraktor tidak berwibawa dan kompeten.,Pihak Kerajaan (Tower Project Management) hendaklah menyediakan terma-terma kontrak yang menjaga kepentingan Kerajaan. Pihak Kerajaan hendaklah menguatkuasakan terma-terma kontrak jika Kontraktor ingkar/tidak mematuhi keperluan.,Bahagian Perolehan KDN,2,5,10,Closed
+R091,Strategic,Reputation,Kontraktor tidak berwibawa dan kompeten.,Kontraktor hendaklah menyediakan Human Resource yang kompeten dan mencukupi mengikut Pelan Pengurusan Sumber yang telah dipersetujui. Sumber  manusia yang dilantik khas untuk melaksanakan projek .,Bahagian Perolehan KDN,2,5,10,Closed
+R092,Project Management,Scope,Kekangan ruang bagi penempatan rak perkakasan pusat data Projek  di PDSA B8.,Pusat data JIM yang sedia ada sebagai pusat data  alternatif,"MAMPU, JIM, PPK",3,3,9,Closed
+R093,Project Management,Scope,Kekangan ruang bagi penempatan rak perkakasan pusat data Projek  di PDSA B8.,"Kontraktor hendaklah menyediakan perancangan dan pengiraan keperluan perkakasan  dengan tepat dan terperinci
+Mendapatkan jadual pelaksanaan D6 melalui MAMPU bagi membolehkan Kontraktor membuat perancangan pemasangan atau pelan mitigasi.","MAMPU, JIM, PPK",3,3,9,Closed
+R094,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,PPK/ IPM hendaklah membuat penetapan melalui penguatkuasaan terma kontrak dalam penglibatan warga asing di dalam projek Kerajaan.,,3,5,15,Closed
+R095,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,PPK/ IPM hendaklah mewujudkan dan menguatkuasa proses pengurusan maklumat sulit supaya terkawal dan tidak jatuh ke pihak ketiga yang tidak berkenaan.,,3,5,15,Closed
+R096,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,Risk ini dicadangkan menjadi Isu,,3,5,15,Closed
+R097,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,Kontraktor  menyenaraikan senarai nama warga asing yang terlibat,,3,5,15,Closed
+R098,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,Surat rasmi telah dikeluarkan kepada Kontraktor untuk mengemukakan senarai cadangan kakitangan bukan warga negara Malaysia yang terlibat di dalam projek.,,3,5,15,Closed
+R099,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,"Perkara ini perlu dibawa ke Mesyuarat Pasukan Projek, Jawatankuasa Teknikal dan Jawatankuasa Pemandu",,3,5,15,Closed
+R100,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Pelaksanaan  tidak dapat dilaksanakan di pos Imigresen yang berada di kawasan pedalaman.,"Pihak JIM perlu menyediakan infrastruktur asas di lokasi yang telah dikenal pasti sebelum Projek  bermula.
+i) Site Visit untuk kawasan pedalaman Sabah dan Sarawak perlu dimasukkan ke dalam Pelan Pelaksanaan.",Bahagian Khidmat Pengurusan JIM,5,5,25,Closed
+R101,Project Management,Time,Pelan pelaksanaan bengkel belum dikeluarkan oleh Kontraktor  yang akan menyebabkan kelewatan pelaksanaan fasa RDS.,"Pelan Pelaksanaan RDS telah dibentangkan pada 12, 15, 23 dan 29 Mac",Tower Project Management ,5,5,25,Closed
+R102,Project Management,Time,Kebergantungan aktiviti pengujian secara khususnya pada fasa quality gates antara Kontraktor  dan Pasukan IV&V mungkin menyebabkan kelewatan projek.,Penyediaan Pelan Pelaksanaan Pengujian yang komprehensif;,Pasukan IV&V,4,5,20,Closed
+R103,Project Management,Time,Kebergantungan aktiviti pengujian secara khususnya pada fasa quality gates antara Kontraktor  dan Pasukan IV&V mungkin menyebabkan kelewatan projek.,Penyediaan Human Resource yang mencukupi;,Pasukan IV&V,4,5,20,Closed
+R104,Project Management,Time,Kebergantungan aktiviti pengujian secara khususnya pada fasa quality gates antara Kontraktor  dan Pasukan IV&V mungkin menyebabkan kelewatan projek.,Penyediaan Integrated Plan yang akan memberi gambaran keseluruhan terhadap interdependency; dan,Pasukan IV&V,4,5,20,Closed
+R105,Project Management,Time,Kebergantungan aktiviti pengujian secara khususnya pada fasa quality gates antara Kontraktor  dan Pasukan IV&V mungkin menyebabkan kelewatan projek.,Pilihan untuk Go With Risk di mana kebenaran untuk ke fasa seterusnya diberikan berdasarkan kepada kesediaan modul dan bukan aktiviti keseluruhan.,Pasukan IV&V,4,5,20,Closed
+R106,Project Management,Integration,"Tidak mendapat kerjasama, sokongan dan persetujuan daripada 24 agensi terlibat semasa pelaksanaan projek.","Tower CMT, hendaklah melaksanakan engagement dengan pengurusan tertinggi agensi untuk makluman dan persetujuan sebelum projek bermula. (Pengurus Change Management)",Tower Bisnes ,5,4,20,Closed
+R107,Project Management,Integration,"Tidak mendapat kerjasama, sokongan dan persetujuan daripada 24 agensi terlibat semasa pelaksanaan projek.","Pihak Kerajaan hendaklah menyediakan projek charter antara KDN dan agensi dengan menekankan skop kolaborasi, jadual pelaksanaan, deliverables serta pasukan yang terlibat semasa fasa permulaan projek . (PMO KDN).",Tower Bisnes ,5,4,20,Closed
+R108,Project Management,Integration,"Tidak mendapat kerjasama, sokongan dan persetujuan daripada 24 agensi terlibat semasa pelaksanaan projek.",Melaksanakan libat urus bersama agensi berkaitan bagi mendapatkan kelulusan Policy persetujuan integrasi antara agensi,Tower Bisnes ,5,4,20,Closed
+R109,Project Management,Integration,"Tidak mendapat kerjasama, sokongan dan persetujuan daripada 24 agensi terlibat semasa pelaksanaan projek.",Mewujudkan Jawatankuasa Kerja Integrasi yang dipengerusikan oleh Ketua PPK dan diurus setiakan oleh Tower Aplikasi Pasukan Projek .,Tower Bisnes ,5,4,20,Closed
+R110,Application and Technical,System Development,Sesi Engagement bersama pihak Agensi belum dilaksanakan,Sesi engagement bersama pihak Agensi yang terlibat perlu dilaksanakan dengan kadar segera sebelum 15/5/2021 bagi memberi peluang kepada sebarang perubahan yang berlaku semasa sesi RDS dan sebelum sign off URS yang dijadualkan pada 10/06/2021.,,5,5,25,Closed
+R111,Project Management,Human Resource,Notis pendek dalam pertukaran ahli pasukan projek di pihak Kontraktor.,PPK/ IPM hendaklah menetapkan terma dan klausa pertukaran ahli pasukan projek (cth: sebarang pertukaran hendaklah dimaklumkan 2 bulan sebelum pertukaran dibuat).,Tower Project Management ,4,5,20,Closed
+R112,Project Management,Human Resource,Notis pendek dalam pertukaran ahli pasukan projek di pihak Kontraktor.,PPK hendaklah menguatkuasakan terma dan klausa kontrak.,Tower Project Management ,4,5,20,Closed
+R113,Project Management,Time,Pelan Pelaksanaan belum diterima dan disemak oleh Work Stream / Tower Kerajaan,Mengemukakan pelan pelaksanaan dengan kadar segera bagi membolehkan semakan dapat dilakukan oleh Work Stream/ Tower Kerajaan.,Tower Project Management ,4,4,16,Closed
+R114,Project Management,Time,Pelan Pelaksanaan belum diterima dan disemak oleh Work Stream / Tower Kerajaan,Mengadakan perbincangan bersama supaya jadual pelaksanaan antara IV&V dan IPM dapat diselaraskan.,Tower Project Management ,4,4,16,Closed
+R115,Application and Technical,ICT Security,Kekangan penggunaan Application Lifecycle Management (ALM) i.e. JIRA yang tidak boleh berada di on-premise KDN.,"Menggunakan software tools lain yang boleh berada di on-premise KDA, atau",Pasukan IV&V,2,2,4,Closed
+R116,Application and Technical,ICT Security,Kekangan penggunaan Application Lifecycle Management (ALM) i.e. JIRA yang tidak boleh berada di on-premise KDN.,Memberi justifikasi kepada Pihak Kerajaan sekiranya penggunaan JIRA cloud tidak akan memberi ancaman keselamatan dan kerahsiaan.,Pasukan IV&V,2,2,4,Closed
+R117,Strategic,Policy,Tiada Enterprise Architecture Office bagi Jabatan Imigresen.,Pihak Kerajaan (JIM) hendaklah mewujudkan Enterprise Architecture office sebelum fasa rekabentuk bermula.,Bahagian Dasar dan Perancangan Strategik JIM,4,4,16,Closed
+R118,Project Management,Human Resource,Human Resource yang tidak mencukupi untuk aktiviti static testing bagi setiap URS.,Penambahan Human Resource bagi memenuhi keperluan tempoh masa dan kualiti aktiviti pengujian; dan,Pasukan IV&V,4,4,16,Closed
+R119,Project Management,Human Resource,Human Resource yang tidak mencukupi untuk aktiviti static testing bagi setiap URS.,Penggunaan tools untuk mempercepatkan aktiviti static testing.,Pasukan IV&V,4,4,16,Closed
+R120,Project Management,Cost,Penggunaan 50 unit lesen EPMPro yang dicadangkan untuk kegunaan Projek  selama empat (4) tahun tidak memenuhi keperluan projek.  EPMPRo bukannya perpetual model dan licence fee akan dikenakan selepas CoA.,"Membuat penilaian terhadap bilangan pengguna yang akan menggunakan sistem ini mengikut organisasi, jabatan, atau tower.",Tower Project Management ,5,5,25,Closed
+R121,Project Management,Cost,Penggunaan 50 unit lesen EPMPro yang dicadangkan untuk kegunaan Projek  selama empat (4) tahun tidak memenuhi keperluan projek.  EPMPRo bukannya perpetual model dan licence fee akan dikenakan selepas CoA.,Membentang dan memperolehi persetujuan Kerajaan untuk Cost tambahan PMIS yang terlibat selepas CoA.,Tower Project Management ,5,5,25,Closed
+R122,Project Management,Procurement,Kemungkinan berlakunya kekangan eksport perkakasan daripada Syarikat Cellebrite disebabkan oleh perubahan peraturan Amerika Syarikat.,"Kontraktor  perlu membuat perbincangan dengan vendor yang berurusan dengan Syarikat Cellebrite untuk memastikan punca Risk tidak akan menjadi kekangan untuk pengeksportan ke Malaysia. Sebagai alternatif, perbincangan langsung diperlukan dengan JIM sama ada perkakasan lain boleh digunakan untuk menyempurnakan BPR yang terlibat.",,5,5,25,Closed
+R123,Project Management,Procurement,Engagement antara Kontraktor  dan sub-kontraktor di luar pengetahuan dan kawalan Kerajaan.,Kontraktor  perlu mengemukakan senarai sub kontraktor yang akan dilantik untuk persetujuan pihak Kerajaan.,,4,4,16,Closed
+R124,Project Management,Procurement,Engagement antara Kontraktor  dan sub-kontraktor di luar pengetahuan dan kawalan Kerajaan.,"Kerajaan dan Kontraktor  hendaklah memastikan kontrak mengandungi  terma-terma berkenaan pelantikan, skop kerja dan penamatan sub kontraktor",,4,4,16,Closed
+R125,Project Management,Human Resource,Kontraktor gagal menyediakan Human Resource mengikut keperluan projek dalam tempoh masa yang ditetapkan.,Kontraktor  hendaklah membuat persediaan Human Resource seawal mendapat surat pelantikan melalui SST.,,4,4,16,Closed
+R126,Project Management,Human Resource,Kontraktor gagal menyediakan Human Resource mengikut keperluan projek dalam tempoh masa yang ditetapkan.,"Kontraktor  hendaklah menyediakan Pelan Pengurusan Sumber yang komprehensif dan 
+terperinci selari dengan penyediaan PMP.",,4,4,16,Closed
+R127,Project Management,Human Resource,Kontraktor gagal menyediakan Human Resource mengikut keperluan projek dalam tempoh masa yang ditetapkan.,Kontraktor  hendaklah melaksanakan dan mematuhi kepada pelan pengurusan yang dipersetujui.,,4,4,16,Closed
+R128,Project Management,Human Resource,Kontraktor gagal menyediakan Human Resource mengikut keperluan projek dalam tempoh masa yang ditetapkan.,PPK hendaklah menguatkuasakan terma dan klausa kontrak.,,4,4,16,Closed
+R129,Project Management,Human Resource,Kebocoran dan penyalahgunaan maklumat yang disalurkan kepada kontraktor dan sub kontraktor yang belum melepasi tapisan e-Vetting.,Kontraktor  telah mengemukakan maklumat e-Vetting untuk 54 orang Kontraktor  dan 11 orang Sub-Kontraktor  pada 17 dan 24 Mac 2021.,,5,5,25,Closed
+R130,Application and Technical,System Development,Pemetaan EPMPRo secara keseluruhan dengan modul-modul dan fungsi fungsi sedia ada di dalam URS PMIS tidak jelas.,Melaksanakan sistem demo & walkthrough berdasarkan fungsi-fungsi URS PMIS untuk mengenalpasti kehendak dan keperluan pengguna serta memberi keyakinan Go-Live pada Julai,,5,5,25,Closed
+R131,Application and Technical,System Development,Pemetaan EPMPRo secara keseluruhan dengan modul-modul dan fungsi fungsi sedia ada di dalam URS PMIS tidak jelas.,Kesediaan 70% keperluan URS PMIS berdasarkan EPMPRo boleh ditentukan untuk memberi keyakinan pennguna.,,5,5,25,Closed
+R132,Application and Technical,System Development,Pemetaan EPMPRo secara keseluruhan dengan modul-modul dan fungsi fungsi sedia ada di dalam URS PMIS tidak jelas.,Pemetaan di antara EPMPRo dan fungsi-fungsi PMIS perlu didokumenkan sebagai traceability matrix bagi memudahkan pemantauan,,5,5,25,Closed
+R133,Project Management,Scope,"Kelewatan dalam melaksanakan obligasi oleh mana-mana pihak terlibat (Kontraktor, IPM dan IV&V) akan memberi kesan secara langsung kepada kontraktor lain yang berkaitan.",Menyediakan IPP yang terperinci merangkumi aktiviti- aktiviti bagi semua kontraktor dalam .,Tower Project Management ,4,4,16,Closed
+R134,Project Management,Scope,"Kelewatan dalam melaksanakan obligasi oleh mana-mana pihak terlibat (Kontraktor, IPM dan IV&V) akan memberi kesan secara langsung kepada kontraktor lain yang berkaitan.",Pasukan kerajaan menetapkan Critical Path projek dengan mewujudkan Integrated Project Plan (IPP) dengan kadar segera serta memastikan penghantaran dokumen mematuhi SDLC dan diserahkan secara berkala,Tower Project Management ,4,4,16,Closed
+R135,Project Management,Scope,Kegagalan pihak kontraktor  untuk menyediakan Pelan-Pelan Project Management dalam tempoh tempoh yang ditetapkan.,PPK/ IPM hendaklah memantau penyediaan PMP mengikut tempoh masa yang ditetapkan.,Tower Project Management ,3,4,12,Closed
+R136,Project Management,Scope,Kegagalan pihak kontraktor  untuk menyediakan Pelan-Pelan Project Management dalam tempoh tempoh yang ditetapkan.,PPK hendaklah menguatkuasakan terma kontrak dan penalti.,Tower Project Management ,3,4,12,Closed
+R137,Application and Technical,System Development,Proses kejuruteraan keperluan (requirement engineering process) kontraktor tidak menghasilkan spesifikasi keperluan pada tahap kualiti yang diperlukan dalam projek .,Pihak Kontraktor mestilah menambah baik proses,Tower Aplikasi ,3,3,9,Closed
+R138,Application and Technical,System Development,Proses kejuruteraan keperluan (requirement engineering process) kontraktor tidak menghasilkan spesifikasi keperluan pada tahap kualiti yang diperlukan dalam projek .,Pihak Kontraktor mestilah memantau penggunaan proses dan berupaya menyesuaikan proses tersebut secara efektif dalam masa yang singkat (iaitu dalam jangka masa bengkel RDS),Tower Aplikasi ,3,3,9,Closed
+R139,Operation,Training,Kekerapan pertukaran pegawai JIM.,Skop pelaksanaan difokuskan kepada pegawai yang terlibat dengan  sahaja memandangkan pusingan kerja adalah tertakluk kepada arahan dalam Pekeliling Perkhidmatan Bil. 3 Tahun 2004 yang perlu dilaksanakan. Cadangan supaya pengecualian pusingan kerja adalah dalam tempoh pembangunan sehingga projek berjaya dilaksanakan.,Bahagian Human Resource JIM,5,3,15,Closed
+R140,Operation,Training,Kekerapan pertukaran pegawai JIM.,Transfer of knowledge / On job training.,Bahagian Human Resource JIM,5,3,15,Closed
+R141,Project Management,Time,Pelaksanaan tidak mengikut tempoh projek yang ditetapkan.,"Kontraktor  perlu menyediakan Jadual Pelaksanaan yang komprehensif, menyeluruh, jelas dan boleh dilaksanakan.",Tower Project Management ,4,4,16,Closed
+R142,Project Management,Time,Pelaksanaan tidak mengikut tempoh projek yang ditetapkan.,Membangunkan PMIS bagi memantau dan mengawal selia pelaksanaan projek .,Tower Project Management ,4,4,16,Closed
+R143,Project Management,Time,Pelaksanaan tidak mengikut tempoh projek yang ditetapkan.,Kontraktor  akan menyediakan Pelan mitigasi untuk mengelakan kelewatan pelaksanaan projek. PMP dan MIP,Tower Project Management ,4,4,16,Closed
+R144,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Kekurangan cip semikonduktor di pasaran global yang akan menyebabkan kelewatan penghantaran dan kenaikan harga perkakasan dan peralatan yang perlu disediakan pada persekitaran development dan testing.,Kontraktor  perlu melakukan perolehan/ tempahan perkakasan/ peralatan dengan segera;,Tower Infrastruktur ,3,5,15,Closed
+R145,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Kekurangan cip semikonduktor di pasaran global yang akan menyebabkan kelewatan penghantaran dan kenaikan harga perkakasan dan peralatan yang perlu disediakan pada persekitaran development dan testing.,"Mendapatkan surat jaminan dari pembekal bagi pembekalan, perkakasan/ peralatan yang mencukupi dan menepati jadual pelaksanaan yang ditetapkan: dan",Tower Infrastruktur ,3,5,15,Closed
+R146,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Kekurangan cip semikonduktor di pasaran global yang akan menyebabkan kelewatan penghantaran dan kenaikan harga perkakasan dan peralatan yang perlu disediakan pada persekitaran development dan testing.,Memuktamadkan BOQ peralatan dan perkakasan dengan segera.,Tower Infrastruktur ,3,5,15,Closed
+R147,Operation,Training,Rekod Training pegawai yang tidak dikemaskini.,Pihak JIM perlu mewujudkan pengurusan Training yang efisen dan efektif bagi merekodkan serta memantau keperluan Training pegawai bagi meningkatkan kompetensi serta prestasi dari semasa ke semasa.,Tower Bisnes ,5,2,10,Closed
+R148,Operation,Human Resource,"Kekurangan komitmen, libat urus dan kerjasama dari semua peringkat (JIM) dari segi penggunaan .",Tower BIsnes hendaklah menyediakan Pelan Pengurusan Perubahan yang mengambilkira penglibatan semua peringkat pemegang taruh sepanjang pelaksanaan  dan selepas sistem go-live dalam tempoh pra-projek.,Tower Bisnes ,3,4,12,Closed
+R149,Operation,Human Resource,"Kekurangan komitmen, libat urus dan kerjasama dari semua peringkat (JIM) dari segi penggunaan .","Tower BIsnes hendaklah melaksanakan aktiviti penilaian penerimaan terhadap sistem baharu secara berkala bagi mengukur tahap penerimaan pemegang taruh. 
+
+3 .Tower Bisnes hendaklah mewujudkan repositori pekeliling yang boleh dicapai oleh semua pegawai dan mengemaskini pekeliling dari masa ke semasa.",Tower Bisnes ,3,4,12,Closed
+R150,Operation,Human Resource,"Kekurangan komitmen, libat urus dan kerjasama dari semua peringkat (JIM) dari segi penggunaan .",Ketua Unit/ Bahagian/ Cawangan perlu mendapat  pengesahan baca dan faham pekeliling yang diedarkan dari setiap pegawai yang terlibat.,Tower Bisnes ,3,4,12,Closed
+R151,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),"Fasa 1 - 30 Ogos 2021
+Pembangunan/  Konfigurasi 18 Modul Aplikasi",Tower Project Management ,4,5,20,Closed
+R152,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Kontrak,Tower Project Management ,4,5,20,Closed
+R153,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Portfolio,Tower Project Management ,4,5,20,Closed
+R154,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Jadual,Tower Project Management ,4,5,20,Closed
+R155,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Deployment,Tower Project Management ,4,5,20,Closed
+R156,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Cost,Tower Project Management ,4,5,20,Closed
+R157,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Serahan,Tower Project Management ,4,5,20,Closed
+R158,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Dashboard dan laporan,Tower Project Management ,4,5,20,Closed
+R159,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Kawalan Kualiti,Tower Project Management ,4,5,20,Closed
+R160,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Risk,Tower Project Management ,4,5,20,Closed
+R161,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Isu,Tower Project Management ,4,5,20,Closed
+R162,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Tindakan,Tower Project Management ,4,5,20,Closed
+R163,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Keperluan,Tower Project Management ,4,5,20,Closed
+R164,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Kawalan Pindaan,Tower Project Management ,4,5,20,Closed
+R165,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Dokumen,Tower Project Management ,4,5,20,Closed
+R166,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Human Resource,Tower Project Management ,4,5,20,Closed
+R167,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),"Dashboard Report Risk, Isu, Action",Tower Project Management ,4,5,20,Closed
+R168,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Dashboard Module Integration dan Change Request,Tower Project Management ,4,5,20,Closed
+R169,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Pengurusan Aset,Tower Project Management ,4,5,20,Closed
+R170,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Fasa 2 -  November 2021,Tower Project Management ,4,5,20,Closed
+R171,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),"Public facing -DNS readiness, portal , SMTP",Tower Project Management ,4,5,20,Closed
+R172,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Integrasi tool dengan DevOp dan JIRA,Tower Project Management ,4,5,20,Closed
+R173,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),Dokumen URS hendaklah dimuktamadkan dan disahkan oleh pemilik modul,Tower Project Management ,4,5,20,Closed
+R174,Project Management,Integration,Agensi tidak mempunyai peruntukan kewangan yang mencukupi untuk melaksanakan integrasi sistem-sistem sedia ada di agensi dengan  bagi keperluan JIM,Kerajaan menjadi sebagai penghubung diantara sistem Kerajaan yang lain dengan kontraktor .,Tower Aplikasi ,2,5,10,Closed
+R175,Project Management,Integration,Agensi tidak mempunyai peruntukan kewangan yang mencukupi untuk melaksanakan integrasi sistem-sistem sedia ada di agensi dengan  bagi keperluan JIM,Mengenal pasti 24 agensi yang akan berintegrasi dengan .,Tower Aplikasi ,2,5,10,Closed
+R176,Project Management,Integration,Agensi tidak mempunyai peruntukan kewangan yang mencukupi untuk melaksanakan integrasi sistem-sistem sedia ada di agensi dengan  bagi keperluan JIM,Mengenal pasti agensi yang melibatkan Cost tambahan bagi pelaksanaan integrasi dengan,Tower Aplikasi ,2,5,10,Closed
+R177,Project Management,Integration,Agensi tidak mempunyai peruntukan kewangan yang mencukupi untuk melaksanakan integrasi sistem-sistem sedia ada di agensi dengan  bagi keperluan JIM,"Perbincangan terperinci dengan Kontraktor  perlu dilakukan semasa fasa RDS / Requirement Study bersama semua pihak terlibat bagi membolehkan pihak agensi membuat persiapan dan tindakan awal seperti permohonan bajet, perbincangan dengan kontraktor untuk semua sistem-sistem yang terlibat di agensi.",Tower Aplikasi ,2,5,10,Closed
+R178,Project Management,Integration,Agensi tidak mempunyai peruntukan kewangan yang mencukupi untuk melaksanakan integrasi sistem-sistem sedia ada di agensi dengan  bagi keperluan JIM,PPK hendaklah mengenal pasti keutamaan agensi untuk pelaksaaan integrasi yang melibatkan Cost tambahan.,Tower Aplikasi ,2,5,10,Closed
+R179,Project Management,Kualiti,Serahan projek kurang berkualiti.,Kontraktor  hendaklah membangunkan Pelan Pengurusan Kualiti dan Pelan Pengujian (Test Plan) yang komprehensif dan melaksanakan pelan tersebut dengan sempurna.,Tower Project Management ,4,4,16,Closed
+R180,Project Management,Kualiti,Serahan projek kurang berkualiti.,"Sebarang serahan/ deliverables  semasa pelaksanaan projek, Kontraktor  hendaklah:_x000B_
+
+_x000B_a) mengguna pakai templat yang telah disediakan oleh Kerajaan;_x000B__x000B_
+
+b) melalui proses kualiti diperingkat dalaman Kontraktor terlebih dahulu sebelum serahan dibuat; dan_x000B__x000B_
+
+c) Pihak IV&V perlu menyemak serahan/ deliverable (teknikal) dan memberi pandangan untuk meningkatkan kualiti kepada pihak kontraktor.
+
+
+d)  Kontraktor perlu melengkapkan borang    semakan bagi setiap serahan.
+
+3.Pihak Kerajaan (JIM) perlu menyemak dengan teliti dan mengesahkan keperluan sistem yang dinyatakan dalam dokumen URS dan SRS adalah memenuhi keperluan Kerajaan._x000B__x000B_",Tower Project Management ,4,4,16,Closed
+R181,Project Management,Kualiti,Serahan projek kurang berkualiti.,Pembangunan  oleh Kontraktor  hendaklah menggunakan metodologi yang telah ditetapkan dan dipersetujui oleh pihak Kerajaan,Tower Project Management ,4,4,16,Closed
+R182,Operation,Training,Bilangan tenaga pengajar yang berpengalaman dan mahir dalam bidang berkaitan tidak mencukupi.,Pihak JIM hendaklah mewujudkan pasukan Master Trainer yang terlatih (dalam aspek kepenggunaan ) semasa fasa permulaan projek. Pemilihan Master Trainer hendaklah berdasarkan kriteria atau senarai semak yang bersesuaian.,Bahagian Human Resource JIM,3,4,12,Closed
+R183,Operation,Training,Bilangan tenaga pengajar yang berpengalaman dan mahir dalam bidang berkaitan tidak mencukupi.,Kontraktor  hendaklah menyediakan TNA yang jelas untuk Master Trainer semasa fasa permulaan projek sebagai persediaan sebagai Master Trainer.,Bahagian Human Resource JIM,3,4,12,Closed
+R184,Operation,Training,Bilangan tenaga pengajar yang berpengalaman dan mahir dalam bidang berkaitan tidak mencukupi.,Kontraktor  hendaklah melatih Master Trainer mengikut Training Plan yang telah ditetapkan dan silibus untuk Master Trainer hendaklah komprehensif dan menyeluruh.,Bahagian Human Resource JIM,3,4,12,Closed
+R185,Operation,Training,Masa Training yang tidak sesuai terutama bagi pegawai yang bertugas shift/ one-man show.,Kontraktor  hendaklah menyediakan jadual Training alternatif dan membuat penjadualan semula bagi pegawai yang tidak dapat hadir.,Tower Bisnes ,5,4,20,Closed
+R186,Operation,Training,Masa Training yang tidak sesuai terutama bagi pegawai yang bertugas shift/ one-man show.,Kontraktor  hendaklah menyediakan Training atas talian/ Computer Based Training (CBT) sebagai alternatif.,Tower Bisnes ,5,4,20,Closed
+R187,Operation,Training,Masa Training yang tidak sesuai terutama bagi pegawai yang bertugas shift/ one-man show.,Penyediaan TOR dan RACI yang jelas di dalam Pelan Pengurusan Komunikasi.,Tower Bisnes ,5,4,20,Closed
+R188,Operation,Training,Peserta mempunyai masalah kefahaman terhadap apa yang disampaikan oleh tenaga pengajar semasa sesi Training dijalankan.,Kontraktor  hendaklah melaksanakan Training  dalam Bahasa Melayu dan perlu dinyatakan di dalam kontrak.,Tower Bisnes ,3,2,6,Closed
+R189,Operation,Training,Peserta mempunyai masalah kefahaman terhadap apa yang disampaikan oleh tenaga pengajar semasa sesi Training dijalankan.,Kontraktor  hendaklah menyediakan tenaga pengajar yang berpengetahuan dan berpengalaman dalam mempelbagaikan teknik penyampaian supaya pengisian Training tersebut menjadi lebih seronok dan menarik minat peserta.,Tower Bisnes ,3,2,6,Closed
+R190,Application and Technical,System Development,Versi sistem tidak selari antara HQ dan cawangan-cawangan.,"Kontraktor  hendaklah menyediakan kaedah kawalan versi secara automasi, menyeluruh dan komprehensif.",Tower Project Management ,3,5,15,Closed
+R191,Application and Technical,System Development,Versi sistem tidak selari antara HQ dan cawangan-cawangan.,Kontraktor  hendaklah menyediakan satu mekanisma pemberitahuan kepada pengguna sekiranya berlaku sebarang perubahan versi.,Tower Project Management ,3,5,15,Closed
+R192,Project Management,Cost,Cost projek melebihi peruntukan siling yang ditetapkan.,Pembangunan Pelan Pengurusan Skop.,,3,4,12,Closed
+R193,Project Management,Cost,Cost projek melebihi peruntukan siling yang ditetapkan.,Pemantauan pelan pengurusan skop,,3,4,12,Closed
+R194,Application and Technical,System Development,SLA  (sistem availability) tidak dapat memenuhi keperluan SLA JIM.,"i) Keperluan SLA hendaklah dipersetujui oleh kedua-dua pihak Kerajaan dan Kontraktor  dan dinyatakan dengan jelas dalam Kontrak.
+ii) Kontraktor  perlu memenuhi Keperluan SLA  availability sistem adalah 99.9%. Di dalam deraf kontrak, Kontraktor  bersetuju dengan SLA 99.9%. 
+iii) Dicadangkan untuk dipindahkan ke Fasa Pelaksanaan (mulai COA)",Tower Project Management ,5,5,25,Closed
+R195,Application and Technical,System Development,SLA  (sistem availability) tidak dapat memenuhi keperluan SLA JIM.,Kontraktor  hendaklah melaksanakan performance test secara menyeluruh sebelum aktiviti rollout/ deployment setiap fasa dilaksanakan. Kerajaan perlu terlibat dalam aktiviti ini.,Tower Project Management ,5,5,25,Closed
+R196,Application and Technical,System Development,SLA  (sistem availability) tidak dapat memenuhi keperluan SLA JIM.,"Kontraktor  perlu menyediakan monitoring system (aplikasi, perkakasan dan sekuriti) yang komprehensif sebelum aktiviti pengujian sistem dilaksanakan.",Tower Project Management ,5,5,25,Closed
+R197,Project Management,Procurement,Pelantikan kontraktor yang tidak kompeten dan berwibawa.,Pihak Kerajaan (Bahagian Perolehan KDN) hendaklah Mencadangkan/menasihati Lembaga Tender supaya memilih syarikat yang memenuhi spesifikasi teknikal dan kewangan semasa proses pemilihan kontraktor.,Bahagian Perolehan KDN,4,3,12,Closed
+R198,Project Management,Procurement,Pelantikan kontraktor yang tidak kompeten dan berwibawa.,"Pihak Kerajaan (Tower Project Management) hendaklah Menyediakan terma-terma kontrak yang menjaga kepentingan Kerajaan. Pihak Kerajaan hendaklah dan menguatkuasakan terma-terma kontrak jika Kontraktor ingkar/tidak mematuhi keperluan projek.
+
+IPM akan melaporkan sebagai Isu atau penilaian laporan bulanan.",Bahagian Perolehan KDN,4,3,12,Closed
+R199,Project Management,Procurement,Pelantikan kontraktor yang tidak kompeten dan berwibawa.,PPK hendaklah  membuat penilaian prestasi ke atas kontraktor secara berkala iaitu setiap enam (6) bulan sekali.,Bahagian Perolehan KDN,4,3,12,Closed
+R200,Project Management,Procurement,Pelantikan kontraktor yang tidak kompeten dan berwibawa.,Membuat serahan deliverable yang berkualiti mengikut tempoh yang telah ditetapkan.,Bahagian Perolehan KDN,4,3,12,Closed
+R201,Project Management,Procurement,Pelantikan kontraktor yang tidak kompeten dan berwibawa.,Menyediakan Training kepada ahli pasukan projek Kontraktor  mengikut pelan operasi Training.,Bahagian Perolehan KDN,4,3,12,Closed
+R202,Project Management,Procurement,Pelantikan kontraktor yang tidak kompeten dan berwibawa.,"Kontraktor hendaklah menyediakan Human Resource yang kompeten dan mencukupi mengikut Pelan Pengurusan Sumber yang telah dipersetujui. Human Resource yang dilantik khas untuk melaksanakan projek .
+
+Menyediakan terma-terma kontrak berkaitan pelantikan kontraktor yang tidak kompeten dan berwibawa.",Bahagian Perolehan KDN,4,3,12,Closed
+R203,Application and Technical,System Development,"Dokumen SRS (Kawalan & eGate) masih belum disemak secara bersama (SME, IPM, IV&V).",Semakan perlu berlaku dengan mengambil kira input daripada pihak SME supaya proses bisnes yang terhasil memenuhi spesifikasi.,Tower Aplikasi,4,5,20,Closed
+R204,Strategic,Policy,Polisi Data dan Maklumat JIM tidak wujud.,Pihak Kerajaan hendaklah mewujudkan dan memuktamadkan satu polisi data dan maklumat yang komprehensif sebelum fasa permulaan projek tamat.,Bahagian Keselamatan dan Passport,2,5,6,Closed
+R205,Application and Technical,Deployment,Kelewatan dalam memuktamadkan SRS bagi modul Kawalan.,Pemuktamadan dan penambahbaikan remedi URS perlu dilaksanakan segera;,Tower Aplikasi,4,5,20,Closed
+R206,Application and Technical,Deployment,Kelewatan dalam memuktamadkan SRS bagi modul Kawalan.,Penyediaan SRS bagi modul Kawalan perlu dilakukan dengan segera; dan,Tower Aplikasi,4,5,20,Closed
+R207,Application and Technical,Deployment,Kelewatan dalam memuktamadkan SRS bagi modul Kawalan.,Kontraktor hendaklah menyediakan dan membentangkan pelan mitigasi bagi penggantian Human Resource dan knowledge transfer perlu dilaksanakan dengan segera bagi modul Kawalan.,Tower Aplikasi,4,5,20,Closed
+R208,Operation,Training,Pegawai tidak dapat menghadirkan diri ke sesi Training yang telah ditetapkan.,Kontraktor  hendaklah memaklumkan jadual Training sebulan lebih awal kepada perserta.,,4,2,8,Closed
+R209,Operation,Training,Pegawai tidak dapat menghadirkan diri ke sesi Training yang telah ditetapkan.,Kontraktor  hendaklah menyediakan Training atas talian/ Computer Based Training (CBT) sebagai alternatif.,,4,2,8,Closed
+R210,Operation,Training,Pegawai tidak dapat menghadirkan diri ke sesi Training yang telah ditetapkan.,Pihak atasan pegawai yang terlibat perlu menghantar pegawai gantian sekiranya pegawai asal tidak dapat hadirkan diri.,,4,2,8,Closed
+R211,Application and Technical,System Development,Skop dan tanggungjawab untuk pemasangan perisian Oracle Golden Gate (OGG) di persekitaran myIMMS masih belum ditentukan.,Melakukan perbincangan awal dengan pihak Kerajaan unutk skop kerja., Tower Teknikal,4,5,20,Closed
+R212,Application and Technical,System Development,Skop dan tanggungjawab untuk pemasangan perisian Oracle Golden Gate (OGG) di persekitaran myIMMS masih belum ditentukan.,Kontraktor  perlu menyediakan pra-syarat pemasangan perisian Oracle Golder Gate untuk makluman kontraktor myIMMs., Tower Teknikal,4,5,20,Closed
+R213,Application and Technical,System Development,"Pengurusan cap keselamatan, smart stamping dan kod QR tiada persetujuan bersama.","Kenal pasti penggunaan antara cap keselamatan, smart stamping dan kod QR yang boleh diguna pakai oleh semua cawangan.",Tower Aplikasi,4,5,20,Closed
+R214,Application and Technical,System Development,"Pengurusan cap keselamatan, smart stamping dan kod QR tiada persetujuan bersama.","Kenal pasti design alternative yang tidak menyebabkan Risk ini berlaku, iaitu memuktamadkan kaedah sebelum dokumen SRS dimuktamadkan.",Tower Aplikasi,4,5,20,Closed
+R215,Application and Technical,Deployment,"Keperluan back up plan bagi bekalan elektrik, server dan network di 10 pintu masuk utama Pemeriksaan Kawalan Imigresen sekiranya berlaku black out atau system offline.","1.Kajian keperluan bekalan elektrik terhadap 10 pintu masuk utama perlu dilaksanakan.
+
+2.Back up plan bagi Server cawangan dan network (WAN/ LAN) yang mencukupi.
+
+3.Menyediakan senarai semak bagi pemasangan genset.
+
+4.Pihak kerajaan juga melalui pihak MAMPU perlu meningkat jaringan Network (network) di semua pintu masuk beserta back up plan sekiranya berlaku network down.",Tower Infrastruktur   & PPK Infrastruktur,4,5,20,Closed
+R216,Application and Technical,System Development,"Tiada perincian tentang common module (modul guna sama) di dalam dokumen URS. Contoh common module ialah:
+1 . Dashboard Pengguna. Setiap aras pegawai mempunyai dashboard paparan E-reporting bagi melihat senarai, status dan agihan tugasan yang berikan.
+2.	Common Email Template bagi kandungan e-mel untuk segala jenis notifikasi e-mel yang perlu/akan dihantar kepada pegawai JIM dan pengguna sistem NtlSe. Contoh e-mel templat seperti e-mel permohonan ditolak.
+3.	Konfigurasi sistem oleh admin setiap modul yang boleh diakses oleh semua modul untuk melakukan kemas kini. Contoh konfigurasi awalan lalai (default value) sistem seperti tempoh tamat pasport/visa/pas dan senarai cawangan, unit/ bahagian.
+4.	Keperluan audit trail bagi semua modul adalah tergantung:
+a.	Modul Pengurusan ID hanya menguruskan audit trail bagi pengurusan ID sahaja di mana hanya merekodkan audit trail bagi proses daftar masuk dan daftar keluar sahaja.
+b.	Tiada modul spesifik yang menyelenggarakan keperluan audit trail",1 . Kenal pasti common module yang terlibat untuk sistem .,Tower Aplikasi,4,5,20,Closed
+R217,Application and Technical,System Development,"Tiada perincian tentang common module (modul guna sama) di dalam dokumen URS. Contoh common module ialah:
+1 . Dashboard Pengguna. Setiap aras pegawai mempunyai dashboard paparan E-reporting bagi melihat senarai, status dan agihan tugasan yang berikan.
+2.	Common Email Template bagi kandungan e-mel untuk segala jenis notifikasi e-mel yang perlu/akan dihantar kepada pegawai JIM dan pengguna sistem NtlSe. Contoh e-mel templat seperti e-mel permohonan ditolak.
+3.	Konfigurasi sistem oleh admin setiap modul yang boleh diakses oleh semua modul untuk melakukan kemas kini. Contoh konfigurasi awalan lalai (default value) sistem seperti tempoh tamat pasport/visa/pas dan senarai cawangan, unit/ bahagian.
+4.	Keperluan audit trail bagi semua modul adalah tergantung:
+a.	Modul Pengurusan ID hanya menguruskan audit trail bagi pengurusan ID sahaja di mana hanya merekodkan audit trail bagi proses daftar masuk dan daftar keluar sahaja.
+b.	Tiada modul spesifik yang menyelenggarakan keperluan audit trail",Wujudkan satu dokumen keperluan untuk common module.,Tower Aplikasi,4,5,20,Closed
+R218,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,Pemilik modul-modul yang terlibat perlu membuat pengesahan terhadap data-data yang digunakan.,Tower Aplikasi,4,5,20,Closed
+R219,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,"Visa, Pas dan Permit (VPP);",Tower Aplikasi,4,5,20,Closed
+R220,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,Pengurusan Ekspatriat (ESD);,Tower Aplikasi,4,5,20,Closed
+R221,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,Pengurusan Pekerja Asing (PPA);,Tower Aplikasi,4,5,20,Closed
+R222,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,Advanced Passenger Screening (APS);,Tower Aplikasi,4,5,20,Closed
+R223,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,Kawalan Imigresen (IBC);,Tower Aplikasi,4,5,20,Closed
+R224,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,Pengurusan Depot dan Tahanan (PDT);,Tower Aplikasi,4,5,20,Closed
+R225,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,Pasport dan Dokumen Perjalanan (PTD); dan,Tower Aplikasi,4,5,20,Closed
+R226,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,Pengurusan Keselamatan ID (IDM);,Tower Aplikasi,4,5,20,Closed
+R227,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,Keselamatan (SEC);,Tower Aplikasi,4,5,20,Closed
+R228,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,Perisikan (INT); dan,Tower Aplikasi,4,5,20,Closed
+R229,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,Penguatkuasaan (ENF).,Tower Aplikasi,4,5,20,Closed
+R230,Application and Technical,System Development,Aplikasi bagi Data Analytic and Business Intelligent masih belum dimuktamadkan,Perlu ada maklum balas dan kemuktamadan aplikasi daripada pihak Kontraktor  sebelum dokumen URS dan SRS dimuktamadkan.,Tower Aplikasi,4,5,20,Closed
+R231,Application and Technical,System Development,Aplikasi bagi Data Analytic and Business Intelligent masih belum dimuktamadkan,Perlu ada perbincangan di antara kontraktor  dan pihak Kerajaan bagi penetapan pemilihan.,Tower Aplikasi,4,5,20,Closed
+R232,Application and Technical,System Development,"1 Tiada perincian keperluan aplikasi Mobile.
+a.	Hybrid application
+b.	Native application
+2. Keperluan aplikasi Mobile tidak dinyatakan bagi menerangkan fungsi-fungsi yang boleh dicapai oleh Mobile.",Kenal pasti aplikasi Mobile yang terlibat untuk sistem .,Tower Aplikasi,4,5,20,Closed
+R233,Application and Technical,System Development,"1 Tiada perincian keperluan aplikasi Mobile.
+a.	Hybrid application
+b.	Native application
+2. Keperluan aplikasi Mobile tidak dinyatakan bagi menerangkan fungsi-fungsi yang boleh dicapai oleh Mobile.",Wujudkan satu dokumen keperluan untuk aplikasi Mobile.,Tower Aplikasi,4,5,20,Closed
+R234,Application and Technical,"Integration Aplikasi/ Modul
+(Perisian dan Perkakasan)",Kelewatan dalam penyediaan development environment bagi tujuan pembangunan .,Pemasangan perkakasan perlu dilaksanakan seperti tempoh yang telah dirancang;,Tower Aplikasi,4,5,20,Closed
+R235,Application and Technical,"Integration Aplikasi/ Modul
+(Perisian dan Perkakasan)",Kelewatan dalam penyediaan development environment bagi tujuan pembangunan .,"Konfigurasi aplikasi, pangkalan data dan devops perlu dilaksanakan dalam tempoh yang telah dirancang; dan",Tower Aplikasi,4,5,20,Closed
+R236,Application and Technical,"Integration Aplikasi/ Modul
+(Perisian dan Perkakasan)",Kelewatan dalam penyediaan development environment bagi tujuan pembangunan .,Perbincangan pelan pelaksanaan hendaklah diadakan bersama MAMPU bagi persiapan kemasukan perkakasan ke PDSA.,Tower Aplikasi,4,5,20,Closed
+R237,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Kesesakan trafik Network (congestion of network traffic)  di Data Centre (DC) satu (1) dan dua (2).,"Kontraktor  perlu membuatr kajian keperluan network terperinci, network arkitektur dan reka bentuk network yang efisien merangkumi capaian server, aplikasi, pheripehral, pengguna dan lain-lain yang berkaitan.",Tower Infrastruktur ,4,5,20,Closed
+R238,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Kesesakan trafik Network (congestion of network traffic)  di Data Centre (DC) satu (1) dan dua (2).,"Kontraktor  perlu mengambil kira Risk ini  dalam merekabentuk arkitektur DC1 dan DC2, contohnya mempertimbangkan semula konsep pembahagian trafik ke DC mengikut zon.",Tower Infrastruktur ,4,5,20,Closed
+R239,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Kesesakan trafik Network (congestion of network traffic)  di Data Centre (DC) satu (1) dan dua (2).,Mendapatkan maklumat keperluan lebar jalur (bandwidth) untuk setiap service keutamaan (priority): dan,Tower Infrastruktur ,4,5,20,Closed
+R240,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Kesesakan trafik Network (congestion of network traffic)  di Data Centre (DC) satu (1) dan dua (2).,Meningkatkan lagi keupayaan lebar jalur DC1 dan DC2.,Tower Infrastruktur ,4,5,20,Closed
+R241,Application and Technical,Tools,Kegagalan peralatan di lokasi operasi JIM seperti pos kawalan dan pintu masuk.,Kontraktor  hendaklah mendapatkan TOT produk yang mencukupi dari prinsipal kepada pasukan sokongan teknikal tempatan sebelum aktiviti rollout dijalankan.,Tower Project Management,2,3,6,Closed
+R242,Application and Technical,Tools,Kegagalan peralatan di lokasi operasi JIM seperti pos kawalan dan pintu masuk.,Training daripada Kontraktor  kepada pihak Kerajaan pasukan sokongan teknikal.,Tower Project Management,2,3,6,Closed
+R243,Application and Technical,Tools,Kegagalan peralatan di lokasi operasi JIM seperti pos kawalan dan pintu masuk.,"Kontraktor  hendaklah menyediakan SOP pemantauan dan penyelenggaraan peralatan, perkakasan dan perisian (update patches dan firmware) yang komprehensif dan dipatuhi.",Tower Project Management,2,3,6,Closed
+R244,Application and Technical,Tools,Kegagalan peralatan di lokasi operasi JIM seperti pos kawalan dan pintu masuk.,PPK/IPM hendaklah menetapkan SLA pembaikan di dalam pelaksanaan kontrak dan pemantauan dari masa ke semasa.,Tower Project Management,2,3,6,Closed
+R245,Application and Technical,Tools,Kegagalan peralatan di lokasi operasi JIM seperti pos kawalan dan pintu masuk.,Mengenalpasti senarai peralatan yang dipasang di pintu masuk kecuali di Pejabat Atase melalui aktiviti penilaian tapak.,Tower Project Management,2,3,6,Closed
+R246,Project Management,Scope,Pertambahan skop / requirement kerap berubah.,"1.Penyediaan keperluan pengguna perlu dinyatakan dalam dokumen URS, SRS, TDD dan perlu mendapat pengesahan dari pihak JIM. Penyediaan dokumen keperluan perlu merangkumi fungsian dan bukan fungsian termasuk keperluan configurable, extensible dan fleksible supaya perubahan skop selepas RDS mempunyai impak minima terhadap Cost projek.
+
+2.Menyediakan Pelan Pengurusan Skop yang jelas.",Tower Aplikasi ,5,2,10,Closed
+R247,Project Management,Scope,Pertambahan skop / requirement kerap berubah.,Menyenaraikan Scope of Work yang tidak dinyatakan dalam BP,Tower Aplikasi ,5,2,10,Closed
+R248,Project Management,Stakeholder,"Tidak mendapat kerjasama, sokongan dan persetujuan daripada Kerajaan Negeri (Sabah dan Sarawak) semasa pelaksanaan projek dan selepas projek disiapkan.",Mengadakan sesi libat urus bersama Setiausaha Kerajaan Negeri (SKN) Sabah dan Sarawak bagi mendapatkan persetujuan mengenai Policy-Policy tertentu dan menawarkan  bagi melaksana proses keimigresenan yang melibatkan yang melibatkan bidang kuasa Kerajaan Negeri masing-masing,,3,5,15,Closed
+R249,Project Management,Stakeholder,"Tidak mendapat kerjasama, sokongan dan persetujuan daripada Kerajaan Negeri (Sabah dan Sarawak) semasa pelaksanaan projek dan selepas projek disiapkan.",Melantik focal point daripada pejabat SKN bagi tujuan perbincangan yang lebih terperinci dengan Pasukan Projek  (sekiranya dipersetujui di peringkat Policy),,3,5,15,Closed
+R250,Project Management,Stakeholder,"Tidak mendapat kerjasama, sokongan dan persetujuan daripada Kerajaan Negeri (Sabah dan Sarawak) semasa pelaksanaan projek dan selepas projek disiapkan.",Mengenalpasti busines process dalam pengurusan pekerja asing di Sabah dan Sarawak untuk diintegrasi atau dibangunkan dalam,,3,5,15,Closed
+R251,Project Management,Procurement,Kontrak yang tidak menyebelahi pihak Kerajaan.,Semakan draf kontrak Bersama pihak berkepentingan bagi memastikan draf kontrak lengkap dan menyebelahi pihak Kerajaan,Tower Project Management ,2,5,10,Closed
+R252,Project Management,Procurement,Kontrak yang tidak menyebelahi pihak Kerajaan.,Draft kontrak akan dikemukakan kepada  PUU KDN untuk semakan sebelum dikemukan kepada AGC bagi tujuan semakan dan kelulusan.,Tower Project Management ,2,5,10,Closed
+R253,Strategic,Technology,Sistem yang dibangunkan tidak boleh berintegrasi dengan perkakasan boleh guna semula,Kontraktor perlu menyenaraikan senarai perkakasan / peralatan yang boleh guna semula dan berintegrasi dengan ; pakai berdasarkan kajian site assesment yang telah dilaksanakan.,BTMR,4,5,20,Closed
+R254,Strategic,Technology,Sistem yang dibangunkan tidak boleh berintegrasi dengan perkakasan boleh guna semula,Kontraktor  hendaklah mencadangkan penggunaan perkakasan tidak boleh guna semula untuk tujuan lain,BTMR,4,5,20,Closed
+R255,Application and Technical,System Development,Kelewatan dalam memuktamadkan rekabentuk sistem akibat dari kelewatan memuktamadkan Arkitektur Sistem Projek .,Mengadakan dan mengenal pasti aktiviti dan kefungsian bisnes proses yang merangkumi end to end process,Tower Aplikasi ,5,5,25,Closed
+R256,Application and Technical,System Development,Kelewatan dalam memuktamadkan rekabentuk sistem akibat dari kelewatan memuktamadkan Arkitektur Sistem Projek .,Memastikan kandungan Dokumen Arkitektur Sistem memenuhi keperluan pengguna dan dipersetujui,Tower Aplikasi ,5,5,25,Closed
+R257,Application and Technical,System Development,Kelewatan dalam memuktamadkan rekabentuk sistem akibat dari kelewatan memuktamadkan Arkitektur Sistem Projek .,Menyediakan product backlog planning yang komprehensif untuk diguna pakai dalam fasa pembangunan,Tower Aplikasi ,5,5,25,Closed
+R258,Application and Technical,System Development,Kelewatan dalam memuktamadkan rekabentuk sistem akibat dari kelewatan memuktamadkan Arkitektur Sistem Projek .,Menambah Human Resource yang berpengalaman dan kompeten dalam membangunkan Solution Arkitektur .,Tower Aplikasi ,5,5,25,Closed
+R259,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Penyelenggaraan perisian dan perkakasan yang akan digunakan dalam projek  tidak dilakukan dengan baik serta tidak mengikut jadual.,PPK/ IPM perlu menghantar peringatan dua minggu sebelum aktiviti penyelenggaraan dan pihak kontraktor perlu menyediakan laporan penyelenggaraan seminggu selepas aktiviti selenggara selesai.,Tower Infrastruktur ,2,4,8,Closed
+R260,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Penyelenggaraan perisian dan perkakasan yang akan digunakan dalam projek  tidak dilakukan dengan baik serta tidak mengikut jadual.,Kontraktor  hendaklah menyediakan Laporan Penyelenggaraan Pencegahan (Preventive Maintenance) dalam tempoh 4 kali setahun sepanjang tempoh warranti.,Tower Infrastruktur ,2,4,8,Closed
+R261,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Penyelenggaraan perisian dan perkakasan yang akan digunakan dalam projek  tidak dilakukan dengan baik serta tidak mengikut jadual.,"PPK perlu mengadakan mesyuarat pemantauan berkala bagi memastikan penyelanggaraan, pembaikan dan pencegahan dilaksanakan.",Tower Infrastruktur ,2,4,8,Closed
+R262,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Penyelenggaraan perisian dan perkakasan yang akan digunakan dalam projek  tidak dilakukan dengan baik serta tidak mengikut jadual.,Kontraktor  hendaklah menyediakan pasukan penyelenggaraan di setiap negeri/ regional dengan Human Resource yang mencukupi.,Tower Infrastruktur ,2,4,8,Closed
+R263,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Penyelenggaraan perisian dan perkakasan yang akan digunakan dalam projek  tidak dilakukan dengan baik serta tidak mengikut jadual.,PPK/ IPM hendaklah memasukkan klausa pembaikan/ penggantian di dalam kontrak jika berlaku vandalisme di lokasi/ cawangan.,Tower Infrastruktur ,2,4,8,Closed
+R264,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Penyelenggaraan perisian dan perkakasan yang akan digunakan dalam projek  tidak dilakukan dengan baik serta tidak mengikut jadual.,Kontraktor  hendaklah mengambil insurans untuk kerosakkan yang berpunca daripada vandalisme/ force majure.,Tower Infrastruktur ,2,4,8,Closed
+R265,Strategic,Policy,"Halatuju, Policy dan polisi Kerajaan sering berubah mengikut keperluan semasa.",Pihak Kerajaan dan Kontraktor hendaklah membangunkan sistem yang configurable dan fleksible dan menggunakan work flow engine.,Tower Aplikasi ,1,5,5,Closed
+R266,Strategic,Policy,"Halatuju, Policy dan polisi Kerajaan sering berubah mengikut keperluan semasa.",Pihak kerajaan dan kontraktor hendaklah membangunkan keperluan sistem memenuhi keperluan dan polisi terkini.,Tower Aplikasi ,1,5,5,Closed
+R267,Strategic,Policy,"Halatuju, Policy dan polisi Kerajaan sering berubah mengikut keperluan semasa.","Sekiranya berlaku perubahan halatuju dan Policy kerajaan, pihak kerajaan dan kontraktor hendaklah :
+     a. Mengenalpasti modul-modul yang terkesan daripada perubahan Policy dan polisi Kerajaan.
+     b. Melakukan perubahan terhadap sistem supaya selaras dengan perubahan polisi.",Tower Aplikasi ,1,5,5,Closed
+R268,Operation,SOP/ Process,Business process yang memerlukan input dari agensi luar sebagai pengguna masih tidak muktamad dan belum dimaklumkan kepada agensi.,Perbincangan bersama dengan agensi luar(Pengguna) perlu diadakan dengan kadar segera bagi mendapatkan input dan memuktamadkan proses bisnes yang terlibat (61 agensi);,,4,5,20,Closed
+R269,Project Management,Scope,"Sistem dibangunkan tidak mengikut keperluan 
+pengguna.","Kontraktor , IPM dan IV&V perlu melantik BE yang sesuai dan mencukupi sepanjang tempoh projek (PM Kontraktor).",Tower Project Management ,2,4,8,Closed
+R270,Project Management,Scope,"Sistem dibangunkan tidak mengikut keperluan 
+pengguna.",Pihak Kerajaan dan Kontraktor  hendaklah melibatkan BE masing-masing dalam aktiviti pengujian.,Tower Project Management ,2,4,8,Closed
+R271,Project Management,Scope,"Sistem dibangunkan tidak mengikut keperluan 
+pengguna.",Kontraktor  hendaklah menyediakan ahli pasukan projek yang kompeten.,Tower Project Management ,2,4,8,Closed
+R272,Project Management,Scope,"Sistem dibangunkan tidak mengikut keperluan 
+pengguna.",Kontraktor  akan mengadakan kajian keperluan bersama-sama KDN dan JIM dengan melaksanakan Bengkel BPR di dalam Fasa RDS.,Tower Project Management ,2,4,8,Closed
+R273,Application and Technical,Deployment,Peralihan (Transition) daripada sistem lama kepada sistem baharu dimana kebarangkalian berlakunya ralat adalah sangat tinggi semasa pelaksanaan.,Kontraktor  perlu menyediakan Pelan Migrasi Sistem yang komprehensif dan menyeluruh.,Tower Teknikal ,4,5,20,Closed
+R274,Application and Technical,Deployment,Peralihan (Transition) daripada sistem lama kepada sistem baharu dimana kebarangkalian berlakunya ralat adalah sangat tinggi semasa pelaksanaan.,Pelaksanaan migrasi sistem hendaklah mengikut Pelan Migrasi Sistem yang telah ditetapkan.,Tower Teknikal ,4,5,20,Closed
+R275,Application and Technical,Deployment,Peralihan (Transition) daripada sistem lama kepada sistem baharu dimana kebarangkalian berlakunya ralat adalah sangat tinggi semasa pelaksanaan.,Sistem yang dimigrasi hendaklah diuji secara menyeluruh.,Tower Teknikal ,4,5,20,Closed
+R276,Application and Technical,Deployment,Peralihan (Transition) daripada sistem lama kepada sistem baharu dimana kebarangkalian berlakunya ralat adalah sangat tinggi semasa pelaksanaan.,Menjalankan satu sesi khas tentang pemetaan bersama pihak Kerajaan termasuk pihak MyIMMS,Tower Teknikal ,4,5,20,Closed
+R277,Application and Technical,System Development,Kontraktor  tidak menyerahkan source code yang boleh digunapakai.,Pihak Kerajaan (PPK) dan Kontraktor  hendaklah meletakkan serahan source code dimasukkan dalam kontrak sebagai salah satu serahan mandatori.,Tower Aplikasi ,3,5,15,Closed
+R278,Application and Technical,System Development,Kontraktor  tidak menyerahkan source code yang boleh digunapakai.,Pihak Kerajaan (Tower Aplikasi/IPM) hendaklah mewujudkan proses dalam serahan source code hendaklah dimasukkan di dalam kontrak sebelum projek bermula.,Tower Aplikasi ,3,5,15,Closed
+R279,Application and Technical,System Development,Kontraktor  tidak menyerahkan source code yang boleh digunapakai.,Kontraktor  hendaklah menyerahkan source code yang lengkap dan boleh diguna pakai disetiap penghujung release.,Tower Aplikasi ,3,5,15,Closed
+R280,Application and Technical,System Development,Kontraktor  tidak menyerahkan source code yang boleh digunapakai.,Pihak Kerajaan (Tower Aplikasi) hendaklah melakukan pengujian terhadap source code yang diserahkan oleh Kontraktor  sebelum pengesahan penerimaan.,Tower Aplikasi ,3,5,15,Closed
+R281,Application and Technical,System Development,Penghasilan dokumen keperluan reka bentuk (TDD) bagi modul Kawalan tidak merujuk kepada BPR & URS IBC terkini.,Dokumen yang dihasilkan perlu merujuk keperluan BPR & URS IBC yang terkini supaya mengikut spesifikasi yang telah ditetapkan,Tower Aplikasi ,4,5,20,Closed
+R282,Application and Technical,System Development,Kesan atau gangguan di pangkalan data myIMMs serta penggunaan ruang (directory) di server pangkalan data myIMMs setelah proses Oracle Golder Gate dipasang (install).,"Kekangan terhadap pelan ini perlu dibincangkan dan dipersetujui oleh Kerajaan.
+(30 Jun 2022)",Tower Teknikal ,,4,12,Closed
+R283,Application and Technical,System Development,Kesan atau gangguan di pangkalan data myIMMs serta penggunaan ruang (directory) di server pangkalan data myIMMs setelah proses Oracle Golder Gate dipasang (install).,"Kenal pasti design alternative yang tidak menyebabkan Risk ini berlaku.
+(30 Jun 2022)
+
+3.Membentangkan serta mengemukakan Pelan Pembangunan/ Pemasangan OGG.
+(30 Jun 2022)",Tower Teknikal ,,4,12,Closed
+R284,Application and Technical,ICT Security,Aspek keselamatan (security) tidak diambil kira dalam persekitaran (DevOps) pembangunan aplikasi,"DevSecOps yang mengutamakan aspek keselamatan bagi meningkatkan kod dan Continuous Integration (CI) and Continuous Delivery (CD) pipeline.
+(30 Jun 2022)",Tower Teknikal ,,4,12,Closed
+R285,Application and Technical,ICT Security,Aspek keselamatan (security) tidak diambil kira dalam persekitaran (DevOps) pembangunan aplikasi,"Penggunaan Dynatrace (security tool) sebagai sebahagian DevSecOps pipeline perlu main peranan penting dalam membuat semakan bagi static dan dynamic API security testing.
+(30 Jun 2022)",Tower Teknikal ,,4,12,Closed
+R286,Application and Technical,System Development,Synchronization data biometric dari myIMMS ke  tidak diboleh dilakukan.,"Kontraktor  perlu mencadangkan solusi bagaimana untuk semakan data biometric di myIMMS boleh dilaksanakan memandangkan data dari  tidak dapat di synchronize ke myIMMS.
+(31 Julai 2022)",Tower Teknikal ,,4,12,Closed
+R287,Application and Technical,ICT Security,Proses pengesahan biometric sebagai MFA (Multi Factor Authentication) proses pendaftaran masuk (login) pengguna dalaman tidak dilaksanakan oleh NEC dibawah skop ABIS.,"Kontraktor  perlu mencadangkan solusi dan melaksanakan pengesahan biometric sebagai MFA untuk proses pendaftaran masuk (login).
+(30 Mei 2022)
+(31 Julai 2022)",Tower Aplikasi ,,5,20,Closed
+R288,Project Management,Scope,Peranan dan skop kerja sub-kontraktor AppFuxion Consulting Sdn. Bhd. yang baharu dilantik tidak jelas,"Memaklumkan skop kerja sub-kontraktor AppFuxion dengan jelas dalam Mesyuarat Workstream Kualiti dan Tower Pengurusan
+(31 Julai 2022)",Tower Project Management ,,5,20,Closed
+R289,Project Management,Scope,Peranan dan skop kerja sub-kontraktor AppFuxion Consulting Sdn. Bhd. yang baharu dilantik tidak jelas,"Memaklumkan secara rasmi kepada pihak Kerajaan skop kerja dan perjanjian yang telah dipersetujui antara Kontraktor  dan sub-kontraktor AppFuxion
+(31 Julai 2022)",Tower Project Management ,,5,20,Closed
+R290,Project Management,Human Resource,Perancangan Human Resource core team Kontraktor dan sub Kontraktor yang tidak terperinci dan jelas bagi pembangunan 22 modul (16 + 6 tidak termasuk Common Module) sepanjang 12 sprint,"Mengemukakan anggaran story point yang tepat sebelum memulakan sprint.
+(31 Julai 2022)
+(31 Ogos 2022)
+(21  September 2022)",Tower Aplikasi ,,5,20,Closed
+R291,Project Management,Human Resource,Perancangan Human Resource core team Kontraktor dan sub Kontraktor yang tidak terperinci dan jelas bagi pembangunan 22 modul (16 + 6 tidak termasuk Common Module) sepanjang 12 sprint,"Tower Pengurusan dan Tower Aplikasi hendaklah menyediakan matriks dalam peranan dan tanggungjawab ahli pasukan semasa fasa pembangunan
+(31 Julai 2022)
+(31 Ogos 2022)
+(21 September 2022)",Tower Aplikasi ,,5,20,Closed
+R292,Project Management,Human Resource,Perancangan Human Resource core team Kontraktor dan sub Kontraktor yang tidak terperinci dan jelas bagi pembangunan 22 modul (16 + 6 tidak termasuk Common Module) sepanjang 12 sprint,"Menyediakan TOR dan RACI bagi setiap ahli pasukan.
+(31 Julai 2022)
+(31 Ogos 2022)
+(31 Disember 2022)",Tower Aplikasi ,,5,20,Closed
+R293,Project Management,Human Resource,Perancangan Human Resource core team Kontraktor dan sub Kontraktor yang tidak terperinci dan jelas bagi pembangunan 22 modul (16 + 6 tidak termasuk Common Module) sepanjang 12 sprint,"Pengiraan mandays perlu disediakan sebelum dan semasa fasa pembangunan
+(31 Julai 2022)
+(31 Ogos 2022)
+(31 Disember 2022)",Tower Aplikasi ,,5,20,Closed
+R294,Project Management,Human Resource,Perancangan Human Resource core team Kontraktor dan sub Kontraktor yang tidak terperinci dan jelas bagi pembangunan 22 modul (16 + 6 tidak termasuk Common Module) sepanjang 12 sprint,"Menggunakan SCRUM dalam memastikan objektif dalam pembangunan tercapai.
+(31 Julai 2022)",Tower Aplikasi ,,5,20,Closed
+R295,Application and Technical,ICT Security,"Tiada Perancangan dan Pelaksanaan Kawalan keselamatan (security) bagi LMS, Portal  dan PMIS di Production Environment.","Pemasangan dan konfigurasi yang lengkap bagi external firewall, web application firewall dan SSL Certification.
+(31 Julai 2022)",Tower Infrastruktur ,,5,20,Closed
+R296,Application and Technical,ICT Security,"Tiada Perancangan dan Pelaksanaan Kawalan keselamatan (security) bagi LMS, Portal  dan PMIS di Production Environment.","Melaksanakan Penetration Testing oleh pihak ketiga (third Party).
+(31 Julai 2022)",Tower Infrastruktur ,,5,20,Closed
+R297,Application and Technical,ICT Security,"Tiada Perancangan dan Pelaksanaan Kawalan keselamatan (security) bagi LMS, Portal  dan PMIS di Production Environment.","Lain-lain tindakan yang dirasakan perlu untuk mengawal keselamatan.
+(31 Julai 2022)",Tower Infrastruktur ,,5,20,Closed
+R298,Project Management,Komunikasi,Kegagalan pengurusan komunikasi projek di setiap peringkat tadbir urus,"Penyediaan Pelan-pelan komunikasi
+a. Pelan pengurusan Perubahan (Kontraktor -30 Julai 21)
+b. Pelan pengurusan Komunikasi ( Kontraktor 30 September 2021)
+c. Pelan Project Management (IV&V- 13 Ogos 2021)
+d. Pelan Komunikasi dan kesedaran (Kontraktor -30 Julai 21)
+(30 September 2021)",Tower Project Management ,4,2,8,Closed
+R299,Project Management,Komunikasi,Kegagalan pengurusan komunikasi projek di setiap peringkat tadbir urus,"Menyediakan struktur organisasi yang seragam dan sama untuk ketiga-tiga pihak (Kontraktor , PPK dan IPM).
+(30 September 2021)",Tower Project Management ,4,2,8,Closed
+R300,Project Management,Komunikasi,Kegagalan pengurusan komunikasi projek di setiap peringkat tadbir urus,"Kontraktor  hendaklah menyediakan TOR dan RACI yang jelas di dalam Pelan Pengurusan Komunikasi.
+(30 September 2021)",Tower Project Management ,4,2,8,Closed
+R301,Project Management,Komunikasi,Kegagalan pengurusan komunikasi projek di setiap peringkat tadbir urus,"Menjalankan aktiviti Team Building. 
+(30 September 2021)",Tower Project Management ,4,2,8,Closed
+R302,Project Management,Komunikasi,Kegagalan pengurusan komunikasi projek di setiap peringkat tadbir urus,"Pemantauan Pelan
+(31 Mei 2024)",Tower Project Management ,4,2,8,Closed
+R303,Application and Technical,System Development,Ancaman Keselamatan Siber (Cyber Security Threat).,"Kontraktor  akan melaksanakan Security Posture Assessment dan Pen Test.
+(31 Oktober 2023)",BTMR,5,5,25,Closed
+R304,Application and Technical,System Development,Ancaman Keselamatan Siber (Cyber Security Threat).,"i. Kontraktor  hendaklah menyediakan perkhidmatan pemantauan di Command Center merangkumi:
+a) NOC 
+b) SOC,
+c) AOC
+ii. IPS dan IDS perlu dimasukkan ke dalam Pelan Pelaksanaan. Seperti : 
+a) IPS (TippingPoint 8400TX   Trendmicro) , 
+b)IDS (DD Inspector 4100 - Trendmicro)
+(31 Mei 2024)",BTMR,5,5,25,Closed
+R305,Application and Technical,System Development,Ancaman Keselamatan Siber (Cyber Security Threat).,"Kontraktor  hendaklah mewujudkan/ memasang perkhidmatan/ tools bagi mengesan serangan dan ancaman siber dalam fasa pemasangan.
+(31 Mei 2024)",BTMR,5,5,25,Closed
+R306,Application and Technical,System Development,Ancaman Keselamatan Siber (Cyber Security Threat).,"Kontraktor  hendaklah membangunkan Pelan ISMS yang menyeluruh dan komprehensif sehingga mendapat pensijilan ISMS.
+(31 Ogos 2024)",BTMR,5,5,25,Closed
+R307,Operation,System,Kebergantungan sistem yang dibangunkan kepada OS tertentu.,"Kontraktor  hendaklah memilih tools/ teknologi bagi pembangunan Sistem yang tidak terikat kepada OS tertentu. 
+(30 September 2022)",Tower Aplikasi ,2,4,8,Closed
+R308,Project Management,Integration,Kegagalan integrasi  dengan sistem agensi luar/ kontraktor.,"Kontraktor  hendaklah menyediakan pelan pengurusan integrasi yang terperinci dan terancang pada permulaan projek.
+(30 September 2021)",Tower Aplikasi ,3,4,12,Closed
+R309,Project Management,Integration,Kegagalan integrasi  dengan sistem agensi luar/ kontraktor.,"Kontraktor  hendaklah menyediakan keperluan integrasi yang terperinci dan tepat. Keperluan integrasi perlu dipersetujui oleh semua pihak yang terlibat dan dilaksanakan pada permulaan projek.
+(30 September 2021)",Tower Aplikasi ,3,4,12,Closed
+R310,Project Management,Integration,Kegagalan integrasi  dengan sistem agensi luar/ kontraktor.,"Pihak Kerajaan perlu menetapkan peranan dan tanggungjawab setiap pihak yang terlibat dalam integrasi sistem dinyatakan secara jelas dan terperinci.
+(30 April 2022)",Tower Aplikasi ,3,4,12,Closed
+R311,Project Management,Integration,Kegagalan integrasi  dengan sistem agensi luar/ kontraktor.,"Kontraktor  dan agensi hendaklah melaksanakan pengujian integrasi sistem dengan teliti dan menyeluruh berserta penglibatan dari pihak kerajaan.
+(31 Mei 2022)
+(30 Ogos 2023)",Tower Aplikasi ,3,4,12,Closed
+R312,Project Management,Integration,Kegagalan integrasi  dengan sistem agensi luar/ kontraktor.,"Kontraktor  hendaklah menyediakan Human Resource yang kompeten dan mahir dalam pembangunan integrasi.
+(30 September 2023)",Tower Aplikasi ,3,4,12,Closed
+R313,Project Management,Integration,Kegagalan integrasi  dengan sistem agensi luar/ kontraktor.,"Engagement dengan pengurusan tertinggi agensi untuk mendapatkan kelulusan.
+(30 September 2023)",Tower Aplikasi ,3,4,12,Closed
+R314,Strategic,Policy,Perancangan pembangunan dan pelaksanaan  tidak selari/selaras dengan akta atau polisi semasa Kerajaan yang berkuatkuasa.,"Pihak Kerajaan (Tower Policy) hendaklah mengenalpasti senarai akta-akta yang berkaitan yang akan digunapakai sebelum projek bermula.
+(31 Disember 2022)",Bahagian IM,4,4,16,Closed
+R315,Strategic,Policy,Perancangan pembangunan dan pelaksanaan  tidak selari/selaras dengan akta atau polisi semasa Kerajaan yang berkuatkuasa.,"Pihak Kerajaan (Tower Policy) hendaklah menyemak semula semua akta yang berkuatkuasa, memberi cadangan dan mendapatkan persetujuan pihak pengurusan atasan sekiranya ada keperluan meminda akta-akta atau menyediakan SOP baru selaras dengan keperluan pembangunan  sebelum projek bermula
+(31 Disember 2022)",Bahagian IM,4,4,16,Closed
+R316,Strategic,Policy,Perancangan pembangunan dan pelaksanaan  tidak selari/selaras dengan akta atau polisi semasa Kerajaan yang berkuatkuasa.,"Pihak Kerajaan (Tower Policy) hendaklah memberi cadangan dan mendapatkan persetujuan pihak pengurusan atasan sekiranya ada keperluan meminda akta-akta atau menyediakan SOP baru sebelum projek bermula.
+(31 Disember 2022)",Bahagian IM,4,4,16,Closed
+R317,Strategic,Policy,Perancangan pembangunan dan pelaksanaan  tidak selari/selaras dengan akta atau polisi semasa Kerajaan yang berkuatkuasa.,"Menjalankan pemantauan dan memaklumkan dengan segera mengenai sebarang perubahan keputusan-keputusan Policy
+(31 Disember 2022)",Bahagian IM,4,4,16,Closed
+R318,Strategic,Policy,Perancangan pembangunan dan pelaksanaan  tidak selari/selaras dengan akta atau polisi semasa Kerajaan yang berkuatkuasa.,"Pihak Kerajaan dan Kontraktor hendaklah membangunkan sistem yang configurable dan fleksible dan menggunakan work flow engine.
+(1 Ogos 2023)",Bahagian IM,4,4,16,Closed
+R319,Strategic,Policy,Perancangan pembangunan dan pelaksanaan  tidak selari/selaras dengan akta atau polisi semasa Kerajaan yang berkuatkuasa.,"Pihak kerajaan dan kontraktor hendaklah membangunkan keper,luan sistem memenuhi keperluan dan polisi terkini.
+(16 Mei 2022)",Bahagian IM,4,4,16,Closed
+R320,Strategic,Policy,Perancangan pembangunan dan pelaksanaan  tidak selari/selaras dengan akta atau polisi semasa Kerajaan yang berkuatkuasa.,"Sekiranya berlaku perubahan halatuju dan Policy kerajaan, pihak kerajaan dan kontraktor hendaklah :
+     a. Mengenalpasti modul-modul yang terkesan daripada perubahan Policy dan polisi Kerajaan.
+     b. Melakukan perubahan terhadap sistem supaya selaras dengan perubahan polisi.
+(31 Disember 2021)",Bahagian IM,4,4,16,Closed
+R321,Strategic,Technology,Perubahan Business Process di dalam  yang membabitkan agensi luar masih belum mendapat persetujuan dari agensi-agensi terlibat.,"Perbincangan dan penerangan yang jelas mengenai Business Process  perlu diadakan dan diberi keutamaan kepada agensi-agensi berikut namun tidak terhad kepada senarai dibawah: 
+a. Education Malaysia Global Services (EMGS);
+b. Talent Corporation Malaysia Berhad (TalentCorp);
+c. Malaysia Digital Economy Corporation (MDEC);
+d. Unit Pusat Permohonan Penggambaran Filem Dan Persembahan Artis Luar Negara (PUSPAL);
+e. Kementerian Luar Negara (KLN);
+f. Biro Pengaduan Awam (BPA); dan
+g. Mahkamah Persekutuan
+(31 Julai 2022)",Bahagian IM,4,5,20,Closed
+R322,Operation,Training,Proses serah tugas yang tidak sempurna menyumbang kepada kelewatan pelaksanaan projek.,Menetapkan tempoh untuk proses serah tugas dan senarai semak serah tugas.,Tower Project Management ,5,2,10,Closed
+R323,Operation,Training,Proses serah tugas yang tidak sempurna menyumbang kepada kelewatan pelaksanaan projek.,Mewujudkan program perkongsian maklumat.,Tower Project Management ,5,2,10,Closed
+R324,Operation,Training,Proses serah tugas yang tidak sempurna menyumbang kepada kelewatan pelaksanaan projek.,Mewujudkan shared folder.,Tower Project Management ,5,2,10,Closed
+R325,Operation,Training,Proses serah tugas yang tidak sempurna menyumbang kepada kelewatan pelaksanaan projek.,Semua pihak perlu menyediakan kaedah penggantian (succession planning) sekiranya terdapat  mana-mana pegawai yang bertukar.,Tower Project Management ,5,2,10,Closed
+R326,Strategic,Technology,yang dibangunkan tidak boleh berintegrasi dengan sistem agensi,"Menyenaraikan agensi luar dan sub-sistem serta perincian bagi sub sistem tersebut (Sehala atau Dua Hala)
+(30 April 2022)",Tower Aplikasi ,4,5,20,Closed
+R327,Strategic,Technology,yang dibangunkan tidak boleh berintegrasi dengan sistem agensi,"Menyediakan Pelan Integrasi bagi menerangkan metodologi dan pelaksanaan integrasi  dengan semua sub-sistem
+(30 April 2022)",Tower Aplikasi ,4,5,20,Closed
+R328,Strategic,Technology,yang dibangunkan tidak boleh berintegrasi dengan sistem agensi,"Menyediakan dokumen Interface Control Document
+(31 Disember 2022)",Tower Aplikasi ,4,5,20,Closed
+R329,Application and Technical,Tools,Kelewatan dalam memuktamadkan fungsi bagi 6 peralatan khas mengakibatkan pembangunan beberapa modul  yang terlibat tidak dapat dilaksanakan,"Memuktamadkan fungsi 6 peralatan khas:
+-Mobile Enrollment Unit (MEU)
+-Mbike 
+-Digital Landing Kiosk (DLC) 
+-EGate Pejalan Kaki
+-Kiosk Passport
+-Kiosk iKad",Tower Infrastruktur,4,5,20,Closed
+R330,Application and Technical,Tools,Kelewatan dalam memuktamadkan fungsi bagi 6 peralatan khas mengakibatkan pembangunan beberapa modul  yang terlibat tidak dapat dilaksanakan,"Membangunkan prototype (e-gate, mbike, dlc)",Tower Infrastruktur,4,5,20,Closed
+R331,Application and Technical,System Development,Pemuktamadan aliran proses modul ESD bagi negeri Sabah masih belum dilaksanakan disebabkan oleh kelewatan engagement untuk mendapatkan persetujuan daripada pihak Kerajaan Negeri Sabah mengakibatkan pembangunan modul ESD terjejas.,"Mengadakan libat urus dengan Kerajaan Negeri Sabah untuk memuktamadkan proses kerja. Persediaan pembentangan yang perlu dibuat ialah:
+         i. Menyediakan carta alir dan proses kerja yang terlibat. 
+         ii. Mendapatkan keputusan dari pihak 
+(30 Disember 2022)",Tower Aplikasi ,3,4,12,Closed
+R332,Application and Technical,System Development,Pemuktamadan aliran proses modul ESD bagi negeri Sabah masih belum dilaksanakan disebabkan oleh kelewatan engagement untuk mendapatkan persetujuan daripada pihak Kerajaan Negeri Sabah mengakibatkan pembangunan modul ESD terjejas.,"Menyediakan carta alir dan proses kerja yang terlibat bagi proses modul ESD serta mendapatkan keputusan bagi setiap aliran proses tersebut.
+(30 Disember 2022)",Tower Aplikasi ,3,4,12,Closed
+R333,Application and Technical,System Development,Pemuktamadan aliran proses modul ESD bagi negeri Sabah masih belum dilaksanakan disebabkan oleh kelewatan engagement untuk mendapatkan persetujuan daripada pihak Kerajaan Negeri Sabah mengakibatkan pembangunan modul ESD terjejas.,"Mengemas kini dokumen URS dan SRS bagi modul ESD sekiranya terdapat sebarang perubahan pada aliran proses
+i. Dokumen BPR
+ii. Dokumen URS
+iii. Dokumen SRS
+(30 Disember 2022)",Tower Aplikasi ,3,4,12,Closed
+R334,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,PPK/ IPM hendaklah membuat penetapan melalui penguatkuasaan terma kontrak dalam penglibatan warga asing di dalam projek Kerajaan.,Tower Project Management ,3,5,15,Transfer
+R335,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,PPK/ IPM hendaklah mewujudkan dan menguatkuasa proses pengurusan maklumat sulit supaya terkawal dan tidak jatuh ke pihak ketiga yang tidak berkenaan.,Tower Project Management ,3,5,15,Transfer
+R336,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,Risk ini dicadangkan menjadi Isu,Tower Project Management ,3,5,15,Transfer
+R337,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,Kontraktor  menyenaraikan senarai nama warga asing yang terlibat,Tower Project Management ,3,5,15,Transfer
+R338,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,Surat rasmi telah dikeluarkan kepada Kontraktor untuk mengemukakan senarai cadangan kakitangan bukan warga negara Malaysia yang terlibat di dalam projek.,Tower Project Management ,3,5,15,Transfer
+R339,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,"Perkara ini perlu dibawa ke Mesyuarat Pasukan Projek, Jawatankuasa Teknikal dan Jawatankuasa Pemandu",Tower Project Management ,3,5,15,Transfer
+R340,Project Management,Procurement,Engagement antara Kontraktor  dan sub-kontraktor di luar pengetahuan dan kawalan Kerajaan.,Kontraktor  perlu mengemukakan senarai sub kontraktor yang akan dilantik untuk persetujuan pihak Kerajaan.,Tower Project Management ,4,4,16,Transfer
+R341,Project Management,Procurement,Engagement antara Kontraktor  dan sub-kontraktor di luar pengetahuan dan kawalan Kerajaan.,"Kerajaan dan Kontraktor  hendaklah memastikan kontrak mengandungi  terma-terma berkenaan pelantikan, skop kerja dan penamatan sub kontraktor",Tower Project Management ,4,4,16,Transfer
+R342,Project Management,Human Resource,Kontraktor gagal menyediakan Human Resource mengikut keperluan projek dalam tempoh masa yang ditetapkan.,Kontraktor  hendaklah membuat persediaan Human Resource seawal mendapat surat pelantikan melalui SST.,Tower Project Management ,4,4,16,Transfer
+R343,Project Management,Human Resource,Kontraktor gagal menyediakan Human Resource mengikut keperluan projek dalam tempoh masa yang ditetapkan.,"Kontraktor  hendaklah menyediakan Pelan Pengurusan Sumber yang komprehensif dan 
+terperinci selari dengan penyediaan PMP.",Tower Project Management ,4,4,16,Transfer
+R344,Project Management,Human Resource,Kontraktor gagal menyediakan Human Resource mengikut keperluan projek dalam tempoh masa yang ditetapkan.,Kontraktor  hendaklah melaksanakan dan mematuhi kepada pelan pengurusan yang dipersetujui.,Tower Project Management ,4,4,16,Transfer
+R345,Project Management,Human Resource,Kontraktor gagal menyediakan Human Resource mengikut keperluan projek dalam tempoh masa yang ditetapkan.,PPK hendaklah menguatkuasakan terma dan klausa kontrak.,Tower Project Management ,4,4,16,Transfer
+R346,Project Management,Human Resource,Kebocoran dan penyalahgunaan maklumat yang disalurkan kepada kontraktor dan sub kontraktor yang belum melepasi tapisan e-Vetting.,Kontraktor  telah mengemukakan maklumat e-Vetting untuk 54 orang Kontraktor  dan 11 orang Sub-Kontraktor  pada 17 dan 24 Mac 2021.,Tower Project Management ,5,5,25,Transfer
+R347,Application and Technical,System Development,Pemetaan EPMPRo secara keseluruhan dengan modul-modul dan fungsi fungsi sedia ada di dalam URS PMIS tidak jelas.,Melaksanakan sistem demo & walkthrough berdasarkan fungsi-fungsi URS PMIS untuk mengenalpasti kehendak dan keperluan pengguna serta memberi keyakinan Go-Live pada Julai,Tower Project Management ,5,5,25,Transfer
+R348,Application and Technical,System Development,Pemetaan EPMPRo secara keseluruhan dengan modul-modul dan fungsi fungsi sedia ada di dalam URS PMIS tidak jelas.,Kesediaan 70% keperluan URS PMIS berdasarkan EPMPRo boleh ditentukan untuk memberi keyakinan pennguna.,Tower Project Management ,5,5,25,Transfer
+R349,Application and Technical,System Development,Pemetaan EPMPRo secara keseluruhan dengan modul-modul dan fungsi fungsi sedia ada di dalam URS PMIS tidak jelas.,Pemetaan di antara EPMPRo dan fungsi-fungsi PMIS perlu didokumenkan sebagai traceability matrix bagi memudahkan pemantauan,Tower Project Management ,5,5,25,Transfer
+R350,Project Management,Scope,"Kelewatan dalam melaksanakan obligasi oleh mana-mana pihak terlibat (Kontraktor, IPM dan IV&V) akan memberi kesan secara langsung kepada kontraktor lain yang berkaitan.",Menyediakan IPP yang terperinci merangkumi aktiviti- aktiviti bagi semua kontraktor dalam .,Tower Project Management ,4,4,16,Transfer
+R351,Project Management,Scope,"Kelewatan dalam melaksanakan obligasi oleh mana-mana pihak terlibat (Kontraktor, IPM dan IV&V) akan memberi kesan secara langsung kepada kontraktor lain yang berkaitan.",Pasukan kerajaan menetapkan Critical Path projek dengan mewujudkan Integrated Project Plan (IPP) dengan kadar segera serta memastikan penghantaran dokumen mematuhi SDLC dan diserahkan secara berkala,Tower Project Management ,4,4,16,Transfer
+R352,Project Management,Scope,Kegagalan pihak kontraktor  untuk menyediakan Pelan-Pelan Project Management dalam tempoh tempoh yang ditetapkan.,PPK/ IPM hendaklah memantau penyediaan PMP mengikut tempoh masa yang ditetapkan.,Tower Project Management ,3,4,12,Transfer
+R353,Project Management,Scope,Kegagalan pihak kontraktor  untuk menyediakan Pelan-Pelan Project Management dalam tempoh tempoh yang ditetapkan.,PPK hendaklah menguatkuasakan terma kontrak dan penalti.,Tower Project Management ,3,4,12,Transfer
+R354,Application and Technical,System Development,Proses kejuruteraan keperluan (requirement engineering process) kontraktor tidak menghasilkan spesifikasi keperluan pada tahap kualiti yang diperlukan dalam projek .,Pihak Kontraktor mestilah menambah baik proses,Tower Aplikasi ,3,3,9,Transfer
+R355,Application and Technical,System Development,Proses kejuruteraan keperluan (requirement engineering process) kontraktor tidak menghasilkan spesifikasi keperluan pada tahap kualiti yang diperlukan dalam projek .,Pihak Kontraktor mestilah memantau penggunaan proses dan berupaya menyesuaikan proses tersebut secara efektif dalam masa yang singkat (iaitu dalam jangka masa bengkel RDS),Tower Aplikasi ,3,3,9,Transfer
+R356,Application and Technical,Deployment,Kelewatan dalam memuktamadkan SRS bagi modul Kawalan.,"Dokumen remedi URS IBC telah dihantar pada 9 Mac 2022 dan sedang dalam semakan IPM dan IV&V; dan
+URS IBC akan dibentangkan dalam Mesyuarat JKKK pada sesi Mac",Tower Aplikasi ,4,5,20,Active
+R357,Application and Technical,Deployment,Kelewatan dalam memuktamadkan SRS bagi modul Kawalan.,"Dokumen SRS telah ditolak dalam Mesyuarat JKKK pada 17 Februari 2022; dan
+Akan diserahkan semula pada 3 Mac",Tower Aplikasi ,4,5,20,Active
+R358,Application and Technical,Deployment,Kelewatan dalam memuktamadkan SRS bagi modul Kawalan.,"SELESAI
+Telah melantik SA bagi modul Kawalan untuk melaksanakan SRS.",Tower Aplikasi ,4,5,20,Active
+R359,Application and Technical,System Development,"Tiada perincian tentang common module (modul guna sama) di dalam dokumen URS. Contoh common module ialah:
+1 . Dashboard Pengguna. Setiap aras pegawai mempunyai dashboard paparan E-reporting bagi melihat senarai, status dan agihan tugasan yang berikan.
+2.	Common Email Template bagi kandungan e-mel untuk segala jenis notifikasi e-mel yang perlu/akan dihantar kepada pegawai JIM dan pengguna sistem NIlSe. Contoh e-mel templat seperti e-mel permohonan ditolak.
+3.	Konfigurasi sistem oleh admin setiap modul yang boleh diakses oleh semua modul untuk melakukan kemas kini. Contoh konfigurasi awalan lalai (default value) sistem seperti tempoh tamat pasport/visa/pas dan senarai cawangan, unit/ bahagian.
+4.	Keperluan audit trail bagi semua modul adalah tergantung:
+a.	Modul Pengurusan ID hanya menguruskan audit trail bagi pengurusan ID sahaja di mana hanya merekodkan audit trail bagi proses daftar masuk dan daftar keluar sahaja.
+b.	Tiada modul spesifik yang menyelenggarakan keperluan audit trail","Dokumen Common Module yang merangkumi perincian keperluan common module, e-Services dan Mobile Application dijangka akan diselesaikan pada 16 Mei 2022",Tower Aplikasi ,4,5,20,Active
+R360,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,,Tower Aplikasi ,4,5,20,Active
+R361,Application and Technical,System Development,Aplikasi bagi Data Analytic and Business Intelligent masih belum dimuktamadkan,Penggunaan Spotlight BDA telah dipersetujui dalam Mesyuarat JKT pada 21 Februari,Tower Aplikasi ,4,5,20,Active
+R362,Application and Technical,System Development,Aplikasi bagi Data Analytic and Business Intelligent masih belum dimuktamadkan,Rekabentuk yang menggunakan Spotlight BDA juga telah dimasukkan dalam dokumen URS dan SRS dan akan dibawa ke Mesyuarat JKKK pada sesi seterusnya,Tower Aplikasi ,4,5,20,Active
+R363,Application and Technical,System Development,Aplikasi bagi Data Analytic and Business Intelligent masih belum dimuktamadkan,URS dan SRS bagi modul BDA/BI telah dihantar kepada pihak Kerajaan pada 5 April 2022,Tower Aplikasi ,4,5,20,Active
+R364,Application and Technical,System Development,"1 Tiada perincian keperluan aplikasi Mobile.
+a.	Hybrid application
+b.	Native application
+2. Keperluan aplikasi Mobile tidak dinyatakan bagi menerangkan fungsi-fungsi yang boleh dicapai oleh Mobile.","Dokumen Common Module yang merangkumi perincian keperluan common module, e-Services dan Mobile Application dijangka akan diselesaikan pada 16 Mei 2022",Tower Aplikasi ,4,5,20,Active
+R365,Application and Technical,Integration,Kelewatan dalam penyediaan development environment bagi tujuan pembangunan .,Pemasangan telah bermula pada awal Mac 2022,Tower Aplikasi ,4,5,20,Active
+R366,Application and Technical,Integration,Kelewatan dalam penyediaan development environment bagi tujuan pembangunan .,"Konfigurasi telah bermula pada pertengahan Mac 2022 dan dijangka selesai sepenuhnya pada 30 Jun 2022
+
+SELESAI",Tower Aplikasi ,4,5,20,Active
+R367,Application and Technical,Integration,Kelewatan dalam penyediaan development environment bagi tujuan pembangunan .,Pembentangan pelan deployment kepada pihak MAMPU telah dilaksanakan pada 30 Mac 2022,Tower Aplikasi ,4,5,20,Active
+R368,Project Management,Scope,Pertambahan skop / requirement kerap berubah.," BPR :  Diterima Mesyuarat JKKK 25 Januari 2022 dan telah ditandatangani pada 16 Februari 2022
+ - Documen URS: Diterima Mesyuarat JKKK 17 Februari 2022 (kecuali URS modul IBC)
+URS modul IBC: Ditolak Mesyuarat JKKK pada 25 Januari 2022 dan telah dihantar semula 8 Mac.
+ - Dokumen SRS: 
+     * Ditolak Mesyuarat JKKK pada 31 Mac 2022
+     * SRS bagi 9 modul telah dihantar semula setakat 15 April",Tower Aplikasi ,2,10,,Active
+R369,Project Management,Scope,Pertambahan skop / requirement kerap berubah.,"- Dokumen SDD: 
+     * Diserahkan 18 Februari 2022
+     * Ditolak Mesyuarat JKKK 21 April 2022
+ - Dokumen TDD: diserahkan pada 1 April 202 dan cuma akan dinilai selepas permuktamadan dokumen SDD.
+
+ITEM 2 - SELESAI
+Pelan Pengurusan Skop telah dibentangkan dalam Mesyuarat JKKK pada 17 Disember 2021 dan Mesyuarat Pasukan Projek pada 11 Januari",Tower Aplikasi ,2,10,,Active
+R370,Project Management,Scope,Pertambahan skop / requirement kerap berubah.,Kontraktor  akan mengadakan perbincangan dengan pihak Kerajaan bagi mendapatkan objektif utama pembentangan,Tower Aplikasi ,2,10,,Active
+R371,Application and Technical,System Development,Kelewatan dalam memuktamadkan rekabentuk sistem akibat dari kelewatan memuktamadkan Arkitektur Sistem Projek .,"BPR2021 telah ditandatangani pada 15 Februari 2022
+
+ITEM 2 - DALAM TINDAKAN
+ - Dokumen Arkitektur Sistem telah diserahkan pada 31 Mac",Tower Aplikasi ,5,25,,Active
+R372,Application and Technical,System Development,Kelewatan dalam memuktamadkan rekabentuk sistem akibat dari kelewatan memuktamadkan Arkitektur Sistem Projek .,"- Bagaimanapun, pihak Kerajaan menyarankan dokumen tersebut ditambah baik
+ - Maklumbalas dari pihak Kerajaan telah diterima lanjutan daripada sesi pembentangan pada 8 April 2022
+ - Dokumen perlu dikemas kini dan dihantar semula pada 28 April 2022
+
+ITEM 3 - DALAM TINDAKAN
+Penyediaan product backlog dan user story sedang berlangsung dan dijangka akan siap pada 30 April 2022
+
+ITEM 4 - SELESAI
+Solution Architect (Chair Kok Beng) telah dilantik pada 1 April 2022 bagi memperkasa pasukan Solution yang diketuai oleh Khairul Anuar",Tower Aplikasi ,5,25,,Active

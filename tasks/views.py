@@ -7,7 +7,6 @@ import numpy as np
 from datetime import datetime
 from io import BytesIO
 import base64
-import logging
 from django.shortcuts import render
 from tasks.models import Task, ManualTask
 from tasks.forms import TaskInputForm, UploadTaskForm
@@ -73,53 +72,7 @@ from tensorflow.keras.optimizers import Adam
 
 #     return image1_base64, image2_base64, image3_base64
 
-from django_pandas.io import read_frame
-import pygwalker as pyg
 
-# Profile Analytics for Task Data
-def profile_analytics(request):
-    # Query the task data from the database
-    tasks_qs = Task.objects.all()  # Fetch all tasks from the database
-
-    # Convert the queryset to a Pandas DataFrame
-    tasks_df = read_frame(tasks_qs)
-
-    # Basic custom spec for default chart
-    spec = {
-        "mark": "bar",  # Default chart type
-        "encoding": {
-            "x": {"field": "task_type", "type": "nominal"},  # X-axis: task_type
-            "y": {"field": "estimated_effort", "type": "quantitative"},  # Y-axis: estimated_effort
-            "color": {"field": "priority_level", "type": "nominal"},  # Color by priority_level
-            "size": {"field": "business_impact", "type": "quantitative"},  # Size by business impact
-        }
-    }
-
-    # Walk the data with the provided custom spec
-    walker = pyg.walk(tasks_df, spec=spec)
-
-    # Convert the Pygwalker object to HTML to embed in the template
-    walker_html = walker.to_html()
-
-    # Render the 'visualization.html' template and pass the generated HTML
-    return render(request, 'visualization.html', {'pygwalker': walker_html})
-
-def visualization(request):
-    try:
-        # Generate visualizations
-        image1_base64, image2_base64, image3_base64 = generate_visualization_images()
-
-        # Pass base64 images to the template
-        context = {
-            'image1': image1_base64,
-            'image2': image2_base64,
-            'image3': image3_base64,
-        }
-        return render(request, 'visualization.html', context)
-    except Exception as e:
-        print(f"Error generating visualizations: {e}")
-        return render(request, 'visualization.html', {'error': str(e)})
-        
 # Handle unseen labels by returning a default or fallback index
 def handle_unseen_labels(le, value):
     # Check if value is in classes_, if not, return a default class index (e.g., 0)
@@ -426,5 +379,3 @@ def home(request):
 #         print(f"Error generating visualizations: {e}")
 #         return render(request, 'manual_task_visualization.html', {'error': str(e)})
 
-def resource_allocation(request):
-    return render(request, 'resource_allocation.html')  # Point to your HTML template

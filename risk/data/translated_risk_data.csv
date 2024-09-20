@@ -1,0 +1,1332 @@
+Risk ID,Risk Level,Risk Category,Risk Description,Action Plan,Action Plan Owner,Likelihood,Impact,Risk Rating,Status
+RSK-APT-000001,Application and Technical,Deployment,Infrastruktur di Cawangan lewat disediakan disebabkan oleh kelewatan perolehan mengakibatkan  tidak dapat dilaksanakan di cawangan berkenaan.,"1. Prepare infrastructure deployment plan di cawangan JM yang merangkumi: 
+a. Pasukan deployment mengikut zon;
+b. Bilangan sumber manusia, tempoh, aktiviti deployment; dan
+c. Strategi penghantaran, pemasangan dan konfigurasi.
+
+2. Menyediakan procurement plan dan menyerahkan kepada Kerajaan 
+
+3. Memuktamadkan bilangan, jenis dan spesifikasi peralatan cawangan mengikut keperluan.
+
+","1. Tower Infrastruktur  Kontraktor 
+
+2. Tower Infrastruktur Kontraktor 
+
+3. Tower Infrastruktur Kontraktor ",3,4,12,Active
+RSK-APT-000016,Application and Technical,Deployment,Terdapat isu teknikal aplikasi luar jangkaan sepanjang fasa pembangunan sehingga fasa pelaksanaan  (Dev-Test-Staging-Production) disebabkan oleh proses DevOps yang tidak menyeluruh dan tidak mengikut amalan terbaik industri  mengakibatkan pembangunan projek  terjejas.,"1. Prepare DevOps platform
+- Devops Blueprint
+- Devops Readiness
+- Devops Training
+(30 Disember 2022)
+
+2. Mengenal pasti individu dan skop kerja individu yang mengawal proses deployment (Change Manager dan Release Manager). Akan diperincikan dalam dokumen Master Implementation Plan (MIP). 
+(31 Disember 2022)
+
+3. Mengenal pasti dan memperincikan keperluan pelan-pelan yang terlibat pada peringkat pre-deployment dan post-deployment.
+(31 Oktober 2023)
+
+4. Menyediakan proses end-to-end (development-pengujian-deployment) di dalam satu dokumen.
+(31 Disember 2022)
+
+5. Membentang amalan terbaik industri
+Seperti konsep, CI/CD, Infrastruktur as Code, Collaboration and Communication, Automation, Monitoring and feedback.
+(31 Oktober 2023)","1. Tower Teknikal Kontraktor 
+
+ 2. Tower Aplikasi Kontraktor 
+
+3. Tower Aplikasi Kontraktor 
+
+4. Tower Aplikasi Kontraktor 
+
+5. Tower Teknikal Kontraktor ",2,5,10,Active
+RSK-APT-000017,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)","Infrastruktur  yang penting dan kritikal seperti DC 1, DC 2, NICC dan server di cawangan gagal diakses dari luar secara online. 
+
+","1. Kontraktor  hendaklah menyediakan insfrastruktur  dengan mengambil kira kemampuan  untuk beroperasi secara online dan offline. 
+(30 September 2023)
+
+2. Kontraktor  hendaklah menyediakan sistem  yang berupaya untuk menyimpan data semasa mode offline dan ada fungsi untuk upload data masuk ke database apabila kembali online. 
+(30 September 2023)
+
+3. Mewujudkan worksheet keseluruhan penggunaan bandwidth .
+(30 September 2023)
+
+4. JIM (BTMR) hendaklah menyediakan perkhidmatan Network (MyGovNet) di semua lokasi yang melibatkan  sebelum fasa rollout.
+(30 September 2021)
+
+5. JIM hendaklah menyediakan genset/ panel solar di setiap lokasi yang terjejas disebabkan oleh masalah bekalan elektrik sebelum fasa pemasangan dilaksanakan.
+(15 Jun 2022)
+(30 September 2023)
+
+6. Menyediakan pelan NICC yang menyeluruh bagi memantau Network (network monitoring) dan melaporkan isu akses yang gagal dari luar secara online. 
+(31 Mei 2023)","1.Tower Infrastruktur Kontraktor   
+
+2.Tower Aplikasi Kontraktor  
+
+3.Tower Infrastruktur Kontraktor  
+
+4.Tower Infrastruktur Kerajaan
+
+5.Tower Infrastruktur Kerajaan
+
+6.Tower Infrastruktur Kontraktor ",1,5,5,Active
+RSK-APT-000018,Application and Technical,ICT Security,Peralatan dan perisian keselamatan ICT yang akan digunakan tidak berkesan disebabkan tiada pengujian secara terperinci yang dilaksanakan mengakibatkan sistem dibolosi.,"1. Menyenaraikan semua ciri keselamatan dan teknologi yang akan dibekalkan untuk projek  bagi memastikan tiada pencerobohan berlaku
+(31 Ogos 2023)
+
+2. Menyediakan Polisi Security Keseluruhan: 
+SPA, Dokumentasi SPA perlu disiapkan kerana ia ada hubungkait dengan kategori pengujian yang akan dilaksanakan.
+ISMS, Polisi ICT
+(31 Ogos 2023)
+
+3. Melaksanakan aktiviti perolehan bagi teknologi keselamatan yang akan digunakan untuk projek .
+Contoh software: OGG, ODI, dll
+(31 Ogos 2023)","1. Tower Infrastruktur Kontraktor 
+
+2. BTMR JIM & Tower Teknikal Kontraktor 
+
+3. Tower Pengurusan Kontraktor ",3,5,15,Active
+RSK-APT-000019,Application and Technical,System Development, The system developed does not follow standard quality processes yang telah ditetapkan oleh pihak Kerajaan disebabkan oleh penyelarasan dokumentasi dan proses pembangunan tidak mengikut metodologi yang telah dipersetujui.,"1. Kontraktor  dan IV&V hendaklah membangunkan Pelan Pengurusan Kualiti (QMP) yang komprehensif dan melaksanakan pelan tersebut dengan sempurna.
+(30 Ogos 2022)
+
+2. Semua deliverables perlu melalui proses serahan yang telah ditetapkan oleh Kerajaan.
+(28 Februari 2022)
+
+3. Mewujudkan Task Force untuk memantau pembangunan  agar mengikut standard kualiti yang ditetapkan.
+(31 Januari 2023)
+
+4. Menyediakan dokumen Master Development Plan (MDP) dan mengemukakan kepada pihak Kerajaan.","1.Tower Aplikasi Kontraktor 
+Tower Aplikasi Kerajaan
+
+2.Tower Aplikasi Kerajaan 
+Pasukan IV&V 
+
+3. Tower Aplikasi Kontraktor 
+
+4. Tower Aplikasi Kontraktor ",4,3,12,Active
+RSK-APT-000020,Application and Technical,System Development,"Sistem  tidak boleh beradaptasi dengan sebarang perubahan teknologi baru (sistem,perisian dan infra) pada masa akan datang
+
+","1. Memastikan Pembangunan sistem  berasaskan MicroServices Architecture (MSA). 
+(31 Disember 2022)
+
+2. Mengenalpasti dan menyenaraikan perkara yang hampir tamat tempoh;
+-Sistem sokongan
+-Perisian 
+-Peralatan
+(31 Disember 2022)
+
+3. Melaksanakan pemantauan bersepadu dan teknologi refresh bagi setiap 3 tahun dengan kaedah pemantauan berikut:
+-Mendapatkan maklumat mengenai perubahan yang perlu dibuat 
+-Membuat kajian impak terhadap perubahan diperlukan.
+-Mencadangkan perubahan yang perlu dilakukan.
+(31 Mei 2024)
+
+4. Pihak Kerajaan dan Kontraktor hendaklah membangunkan sistem yang configurable dan fleksible dan menggunakan work flow engine.
+(1 Ogos 2023)
+
+","1. Tower Aplikasi Kontraktor 
+
+2. Tower Infrastruktur Kontraktor 
+
+3. Tower Infrastruktur Kontraktor 
+
+4. Tower Aplikasi Kontraktor 
+
+
+",3,4,12,Active
+RSK-APT-000002,Application and Technical,System Development,"Data yang dipindahkan (migrasi) dari sistem lama ke sistem baharu tidak memenuhi kualiti data disebabkan oleh aktiviti data cleansing dan harmonisation tidak mengikut proses yang telah ditetapkan mengakibatkan data transaksi, statistik dan laporan yang dikeluarkan tidak tepat.
+","1. Kontraktor  hendaklah menyediakan Pelan Migrasi Data dengan menyatakan secara jelas dan terperinci pendekatan, kaedah, proses dan senarai semak sebelum aktiviti migrasi dilaksanakan. Pelan migrasi data perlu mendapat pengesahan dan persetujuan oleh pihak Kerajaan. 
+
+2. Kontraktor  hendaklah melaksanakan dengan sempurna proses migrasi data mengikut Pelan Migrasi Data yang telah dipersetujui oleh pihak kerajaan seperti 
+-Menjalankan kerja-kerja pembangunan seperti mapping, cleansing, harmonization dan sinkronisasi
+-Melibatkan data steward dan data validator yang dilantik daripada pihak kerajaan 
+-Melakukan pengujian (cleansing and harmonisation rules) migrasi dan sinkronisasi data bersama pihak kerajaan yang dilantik.
+
+3. Melaksanakan aktiviti validasi dan verifikasi data transaksi, laporan dan statistik melalui aplikasi . ","1. Tower Teknikal Kontraktor 
+
+2. Tower Teknikal Kontraktor 
+
+3. Tower Aplikasi Kontraktor ",2,5,10,Active
+RSK-APT-000003,Application and Technical,System Development,Data yang disikronisasi di antara sistem lama dan baru tidak tepat disebabkan oleh aktiviti data transformasi 2 hala tidak mengikut proses yang ditetapkan mengakibatkan keberadaan data di sistem lama dan baru tidak konsisten.,"Kontraktor  hendaklah melaksanakan dengan sempurna proses sinkronisasi data mengikut Pelan Sikronisasi Data yang telah dipersetujui oleh pihak kerajaan seperti 
+i. Menjalankan kerja-kerja pembangunan seperti mapping, cleansing, harmonization dan sinkronisasi
+ii. Melibatkan data steward dan data validator yang dilantik daripada pihak kerajaan 
+iii. Melakukan pengujian (cleansing and harmonisation rules) sinkronisasi data bersama pihak kerajaan yang dilantik
+(31 Mei 2024)",1.Tower Teknikal Kontraktor ,3,5,15,Active
+RSK-APT-000005,Application and Technical,Network,"Keupayaan infrastruktur Network (line connectivity) tidak memenuhi keperluan capaian  disebabkan oleh bandwidth tidak mencukupi dan boleh mengakibatkan gangguan capaian .
+","1. Menyenaraikan parameter yang menyumbang kepada penggunaan bandwidth 
+
+2. Melaksanakan simulasi berdasarkan parameter yang dikenal pasti.
+
+3. Menaik taraf Bandwidth sedia ada.
+
+4. Mengemukakan cadangan IPSec (Voice, Text Video).
+
+5. Melaksanakan bandwith shaping bagi bandwidth yang terlibat","1. Tower Infrastruktur Kontraktor .
+
+2. Tower Infrastruktur Kontraktor .
+
+3. Tower Infrastruktur Kontraktor .
+
+4. Tower Infrastruktur & Aplikasi Kontraktor .
+
+5. Tower Infrastruktur & Aplikasi Kontraktor .",5,5,25,Active
+RSK-APT-000008,Application and Technical,System Development,Integriti data dalam  dipertikai.,"1. Memastikan sistem bug diselesaikan sebelum sesuatu Release.
+
+2. Melaksanakan Security Posture Assessment (SPA).
+
+3. Menyediakan fungsi Audit trail yang komprehensif bagi tujuan pemantauan setiap transaksi dalam .
+
+4. Memastikan Data Migration Plan dan Data Synchonization Plan mengandungi;
+Mengandungi proses migrasi data yang menjamin completion, consistency, accuracy dan security.
+","1. Tower Aplikasi Kontraktor 
+
+2. Tower Teknikal Kontraktor 
+
+3. Tower Aplikasi Kontraktor 
+
+4. Tower Teknikal Kontraktor ",3,4,12,Active
+RSK-OPS-000001,Operation,Training,Training Pengguna Akhir (End User Training) tidak dapat dilaksanakan mengikut perancangan disebabkan oleh kebergantungan kepada fasa pembangunan mengakibatkan tempoh masa Training yang diperuntukan tidak mencukupi untuk melaksanakan Training serta kelewatan pembangunan dan pemuktamadan Manual Training  untuk melaksanakan Training Pengguna Akhir.,"1. Tower Aplikasi hendaklah memastikan semua dokumentasi berkaitan modul  dibangunkan dan dimuktamadkan dengan segera.
+
+2. Modul Training Pengguna Akhir hendaklah di bangunkan dan dimuktamadkan sebelum M42 (iaitu sebelum Training Pilot).
+
+3. Kontraktor  hendaklah menyediakan persekitaran Training yang lengkap termasuk sampel data Training yang sesuai sebelum Training bermula.
+
+4. Pihak JIM perlu mewujudkan pusat Training dan infrastruktur yang mencukupi sebelum Training bermula. ","1. Tower Aplikasi Kontraktor  
+
+2. Tower Bisnes Kontraktor 
+
+3. Tower Bisnes Kontraktor 
+
+4. Tower Bisnes Kerajaan",3,3,9,Active
+RSK-OPS-000010,Operation,Training,Ketiadaan sumber rujukan untuk pengguna  disebabkan oleh Training Manual tidak disediakan dalam bentuk hardcopy dan softcopy mengakibatkan proses kerja tidak lancar ,"1. Kontraktor  hendaklah menyediakan Training Manual dalam bentuk hardcopy (berdasarkan kepada serahan akhir) dan softcopy yang boleh diakses pada bila-bila masa apabila diperlukan 
+
+2. Kontraktor  hendaklah menyediakan garis panduan pengguna untuk mengakses User Manual dan Training Manual di dalam platform LMS.
+(30 Ogos 2023)","1. Tower Bisnes Kontraktor 
+Tower Aplikasi Kontraktor 
+
+2. Tower Bisnes Kontraktor 
+",5,2,10,Active
+RSK-OPS-000007,Operation,Human Resource,Penyalahgunaan  oleh JIM dan KDN selepas sistem beroperasi dan dalam tempoh penyelenggaraan disebabkan oleh penyalahgunaan ID pegawai mengakibatkan kebocoran maklumat keselamatan negara.,"1. Membangunkan modul pengurusan ID sebagai salah satu modul dalam sistem . 
+URS 
+SRS 
+SDD
+TDD
+
+2. Menetapkan access level bagi setiap pengguna di dalam dokumen IDM.
+
+3. Mengadakan aktiviti kesedaran dari masa ke semasa.","1. Tower Aplikasi Kontraktor .
+
+2. Tower Aplikasi Kontraktor .
+
+3. Tower Pengurusan Kontraktor ",5,3,15,Active
+RSK-OPS-000004,Operation,SOP/ Process,Pengoperasian sistem  Helpdesk ICT tidak teratur disebabkan oleh pelaporan yang tidak tepat mengakibatkan SLA meja bantuan tidak tercapai sepenuhnya.,"1. Memuktamadkan dokumen URS dan RDS ICT Helpdesk dan menyerahkan dokumen kepada Kerajaan. 
+
+2. Memasang dan melaksanakan konfigurasi ICT helpdesk untuk penggunaan log aduan  bermula fasa pembangunan
+
+3. Melaksanakan pengujian Helpdesk ICT.
+
+4. Melaksanakan Training Helpdesk ICT.
+
+5. Memuktamadkan SOP pengoperasian meja bantuan ICT.
+
+6. Memastikan aliran proses sistem meja bantuan ICT (termasuk customization dan konfigurasi) mematuhi keperluan SLA mengikut Jadual 8 dan Jadual 9. ","Tower Infrastruktur
+Kontraktor  & BTMR JIM
+
+",2,2,4,Active
+RSK-STR-000005,Strategic,Force Majure,Ketiadaan BCP yang menyeluruh dalam menghadapi situasi luar jangka selepas  Go-live.,"1. Kerajaan (JIM) hendaklah menyediakan Business Continuity Plan (BCP) yang komprehensif sebagai persediaan menghadapi insiden luar jangka.  
+(1 September 2023)
+
+2. Pihak kontraktor  perlu menyediakan BCP Projek yang merangkumi 12 bulan fasa warranti.
+(30 Jun 2024)
+
+3. Sekiranya force majure/ bencana berlaku, pihak Kerajaan dan Kontraktor dengan segera hendaklah melaksanakan aktiviti projek berdasarkan prosedur dalam BCP.
+(1 September 2023)","1.Bahagian Policy dan Perancangan Strategic JIM
+
+2. Tower Pengurusan Kontraktor 
+
+3.Bahagian Policy dan Perancangan Strategic JIM",1,5,5,Active
+RSK-APT-000011,Application and Technical,Deployment,Pembangunan sistem secara serentak bagi kesemua 13 modul boleh melambatkan jadual pelaksanaan disebabkan oleh modul yang ada kebergantungan antara satu sama lain. Ini mengakibatkan jadual pelaksanaan keseluruhan akan terganggu dan tidak mengikut masa yang telah ditetapkan. ,"1. Melaksanakan pelan perancangan strategi penutupan serahan seperti berikut: 
+    a. Keutamaan Serahan (Priotizize)
+    b. Human Resource
+    c. Drill Session
+    d. Subject Matter Expert
+    e. Morning Standup
+     f. Vendor Engagement
+
+2. Menyediakan pelan pembangunan dan pelaksanaan cawangan  dan mengemukakan kepada pihak Kerajaan.","1.Tower Infrastruktur Kontraktor 
+
+2.Tower Infrastruktur Kontraktor ",4,5,20,Active
+RSK-OPS-000011,Operation,Training,Proses jemputan TOT dan TOK tidak dilaksanakan dengan sempurna disebabkan oleh ketiadaan perancangan Training secara menyeluruh mengakibatkan kehadiran yang kurang memuaskan. ,"1.Pemakluman kepada pihak Kerajaan dikeluarkan 45 hari sebelum Training TOT dan TOK dilaksanakan. 
+(Sepanjang tempoh pelaksanaan projek)
+
+2. Memastikan kehadiran terlibat adalah 100% dan input maklum balas diambil kira bagi memastikan objektif Training dapat dicapai. 
+(Sepanjang tempoh pelaksanaan projek)","1. Tower Bisnes Kontraktor  
+
+2. Tower Bisnes Kerajaan 
+",4,5,20,Active
+RSK-APT-000042,Application and Technical,System Development,Source code dan artifak yang dibangunkan tidak diurus/ diselenggara dengan baik dalam Fasa Pembangunan dan Pengujian,"1. Mengenal pasti dan melantik Release Manager dan Configuration Manager yang berkelayakan dan berkemahiran
+(31 Disember 2022)
+
+2.Mengadakan Bengkel Dry Run.
+(31 Disember 2022)
+
+3. Memuktamadkan dokumen  yang berkaitan dengan pengurusan source code dan artifak 
+-DevOps Blueprint, 
+-Konfigurasi DevOps, 
+(31 Disember 2022)
+
+4. Perlu memuktamadkan semua tools DevOps dan konfigurasi bagi pengurusan source code dan artifak.
+(31 Disember 2022)
+
+5. Menyediakan dokumen Laporan Kesediaan Platform DevOps (Production) dan mengemukakan kepada pihak Kerajaan.","1. Tower Aplikasi Kontraktor 
+Tower Pengurusan Kontraktor 
+
+2. Tower Aplikasi Kontraktor 
+
+3. Tower Teknikal Kontraktor 
+
+4. Tower Teknikal Kontraktor 
+
+5. Tower Teknikal Kontraktor ",4,5,20,Active
+RSK-APT-000046,Application and Technical,System Development,"Penyelarasan keperluan sistem yang mempunyai kebergantungan antara modul tidak dilaksanakan dengan terperinci yang menyebabkan sistem yang dibangunkan tidak dapat berinteraksi mengikut keperluan yang lengkap. 
+","1. Keperluan kebergantungan antara modul perlu dikenal pasti dan direkodkan dengan terperinci dalam setiap dokumen modul yang terlibat dengan penyediaan matriks.
+(28 Februari 2023)
+
+2. Perbincangan dan pengesahan bersama SA dan SME setiap modul  bagi pengesahan matriks rentas modul antara Kontraktor  dan Kerajaan. 
+(30 November 2022)",Tower Aplikasi Kontraktor ,4,3,12,Active
+RSK-PP-000034,Project Management,Risk,Penamatan projek  secara keseluruhan disebabkan oleh kegagalan pihak Kontraktor untuk melaksanakan projek mengikut jadual pelaksanaan mengakibatkan domino effect kepada pihak-pihak berkepentingan,"1. Menyelesaikan isu kekurangan Human Resource dengan mengikut jumlah yang dirancang.
+(31 Ogos 2025)
+
+2. Melaksanakan perolehan mengikut perancangan yang telah dipersetujui.
+(31 Ogos 2025)
+
+3. Membuat permohonan perlanjutan tempoh Extension of Time (EOT).
+(30 Jun 2023)
+
+4. Melantik rakan Strategic untuk mendapatkan suntikan modal tambahan.
+(30 Jun 2023)","1. Tower Pengurusan Kontraktor 
+
+2. Tower Pengurusan Kontraktor 
+
+3. Tower Pengurusan Kontraktor 
+
+4. Tower Pengurusan Kontraktor ",5,5,25,Active
+RSK-APT-000048,Application and Technical,System Development,906 laporan Data Analytics Business Intelligence (DABI) yang akan dibangunkan tidak tepat disebabkan tiada perincian dalam dokumen SRS atau SDS berkenaan medan-medan yang diperlukan. Ini boleh mengakibatkan tempoh aktiviti pengujian dan pengesahan laporan bertambah panjang serta berulang-ulang seterusnya meningkatkan varian kemajuan projek.,"1. Memperincikan setiap 906 laporan dengan medan-medan yang dirujuk kepada dokumen sumber seperti Dokumen Master Database Design (MDD), Dokumen System Requirement Specification (SRS), Dokumen SDS DataWarehouse/ Data Lake (DWH/DL)",Tower Aplikasi Kontraktor ,3,4,12,Active
+RSK-APT-000049,Application and Technical,ICT Security,"Ketiadaan dokumen yang memperincikan keseluruhan elemen keselamatan aplikasi, data, peralatan dan Network bagi Projek  mengakibatkan solusi yang dicadangkan tidak meliputi keseluruhan keperluan keselamatan Projek . ","1. Menyediakan satu dokumen bagi memperincikan keseluruhan keperluan keselamatan dalam Projek  merangkumi keselamatan aplikasi, data, peralatan dan Network. 
+
+2. Dokumen tersebut perlu disemak dan disahkan oleh kesemua Tower iaitu daripada pihak JIM, BTMR, PPK, IPM dan IV&V.
+
+3. Mengemukakan dokumen tersebut kepada pihak Kerajaan mengikut tarikh yang telah dipersetujui.
+
+4. Menyediakan Human Resource yang kompeten bagi penyediaan dokumen.",,3,4,12,Active
+RSK-PP-000030,Project Management,Human Resource,Penempatan ahli pasukan projek kurang pengetahuan dan berkemahiran dalam bidang yang berkaitan.,"1. PPK/ IPM hendaklah menyediakan program Training dan pendedahan yang mantap kepada ahli pasukan projek. 
+
+2. PPK/ IPM hendaklah menetapkan peranan dan tanggungjawab dengan jelas sebelum projek bermula.
+
+
+3. PPK/ IPM hendaklah menyemak peranan dan tanggungjawab dari semasa ke semasa dan membuat penambahbaikan (cth: pelan-pelan pengurusan) sekiranya perlu. 
+","Tower Project Management Pasukan Projek 
+Item 1, 2 dan 3: M3",3,4,12,Closed
+RSK-PP-000029,Project Management,Human Resource,Pertukaran ahli pasukan projek di pihak Kerajaan.,1.  PPK/ IPM hendaklah mewujudkan Repositori Pengetahuan (Knowledge Repository),"Tower Project Management Kerajaan
+M1",4,4,16,Closed
+RSK-PP-000028,Project Management,Human Resource,Tambahan perjawatan untuk pasukan projek Kerajaan tidak diluluskan. ,"1. PPK hendaklah membuat rayuan semula perjawatan yang diperlukan.
+
+
+2. PPK hendaklah mencari alternatif jika rayuan ditolak.","Tower Project Management Kerajaan
+M1",3,4,12,Closed
+RSK-STR-000010,Strategic,Policy,Peruntukan tahunan tidak mencukupi untuk membiayai Cost projek .,"1. Sekiranya peruntukan tahunan tidak mencukupi pihak Kerajaan hendaklah:  
+a. menukar kaedah pembiayaan projek kepada model PFI(Private Financial Initiative).
+b.  mengecilkan skop projek.
+c.  melaksanakan pembangunan modul mengikut keutamaan keperluan semasa pihak JIM.
+d. menggunakan sistem sedia ada (MyIMMS) yang telah dipertingkatkan keupayaannya.","Tower Project Management Kerajaan
+M1",1,5,5,Closed
+RSK-PP-000027,Project Management,Cost,Kontraktor tidak mempunyai kemampuan kewangan yang mencukupi.,"1. Pihak Kerajaan (Bahagian Perolehan KDN) hendaklah melakukan penilaian kedudukan kewangan yang teliti semasa proses pemilihan.
+
+2. Kontraktor  hendaklah memaklumkan kepada KDN keadaan kewangan daripada masa ke semasa untuk dipantau kedudukan kewangan supaya tidak menjejaskan pelaksanaan projek.
+
+3. Pihak Kerajaan (Tower Project Management) hendaklah memasukkan klausa-klausa yang berkaitan (cth: penamatan kontrak disebabkan kedudukan kewangan) dalam kontrak kontraktor pada fasa penyediaan kontrak.
+
+4. Pihak Kerajaan (Tower Project Management) hendaklah memulakan proses penamatan jika perlu.","Tower Project Management Kerajaan
+Item 1, 2, 3 dan 4: M4",2,4,8,Closed
+RSK-STR-000009,Strategic,Policy,Jumlah ahli pasukan projek yang tidak bersesuaian dengan kompleksiti dan keperluan projek.,"1. Pihak Kerajaan (PPK) hendaklah menyediakan Pelan Pengurusan Sumber yang terperinci dan komprehensif sebelum projek bermula. 
+
+2. Penyumber luaran peranan pemantauan kepada pihak ketiga sekiranya jumlah ahli pasukan yang bersesuaian tidak dapat disediakan oleh pihak Kerajaan.","Tower Project Management Kerajaan
+Item 1 dan 2: M1",4,5,20,Closed
+RSK-STR-000007,Strategic,Reputation,"Kontraktor tidak berwibawa dan kompeten.
+","1. Pihak Kerajaan (Bahagian Perolehan KDN) hendaklah mencadangkan/menasihati Lembaga Tender supaya memilih syarikat yang memenuhi spesifikasi teknikal dan kewangan semasa proses pemilihan kontraktor.
+
+2. Pihak Kerajaan (Tower Project Management) hendaklah menyediakan terma-terma kontrak yang menjaga kepentingan Kerajaan. Pihak Kerajaan hendaklah menguatkuasakan terma-terma kontrak jika Kontraktor ingkar/tidak mematuhi keperluan.
+
+3. Kontraktor hendaklah menyediakan Human Resource yang kompeten dan mencukupi mengikut Pelan Pengurusan Sumber yang telah dipersetujui. Sumber  manusia yang dilantik khas untuk melaksanakan projek . ","Bahagian 
+Perolehan KDN
+Item 1: M1
+
+Tower Project Management 
+Item 2: M3
+
+Tower Project Management Kontraktor 
+Item 3: M3",2,5,10,Closed
+RSK-PP-000024,Project Management,Scope,Kekangan ruang bagi penempatan rak perkakasan pusat data Projek  di PDSA B8.,"1. Pusat data JIM yang sedia ada sebagai pusat data  alternatif
+2. Kontraktor hendaklah menyediakan perancangan dan pengiraan keperluan perkakasan  dengan tepat dan terperinci
+Mendapatkan jadual pelaksanaan D6 melalui MAMPU bagi membolehkan Kontraktor membuat perancangan pemasangan atau pelan mitigasi.","MAMPU, JIM, PPK",3,3,9,Closed
+RSK-PP-000010,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,"1. PPK/ IPM hendaklah membuat penetapan melalui penguatkuasaan terma kontrak dalam penglibatan warga asing di dalam projek Kerajaan.
+
+2. PPK/ IPM hendaklah mewujudkan dan menguatkuasa proses pengurusan maklumat sulit supaya terkawal dan tidak jatuh ke pihak ketiga yang tidak berkenaan. 
+
+3. Risk ini dicadangkan menjadi Isu
+
+4. Kontraktor  menyenaraikan senarai nama warga asing yang terlibat
+
+5. Surat rasmi telah dikeluarkan kepada Kontraktor untuk mengemukakan senarai cadangan kakitangan bukan warga negara Malaysia yang terlibat di dalam projek.
+
+6. Perkara ini perlu dibawa ke Mesyuarat Pasukan Projek, Jawatankuasa Teknikal dan Jawatankuasa Pemandu",,3,5,15,Closed
+RSK-APT-000037,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Pelaksanaan  tidak dapat dilaksanakan di pos Imigresen yang berada di kawasan pedalaman.,"Pihak JIM perlu menyediakan infrastruktur asas di lokasi yang telah dikenal pasti sebelum Projek  bermula.
+i) Site Visit untuk kawasan pedalaman Sabah dan Sarawak perlu dimasukkan ke dalam Pelan Pelaksanaan.
+","Bahagian Khidmat Pengurusan JIM -
+ M1",5,5,25,Closed
+RSK-PP-000023,Project Management,Time,Pelan pelaksanaan bengkel belum dikeluarkan oleh Kontraktor  yang akan menyebabkan kelewatan pelaksanaan fasa RDS.,"Pelan Pelaksanaan RDS telah dibentangkan pada 12, 15, 23 dan 29 Mac 2021.
+",Tower Project Management Kontraktor ,5,5,25,Closed
+RSK-PP-000026,Project Management,Time,Kebergantungan aktiviti pengujian secara khususnya pada fasa quality gates antara Kontraktor  dan Pasukan IV&V mungkin menyebabkan kelewatan projek.,"1.	Penyediaan Pelan Pelaksanaan Pengujian yang komprehensif;
+
+2.	Penyediaan Human Resource yang mencukupi;
+
+3.	Penyediaan Integrated Plan yang akan memberi gambaran keseluruhan terhadap interdependency; dan
+
+4.	Pilihan untuk Go With Risk di mana kebenaran untuk ke fasa seterusnya diberikan berdasarkan kepada kesediaan modul dan bukan aktiviti keseluruhan.","Che Azian, Azlan
+Item1: Pelan pelaksanaan pihak IV&V telah diserahkan kepada pihak Kerajaan pada 23-Jun-2021 dan telah dipersetujui. Jadual ini akan diserahkan kepada pihak Pasukan Projek kerajaan pada 2 -Jul-2021.
+Aktiviti IV&V telah dipersetujui untuk dilaksanakan dalam tempoh 10 hari bekerja selepas menerima notis kerajaan. Maka, aktiviti IV&V tiada kebergantungan kepada fasa quality gates kontraktor .
+
+Item2: 17-Jul-2021 (Sebelum sesi semakan URS). 
+
+Item3: Pelan pelaksanaan pihak IV&V telah diserahkan kepada pihak Kerajaan pada 23-Jun-2021 dan telah dipersetujui. Jadual ini akan diserahkan kepada pihak Pasukan Projek kerajaan pada 2-Jul-2021.
+Aktiviti IV&V telah dipersetujui untuk dilaksanakan dalam tempoh 10 hari bekerja selepas menerima notis kerajaan. Maka, aktiviti IV&V tiada kebergantungan kepada fasa quality gates kontraktor .
+
+Noor Ezleen 
+Item4: Seperti yang dijelaskan semasa perbincangan mengenai Jadual Pelaksanaan Perkhidmatan IV&V pada 18 Jun 2021 dan telah dipersetujui, penilaian quality gates boleh dilaksanakan mengikut skop/modul dan rangka kerja penilaian quality gates akan dinyatakan di dalam IV&V Quality Assurance Plan.
+
+Draf pertama Quality Assurance Pelan akan dihantar untuk semakan pada 14-Julai-2021.",4,5,20,Closed
+RSK-PP-000031,Project Management,Integration,"Tidak mendapat kerjasama, sokongan dan persetujuan daripada 24 agensi terlibat semasa pelaksanaan projek.","1. Tower CMT, hendaklah melaksanakan engagement dengan pengurusan tertinggi agensi untuk makluman dan persetujuan sebelum projek bermula. (Pengurus Change Management)
+
+2. Pihak Kerajaan hendaklah menyediakan projek charter antara KDN dan agensi dengan menekankan skop kolaborasi, jadual pelaksanaan, deliverables serta pasukan yang terlibat semasa fasa permulaan projek . (PMO KDN).
+
+3. Melaksanakan libat urus bersama agensi berkaitan bagi mendapatkan kelulusan Policy persetujuan integrasi antara agensi
+
+4. Mewujudkan Jawatankuasa Kerja Integrasi yang dipengerusikan oleh Ketua PPK dan diurus setiakan oleh Tower Aplikasi Pasukan Projek .","Tower Bisnes Kerajaan
+Item1: Selesai
+
+Tower Project Management Kerajaan
+Item1, Item2, Item3  & Item4: Sebelum RDS dimuktamadkan (September 2021)",5,4,20,Closed
+RSK-APT-000036,Application and Technical,System Development,Sesi Engagement bersama pihak Agensi belum dilaksanakan,Sesi engagement bersama pihak Agensi yang terlibat perlu dilaksanakan dengan kadar segera sebelum 15/5/2021 bagi memberi peluang kepada sebarang perubahan yang berlaku semasa sesi RDS dan sebelum sign off URS yang dijadualkan pada 10/06/2021.,"Kontraktor 
+Tower Aplikasi - Integrasi",5,5,25,Closed
+RSK-PP-000022,Project Management,Human Resource,Notis pendek dalam pertukaran ahli pasukan projek di pihak Kontraktor.,"1. PPK/ IPM hendaklah menetapkan terma dan klausa pertukaran ahli pasukan projek (cth: sebarang pertukaran hendaklah dimaklumkan 2 bulan sebelum pertukaran dibuat). 
+
+2. PPK hendaklah menguatkuasakan terma dan klausa kontrak.","Tower Project Management Kerajaan
+Item 1: M4 
+Item 2: Sepanjang pelaksanaan projek ",4,5,20,Closed
+RSK-PP-000021,Project Management,Time,Pelan Pelaksanaan belum diterima dan disemak oleh Work Stream / Tower Kerajaan,"1. Mengemukakan pelan pelaksanaan dengan kadar segera bagi membolehkan semakan dapat dilakukan oleh Work Stream/ Tower Kerajaan.
+2. Mengadakan perbincangan bersama supaya jadual pelaksanaan antara IV&V dan IPM dapat diselaraskan.",Tower Project Management Kontraktor ,4,4,16,Closed
+RSK-APT-000034,Application and Technical,ICT Security,Kekangan penggunaan Application Lifecycle Management (ALM) i.e. JIRA yang tidak boleh berada di on-premise KDN.,"1.	Menggunakan software tools lain yang boleh berada di on-premise KDA, atau
+2.	Memberi justifikasi kepada Pihak Kerajaan sekiranya penggunaan JIRA cloud tidak akan memberi ancaman keselamatan dan kerahsiaan.","Pasukan IV&V
+
+Perbincangan dengan PPK pada 9-Julai, 2021, untuk menetapkan tarikh lawatan ke MTSSB Software Testing Lab
+
+Penghantaran surat kepada Kerajaan dijangka pada 12 Julai 2021.",2,2,4,Closed
+RSK-STR-000008,Strategic,Policy,Tiada Enterprise Architecture Office bagi Jabatan Imigresen.,"Pihak Kerajaan (JIM) hendaklah mewujudkan Enterprise Architecture office sebelum fasa rekabentuk bermula.
+","Bahagian Policy dan Perancangan Strategic JIM/ BTMR / Tower Bisnes Kerajaan
+30 Ogos 2024
+",4,4,16,Closed
+RSK-PP-000025,Project Management,Human Resource,Human Resource yang tidak mencukupi untuk aktiviti static testing bagi setiap URS.,"1.	Penambahan Human Resource bagi memenuhi keperluan tempoh masa dan kualiti aktiviti pengujian; dan
+2.	Penggunaan tools untuk mempercepatkan aktiviti static testing.","Pasukan IV&V
+30-Jul-2021 (Sebelum sesi semakan URS)",4,4,16,Closed
+RSK-PP-000020,Project Management,Cost,Penggunaan 50 unit lesen EPMPro yang dicadangkan untuk kegunaan Projek  selama empat (4) tahun tidak memenuhi keperluan projek.  EPMPRo bukannya perpetual model dan licence fee akan dikenakan selepas CoA. ,"1. Membuat penilaian terhadap bilangan pengguna yang akan menggunakan sistem ini mengikut organisasi, jabatan, atau tower. 
+2. Membentang dan memperolehi persetujuan Kerajaan untuk Cost tambahan PMIS yang terlibat selepas CoA.","Tower Pengurusan Kontraktor :
+Item1 & Item2: 15 Ogos 2021",5,5,25,Closed
+RSK-PP-000019,Project Management,Procurement,Kemungkinan berlakunya kekangan eksport perkakasan daripada Syarikat Cellebrite disebabkan oleh perubahan peraturan Amerika Syarikat. ,"Kontraktor  perlu membuat perbincangan dengan vendor yang berurusan dengan Syarikat Cellebrite untuk memastikan punca Risk tidak akan menjadi kekangan untuk pengeksportan ke Malaysia. Sebagai alternatif, perbincangan langsung diperlukan dengan JIM sama ada perkakasan lain boleh digunakan untuk menyempurnakan BPR yang terlibat.   ",,5,5,25,Closed
+RSK-PP-000011,Project Management,Procurement,Engagement antara Kontraktor  dan sub-kontraktor di luar pengetahuan dan kawalan Kerajaan.,"1. Kontraktor  perlu mengemukakan senarai sub kontraktor yang akan dilantik untuk persetujuan pihak Kerajaan.
+
+
+2. Kerajaan dan Kontraktor  hendaklah memastikan kontrak mengandungi  terma-terma berkenaan pelantikan, skop kerja dan penamatan sub kontraktor",,4,4,16,Closed
+RSK-PP-000012,Project Management,Human Resource,Kontraktor gagal menyediakan Human Resource mengikut keperluan projek dalam tempoh masa yang ditetapkan.,"1. Kontraktor  hendaklah membuat persediaan Human Resource seawal mendapat surat pelantikan melalui SST. 
+
+2. Kontraktor  hendaklah menyediakan Pelan Pengurusan Sumber yang komprehensif dan 
+terperinci selari dengan penyediaan PMP.
+
+3. Kontraktor  hendaklah melaksanakan dan mematuhi kepada pelan pengurusan yang dipersetujui.
+
+4. PPK hendaklah menguatkuasakan terma dan klausa kontrak.
+",,4,4,16,Closed
+RSK-PP-000013,Project Management,Human Resource,Kebocoran dan penyalahgunaan maklumat yang disalurkan kepada kontraktor dan sub kontraktor yang belum melepasi tapisan e-Vetting.,Kontraktor  telah mengemukakan maklumat e-Vetting untuk 54 orang Kontraktor  dan 11 orang Sub-Kontraktor  pada 17 dan 24 Mac 2021.,,5,5,25,Closed
+RSK-APT-000023,Application and Technical,System Development,Pemetaan EPMPRo secara keseluruhan dengan modul-modul dan fungsi fungsi sedia ada di dalam URS PMIS tidak jelas.,"1.	Melaksanakan sistem demo & walkthrough berdasarkan fungsi-fungsi URS PMIS untuk mengenalpasti kehendak dan keperluan pengguna serta memberi keyakinan Go-Live pada Julai 2021. Kesediaan 70% keperluan URS PMIS berdasarkan EPMPRo boleh ditentukan untuk memberi keyakinan pennguna.
+2.	Pemetaan di antara EPMPRo dan fungsi-fungsi PMIS perlu didokumenkan sebagai traceability matrix bagi memudahkan pemantauan",,5,5,25,Closed
+RSK-PP-000014,Project Management,Scope,"Kelewatan dalam melaksanakan obligasi oleh mana-mana pihak terlibat (Kontraktor, IPM dan IV&V) akan memberi kesan secara langsung kepada kontraktor lain yang berkaitan.","1. Menyediakan IPP yang terperinci merangkumi aktiviti- aktiviti bagi semua kontraktor dalam .
+
+2. Pasukan kerajaan menetapkan Critical Path projek dengan mewujudkan Integrated Project Plan (IPP) dengan kadar segera serta memastikan penghantaran dokumen mematuhi SDLC dan diserahkan secara berkala ","Tower Project Management Kontraktor ; 
+IPM,
+IV&V; dan
+Tower Project Management Kerajaan
+
+30 September 2021
+",4,4,16,Closed
+RSK-PP-000015,Project Management,Scope,Kegagalan pihak kontraktor  untuk menyediakan Pelan-Pelan Project Management dalam tempoh tempoh yang ditetapkan.,"1. PPK/ IPM hendaklah memantau penyediaan PMP mengikut tempoh masa yang ditetapkan.
+
+2. PPK hendaklah menguatkuasakan terma kontrak dan penalti.","Tower Project Management Kerajaan 
+Item 1 dan 2: M4",3,4,12,Closed
+RSK-APT-000024,Application and Technical,System Development,Proses kejuruteraan keperluan (requirement engineering process) kontraktor tidak menghasilkan spesifikasi keperluan pada tahap kualiti yang diperlukan dalam projek .,"1. Pihak Kontraktor mestilah menambah baik proses
+2. Pihak Kontraktor mestilah memantau penggunaan proses dan berupaya menyesuaikan proses tersebut secara efektif dalam masa yang singkat (iaitu dalam jangka masa bengkel RDS) 
+","Tower Aplikasi Kontraktor 
+30 Ogos 2021",3,3,9,Closed
+RSK-OPS-000014,Operation,Training,Kekerapan pertukaran pegawai JIM.,"1. Skop pelaksanaan difokuskan kepada pegawai yang terlibat dengan  sahaja memandangkan pusingan kerja adalah tertakluk kepada arahan dalam Pekeliling Perkhidmatan Bil. 3 Tahun 2004 yang perlu dilaksanakan. Cadangan supaya pengecualian pusingan kerja adalah dalam tempoh pembangunan sehingga projek berjaya dilaksanakan.
+
+2. Transfer of knowledge / On job training.","Bahagian Human Resource JIM 
+Item 1: 30 Sept 2021
+
+Tower Bisnes Kontraktor 
+Item 2: 30 Sept 2021
+",5,3,15,Closed
+RSK-PP-000017,Project Management,Time,Pelaksanaan tidak mengikut tempoh projek yang ditetapkan.,"1. Kontraktor  perlu menyediakan Jadual Pelaksanaan yang komprehensif, menyeluruh, jelas dan boleh dilaksanakan.
+
+2. Membangunkan PMIS bagi memantau dan mengawal selia pelaksanaan projek .
+
+3. Kontraktor  akan menyediakan Pelan mitigasi untuk mengelakan kelewatan pelaksanaan projek. PMP dan MIP","Tower Project Management Kontraktor  
+Item1: 26 Julai 2021
+Item2: 30 Ogos 2021
+ Item3: 30 Disember 2021
+
+
+",4,4,16,Closed
+RSK-APT-000035,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Kekurangan cip semikonduktor di pasaran global yang akan menyebabkan kelewatan penghantaran dan kenaikan harga perkakasan dan peralatan yang perlu disediakan pada persekitaran development dan testing.,"1. Kontraktor  perlu melakukan perolehan/ tempahan perkakasan/ peralatan dengan segera;
+
+2. Mendapatkan surat jaminan dari pembekal bagi pembekalan, perkakasan/ peralatan yang mencukupi dan menepati jadual pelaksanaan yang ditetapkan: dan
+
+3. Memuktamadkan BOQ peralatan dan perkakasan dengan segera.","Tower Infrastruktur Kontraktor 
+
+Item1: 30 Oktober 2021
+
+Item2: 30 Oktober 2021
+
+Item3: 30 Oktober 2021",3,5,15,Closed
+RSK-OPS-000013,Operation,Training,"Rekod Training pegawai yang tidak dikemaskini.
+
+",Pihak JIM perlu mewujudkan pengurusan Training yang efisen dan efektif bagi merekodkan serta memantau keperluan Training pegawai bagi meningkatkan kompetensi serta prestasi dari semasa ke semasa.,"Tower Bisnes Kerajaan
+30 Ogos 2021
+(Portal LMS selesai dibangunkan)
+
+30 Ogos 2024 (pemantauan sepanjang tempoh pelaksanaan projek)",5,2,10,Closed
+RSK-OPS-000012,Operation,Human Resource,"Kekurangan komitmen, libat urus dan kerjasama dari semua peringkat (JIM) dari segi penggunaan .
+
+","1. Tower BIsnes hendaklah menyediakan Pelan Pengurusan Perubahan yang mengambilkira penglibatan semua peringkat pemegang taruh sepanjang pelaksanaan  dan selepas sistem go-live dalam tempoh pra-projek.
+
+2. Tower BIsnes hendaklah melaksanakan aktiviti penilaian penerimaan terhadap sistem baharu secara berkala bagi mengukur tahap penerimaan pemegang taruh. 
+
+3 .Tower Bisnes hendaklah mewujudkan repositori pekeliling yang boleh dicapai oleh semua pegawai dan mengemaskini pekeliling dari masa ke semasa.  
+
+4. Ketua Unit/ Bahagian/ Cawangan perlu mendapat  pengesahan baca dan faham pekeliling yang diedarkan dari setiap pegawai yang terlibat. ","Kontraktor / Tower Bisnes Kerajaan
+Item1: 30 Julai 2021
+Item2: 30 Mei 2025
+
+Tower Bisnes
+Item3: 30 Julai 2024
+(selepas sistem Go-Live sepenuhnya)
+Item4: 30 Ogos 2025 (berterusan sehingga tamat kontrak)",3,4,12,Closed
+RSK-PP-000016,Project Management,Scope,Kegagalan pihak kontraktor untuk menyediakan PMIS pada tarikh yang telah ditetapkan (30 Ogos 2021 dan November 2021),"1. Fasa 1 - 30 Ogos 2021
+Pembangunan/  Konfigurasi 18 Modul Aplikasi 
+1. Pengurusan Kontrak
+2. Pengurusan Portfolio
+3. Pengurusan Jadual
+4. Deployment
+5. Pengurusan Cost
+6. Pengurusan Serahan
+7. Dashboard dan laporan
+8. Pengurusan Kawalan Kualiti
+9. Pengurusan Risk
+10. Pengurusan Isu
+11. Pengurusan Tindakan
+12. Pengurusan Keperluan
+13. Pengurusan Kawalan Pindaan
+14. Pengurusan Dokumen
+15. Pengurusan Human Resource
+16. Dashboard Report Risk, Isu, Action
+17. Dashboard Module Integration dan Change Request
+18. Pengurusan Aset
+
+2. Fasa 2 -  November 2021
+19. Public facing -DNS readiness, portal , SMTP 
+20. Integrasi tool dengan DevOp dan JIRA
+
+3. Dokumen URS hendaklah dimuktamadkan dan disahkan oleh pemilik modul","Tower Project Management Kontraktor 
+31 Disember 2021 (M10)
+
+Cadangan Tarikh baharu: 1 April 2022 
+(Jika CR diluluskan)",4,5,20,Closed
+RSK-PP-000009,Project Management,Integration,Agensi tidak mempunyai peruntukan kewangan yang mencukupi untuk melaksanakan integrasi sistem-sistem sedia ada di agensi dengan  bagi keperluan JIM,"1. Kerajaan menjadi sebagai penghubung diantara sistem Kerajaan yang lain dengan kontraktor .
+
+1. Mengenal pasti 24 agensi yang akan berintegrasi dengan .
+
+2. Mengenal pasti agensi yang melibatkan Cost tambahan bagi pelaksanaan integrasi dengan 
+
+2. Perbincangan terperinci dengan Kontraktor  perlu dilakukan semasa fasa RDS / Requirement Study bersama semua pihak terlibat bagi membolehkan pihak agensi membuat persiapan dan tindakan awal seperti permohonan bajet, perbincangan dengan kontraktor untuk semua sistem-sistem yang terlibat di agensi.
+
+
+3. PPK hendaklah mengenal pasti keutamaan agensi untuk pelaksaaan integrasi yang melibatkan Cost tambahan.","Tower Aplikasi Kerajaan
+Item 1: Sebelum RDS dimuktamadkan (September 2021)
+
+Tower Aplikasi Kerajaan
+Item 2: 31 Januari 2022
+
+
+Tower Aplikasi dan Bisnes Kerajaan
+Item3: 31 Januari 2022
+
+Workstream Integrasi
+Item 1- 3: Sebelum Serahan Pelan Integrasi Sistem (Final) 
+31 Januari 2022
+
+",2,5,10,Closed
+RSK-PP-000003,Project Management,Kualiti,Serahan projek kurang berkualiti.,"1. Kontraktor  hendaklah membangunkan Pelan Pengurusan Kualiti dan Pelan Pengujian (Test Plan) yang komprehensif dan melaksanakan pelan tersebut dengan sempurna.
+
+2. Sebarang serahan/ deliverables  semasa pelaksanaan projek, Kontraktor  hendaklah:_x000B_
+
+_x000B_a) mengguna pakai templat yang telah disediakan oleh Kerajaan;_x000B__x000B_
+
+b) melalui proses kualiti diperingkat dalaman Kontraktor terlebih dahulu sebelum serahan dibuat; dan_x000B__x000B_
+
+c) Pihak IV&V perlu menyemak serahan/ deliverable (teknikal) dan memberi pandangan untuk meningkatkan kualiti kepada pihak kontraktor.
+
+
+d)  Kontraktor perlu melengkapkan borang    semakan bagi setiap serahan.
+
+3.Pihak Kerajaan (JIM) perlu menyemak dengan teliti dan mengesahkan keperluan sistem yang dinyatakan dalam dokumen URS dan SRS adalah memenuhi keperluan Kerajaan._x000B__x000B_
+
+4. Pembangunan  oleh Kontraktor  hendaklah menggunakan metodologi yang telah ditetapkan dan dipersetujui oleh pihak Kerajaan","Tower Project Management Kontraktor 
+Item1, Item2, Item4 & Item5: M39
+
+Jabatan Imigresen Malaysia
+Item3: M39",4,4,16,Closed
+RSK-OPS-000009,Operation,Training,"Bilangan tenaga pengajar yang berpengalaman dan mahir dalam bidang berkaitan tidak mencukupi.
+","1. Pihak JIM hendaklah mewujudkan pasukan Master Trainer yang terlatih (dalam aspek kepenggunaan ) semasa fasa permulaan projek. Pemilihan Master Trainer hendaklah berdasarkan kriteria atau senarai semak yang bersesuaian.
+
+2. Kontraktor  hendaklah menyediakan TNA yang jelas untuk Master Trainer semasa fasa permulaan projek sebagai persediaan sebagai Master Trainer.
+
+3. Kontraktor  hendaklah melatih Master Trainer mengikut Training Plan yang telah ditetapkan dan silibus untuk Master Trainer hendaklah komprehensif dan menyeluruh.","Bahagian Human Resource JIM
+Item 1: M19
+
+Tower Pengurusan Perubahan Kontraktor 
+Item 2 dan 3: M23, M27, M31 dan M35",3,4,12,Closed
+RSK-OPS-000005,Operation,Training,Masa Training yang tidak sesuai terutama bagi pegawai yang bertugas shift/ one-man show.,"1. Kontraktor  hendaklah menyediakan jadual Training alternatif dan membuat penjadualan semula bagi pegawai yang tidak dapat hadir.
+
+2. Kontraktor  hendaklah menyediakan Training atas talian/ Computer Based Training (CBT) sebagai alternatif.
+
+3. Penyediaan TOR dan RACI yang jelas di dalam Pelan Pengurusan Komunikasi.","Tower Bisnes Kontraktor 
+Item1: M19 Sebelum R1 bermula
+Item2: M19 Sebelum R1 bermula",5,4,20,Closed
+RSK-OPS-000003,Operation,Training,Peserta mempunyai masalah kefahaman terhadap apa yang disampaikan oleh tenaga pengajar semasa sesi Training dijalankan.,"1. Kontraktor  hendaklah melaksanakan Training  dalam Bahasa Melayu dan perlu dinyatakan di dalam kontrak. 
+
+2. Kontraktor  hendaklah menyediakan tenaga pengajar yang berpengetahuan dan berpengalaman dalam mempelbagaikan teknik penyampaian supaya pengisian Training tersebut menjadi lebih seronok dan menarik minat peserta. 
+","Tower Bisnes Kontraktor 
+Item2: M19
+
+Tower Pengurusan Kontraktor 
+Item 1: M9
+
+",3,2,6,Closed
+RSK-APT-000007,Application and Technical,System Development,Versi sistem tidak selari antara HQ dan cawangan-cawangan.,"1. Kontraktor  hendaklah menyediakan kaedah kawalan versi secara automasi, menyeluruh dan komprehensif.
+
+2. Kontraktor  hendaklah menyediakan satu mekanisma pemberitahuan kepada pengguna sekiranya berlaku sebarang perubahan versi. ","Tower Project Management Kontraktor 
+Item1  dan Item2:M27",3,5,15,Closed
+RSK-PP-000002,Project Management,Cost,Cost projek melebihi peruntukan siling yang ditetapkan. ,"1. Pembangunan Pelan Pengurusan Skop.
+
+2. Pemantauan pelan pengurusan skop",Kontraktor ,3,4,12,Closed
+RSK-APT-000004,Application and Technical,System Development,"SLA  (sistem availability) tidak dapat memenuhi keperluan SLA JIM.
+","1. i) Keperluan SLA hendaklah dipersetujui oleh kedua-dua pihak Kerajaan dan Kontraktor  dan dinyatakan dengan jelas dalam Kontrak.
+ii) Kontraktor  perlu memenuhi Keperluan SLA  availability sistem adalah 99.9%. Di dalam deraf kontrak, Kontraktor  bersetuju dengan SLA 99.9%. 
+iii) Dicadangkan untuk dipindahkan ke Fasa Pelaksanaan (mulai COA)
+
+2. Kontraktor  hendaklah melaksanakan performance test secara menyeluruh sebelum aktiviti rollout/ deployment setiap fasa dilaksanakan. Kerajaan perlu terlibat dalam aktiviti ini. 
+
+3. Kontraktor  perlu menyediakan monitoring system (aplikasi, perkakasan dan sekuriti) yang komprehensif sebelum aktiviti pengujian sistem dilaksanakan. ","Tower Project Management Kerajaan 
+Item 1: M7 
+(Dicadangkan tukar tarikh: M12
+31 Disember 2021)
+Item 2: M12
+
+Tower Teknikal Kontraktor 
+Dicadangkan untuk tukar pemilik kepada: Tower Pengurusan
+Item 1: 31 Disember 2021
+Item 2: M12 (31 Jan. 2021)
+Item 3: M12 (31 Jan. 2021)",5,5,25,Closed
+"RSK-PP-000005
+
+",Project Management,Procurement,"Pelantikan kontraktor yang tidak kompeten dan berwibawa.
+
+","1. Pihak Kerajaan (Bahagian Perolehan KDN) hendaklah Mencadangkan/menasihati Lembaga Tender supaya memilih syarikat yang memenuhi spesifikasi teknikal dan kewangan semasa proses pemilihan kontraktor.
+
+2. Pihak Kerajaan (Tower Project Management) hendaklah Menyediakan terma-terma kontrak yang menjaga kepentingan Kerajaan. Pihak Kerajaan hendaklah dan menguatkuasakan terma-terma kontrak jika Kontraktor ingkar/tidak mematuhi keperluan projek.
+
+IPM akan melaporkan sebagai Isu atau penilaian laporan bulanan.
+
+3. PPK hendaklah  membuat penilaian prestasi ke atas kontraktor secara berkala iaitu setiap enam (6) bulan sekali.
+
+4. Membuat serahan deliverable yang berkualiti mengikut tempoh yang telah ditetapkan.
+
+5. Menyediakan Training kepada ahli pasukan projek Kontraktor  mengikut pelan operasi Training.
+
+5. Kontraktor hendaklah menyediakan Human Resource yang kompeten dan mencukupi mengikut Pelan Pengurusan Sumber yang telah dipersetujui. Human Resource yang dilantik khas untuk melaksanakan projek .
+
+Menyediakan terma-terma kontrak berkaitan pelantikan kontraktor yang tidak kompeten dan berwibawa.","Bahagian Perolehan KDN
+Item1: 30 September 2021
+
+Tower Project Management Kerajaan
+Item2: 
+31 Januari 2022
+
+Tower Project Management Kerajaan (PPK)
+Item3: 
+31 Disember 2021
+
+Tower Project Management Kerajaan (Kualiti)
+Item4: 
+
+Tower Project Management Kontraktor 
+Item5:
+
+",4,3,12,Closed
+RSK-APT-000027,Application and Technical,System Development,"Dokumen SRS (Kawalan & eGate) masih belum disemak secara bersama (SME, IPM, IV&V).",Semakan perlu berlaku dengan mengambil kira input daripada pihak SME supaya proses bisnes yang terhasil memenuhi spesifikasi.,Kontraktor -Tower Aplikasi,4,5,20,Closed
+RSK-STR-000002,Strategic,Policy,Polisi Data dan Maklumat JIM tidak wujud.,Pihak Kerajaan hendaklah mewujudkan dan memuktamadkan satu polisi data dan maklumat yang komprehensif sebelum fasa permulaan projek tamat.,"Bahagian Keselamatan dan Passport
+31 Mac 2022
+",2,5,6,Closed
+RSK-APT-000013,Application and Technical,Deployment,Kelewatan dalam memuktamadkan SRS bagi modul Kawalan.,"1. Pemuktamadan dan penambahbaikan remedi URS perlu dilaksanakan segera;
+
+2. Penyediaan SRS bagi modul Kawalan perlu dilakukan dengan segera; dan
+
+3. Kontraktor hendaklah menyediakan dan membentangkan pelan mitigasi bagi penggantian Human Resource dan knowledge transfer perlu dilaksanakan dengan segera bagi modul Kawalan.","Tower Aplikasi Kontraktor  dan Tower Pengurusan Kontraktor 
+Item 2: 28 Februari 2022
+
+Tower Aplikasi Kontraktor  dan Tower Pengurusan Kontraktor 
+Item 2: 28 Februari 2022
+
+Tower Aplikasi Kontraktor  dan Tower Pengurusan Kontraktor 
+Item 3: 31 Januari 2022",4,5,20,Closed
+RSK-OPS-000002,Operation,Training,"Pegawai tidak dapat menghadirkan diri ke sesi Training yang telah ditetapkan.
+","1. Kontraktor  hendaklah memaklumkan jadual Training sebulan lebih awal kepada perserta.
+
+
+2. Kontraktor  hendaklah menyediakan Training atas talian/ Computer Based Training (CBT) sebagai alternatif.
+
+3. Pihak atasan pegawai yang terlibat perlu menghantar pegawai gantian sekiranya pegawai asal tidak dapat hadirkan diri.
+"," Kontraktor 
+Item1: 30 September 2021
+Item2: 30 Ogos 2021
+
+Tower Bisnes Kerajaan
+Item3: 30 September 2021",4,2,8,Closed
+RSK-APT-000031,Application and Technical,System Development,Skop dan tanggungjawab untuk pemasangan perisian Oracle Golden Gate (OGG) di persekitaran myIMMS masih belum ditentukan.,"1. Melakukan perbincangan awal dengan pihak Kerajaan unutk skop kerja.
+2. Kontraktor  perlu menyediakan pra-syarat pemasangan perisian Oracle Golder Gate untuk makluman kontraktor myIMMs.",Kontraktor -Teknikal,4,5,20,Closed
+RSK-APT-000030,Application and Technical,System Development,"Pengurusan cap keselamatan, smart stamping dan kod QR tiada persetujuan bersama.","1.	Kenal pasti penggunaan antara cap keselamatan, smart stamping dan kod QR yang boleh diguna pakai oleh semua cawangan.
+2.	Kenal pasti design alternative yang tidak menyebabkan Risk ini berlaku, iaitu memuktamadkan kaedah sebelum dokumen SRS dimuktamadkan.",Tower Aplikasi-Kerajaan & Kontraktor ,4,5,20,Closed
+RSK-APT-000012,Application and Technical,Deployment,"Keperluan back up plan bagi bekalan elektrik, server dan network di 10 pintu masuk utama Pemeriksaan Kawalan Imigresen sekiranya berlaku black out atau system offline.","1.Kajian keperluan bekalan elektrik terhadap 10 pintu masuk utama perlu dilaksanakan.
+
+2.Back up plan bagi Server cawangan dan network (WAN/ LAN) yang mencukupi.
+
+3.Menyediakan senarai semak bagi pemasangan genset.
+
+4.Pihak kerajaan juga melalui pihak MAMPU perlu meningkat jaringan Network (network) di semua pintu masuk beserta back up plan sekiranya berlaku network down.","Tower Infrastruktur Kontraktor  & PPK Infrastruktur
+item 1 : 31 Januari 2022
+
+Tower Infrastruktur Kontraktor 
+item 2: 30 Julai 2022
+
+Tower Infrastruktur Kontraktor  
+item 3: 30 April 2022
+
+Tower Infrastuktur Kerajaan
+item 4:31 Januari 2021",4,5,20,Closed
+RSK-APT-000031,Application and Technical,System Development,"Tiada perincian tentang common module (modul guna sama) di dalam dokumen URS. Contoh common module ialah:
+1 . Dashboard Pengguna. Setiap aras pegawai mempunyai dashboard paparan E-reporting bagi melihat senarai, status dan agihan tugasan yang berikan.
+2.	Common Email Template bagi kandungan e-mel untuk segala jenis notifikasi e-mel yang perlu/akan dihantar kepada pegawai JIM dan pengguna sistem NtlSe. Contoh e-mel templat seperti e-mel permohonan ditolak.
+3.	Konfigurasi sistem oleh admin setiap modul yang boleh diakses oleh semua modul untuk melakukan kemas kini. Contoh konfigurasi awalan lalai (default value) sistem seperti tempoh tamat pasport/visa/pas dan senarai cawangan, unit/ bahagian.
+4.	Keperluan audit trail bagi semua modul adalah tergantung:
+a.	Modul Pengurusan ID hanya menguruskan audit trail bagi pengurusan ID sahaja di mana hanya merekodkan audit trail bagi proses daftar masuk dan daftar keluar sahaja.
+b.	Tiada modul spesifik yang menyelenggarakan keperluan audit trail","1 . Kenal pasti common module yang terlibat untuk sistem .
+2. Wujudkan satu dokumen keperluan untuk common module.",Kontraktor -Tower Aplikasi ,4,5,20,Closed
+RSK-APT-000029,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,"Pemilik modul-modul yang terlibat perlu membuat pengesahan terhadap data-data yang digunakan.
+1.	Visa, Pas dan Permit (VPP);
+2.	Pengurusan Ekspatriat (ESD);
+3.	Pengurusan Pekerja Asing (PPA);
+4.	Advanced Passenger Screening (APS);
+5.	Kawalan Imigresen (IBC);
+6.	Pengurusan Depot dan Tahanan (PDT);
+7.	Pasport dan Dokumen Perjalanan (PTD); dan
+8.	Pengurusan Keselamatan ID (IDM);
+9.	Keselamatan (SEC);
+10.	Perisikan (INT); dan
+11.	Penguatkuasaan (ENF).",Tower Aplikasi-Kerajaan & Kontraktor ,4,5,20,Closed
+RSK-APT-000028,Application and Technical,System Development,Aplikasi bagi Data Analytic and Business Intelligent masih belum dimuktamadkan,"1.	Perlu ada maklum balas dan kemuktamadan aplikasi daripada pihak Kontraktor  sebelum dokumen URS dan SRS dimuktamadkan.
+2.	Perlu ada perbincangan di antara kontraktor  dan pihak Kerajaan bagi penetapan pemilihan.",Tower Aplikasi-Kerajaan & Kontraktor ,4,5,20,Closed
+RSK-APT-000026,Application and Technical,System Development,"1 Tiada perincian keperluan aplikasi Mobile.
+a.	Hybrid application
+b.	Native application
+2. Keperluan aplikasi Mobile tidak dinyatakan bagi menerangkan fungsi-fungsi yang boleh dicapai oleh Mobile.","1.	Kenal pasti aplikasi Mobile yang terlibat untuk sistem .
+2.	Wujudkan satu dokumen keperluan untuk aplikasi Mobile.","Kontraktor -Tower Aplikasi
+16 Mei 2022",4,5,20,Closed
+RSK-APT-000025,Application and Technical,"Integration Aplikasi/ Modul
+(Perisian dan Perkakasan)",Kelewatan dalam penyediaan development environment bagi tujuan pembangunan .,"1. Pemasangan perkakasan perlu dilaksanakan seperti tempoh yang telah dirancang; 
+
+2. Konfigurasi aplikasi, pangkalan data dan devops perlu dilaksanakan dalam tempoh yang telah dirancang; dan 
+
+3. Perbincangan pelan pelaksanaan hendaklah diadakan bersama MAMPU bagi persiapan kemasukan perkakasan ke PDSA. ","Item 1
+Kontraktor -Tower Infrastruktur
+
+Item 2: 
+Kontraktor  - Tower aplikasi
+30 Jun 2022
+
+Item 3:
+Kontraktor -Tower Infrastruktur
+30 Mac 2022",4,5,20,Closed
+RSK-APT-000010,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Kesesakan trafik Network (congestion of network traffic)  di Data Centre (DC) satu (1) dan dua (2).,"1.	Kontraktor  perlu membuatr kajian keperluan network terperinci, network arkitektur dan reka bentuk network yang efisien merangkumi capaian server, aplikasi, pheripehral, pengguna dan lain-lain yang berkaitan.
+
+2.	Kontraktor  perlu mengambil kira Risk ini  dalam merekabentuk arkitektur DC1 dan DC2, contohnya mempertimbangkan semula konsep pembahagian trafik ke DC mengikut zon.
+
+3.	Mendapatkan maklumat keperluan lebar jalur (bandwidth) untuk setiap service keutamaan (priority): dan
+
+4.	Meningkatkan lagi keupayaan lebar jalur DC1 dan DC2.","Tower Infrastruktur Kontraktor 
+
+Item1: 16 Julai 2021
+
+Item2: 16 Julai 2021
+
+Item3: 16 Julai 2021
+
+Item4: Antara M24 hingga M28 (Februari 2023 hingga Jun 2023)",4,5,20,Closed
+RSK-APT-000021,Application and Technical,Tools,Kegagalan peralatan di lokasi operasi JIM seperti pos kawalan dan pintu masuk.,"1. Kontraktor  hendaklah mendapatkan TOT produk yang mencukupi dari prinsipal kepada pasukan sokongan teknikal tempatan sebelum aktiviti rollout dijalankan. 
+
+2. Training daripada Kontraktor  kepada pihak Kerajaan pasukan sokongan teknikal.
+
+3. Kontraktor  hendaklah menyediakan SOP pemantauan dan penyelenggaraan peralatan, perkakasan dan perisian (update patches dan firmware) yang komprehensif dan dipatuhi. 
+
+4. PPK/IPM hendaklah menetapkan SLA pembaikan di dalam pelaksanaan kontrak dan pemantauan dari masa ke semasa. 
+
+5. Mengenalpasti senarai peralatan yang dipasang di pintu masuk kecuali di Pejabat Atase melalui aktiviti penilaian tapak.","Tower Project Management Kerajaan (PPK/ IPM)
+Item 3: M19
+
+Tower Pengurusan Perubahan (CMT)  Kontraktor/ Infrastruktur
+Item 1: M19
+1a) M28
+1b) M30
+
+Tower Infrastruktur Kontraktor 
+Item 1: M19
+Item 2: M19
+M28
+Jun 2023
+Item5: 31 Januari 2022",2,3,6,Closed
+"RSK-PP-000006
+",Project Management,Scope,Pertambahan skop / requirement kerap berubah.,"1.Penyediaan keperluan pengguna perlu dinyatakan dalam dokumen URS, SRS, TDD dan perlu mendapat pengesahan dari pihak JIM. Penyediaan dokumen keperluan perlu merangkumi fungsian dan bukan fungsian termasuk keperluan configurable, extensible dan fleksible supaya perubahan skop selepas RDS mempunyai impak minima terhadap Cost projek.
+
+2.Menyediakan Pelan Pengurusan Skop yang jelas.
+
+3. Menyenaraikan Scope of Work yang tidak dinyatakan dalam BP2021.
+","Tower Aplikasi Kontraktor 
+Item1: 16 Mei 2022
+
+Tower Project Management Kontraktor 
+Item 2: 31 Januari 2022
+
+Tower Project Management Kontraktor 
+Item 3 : 30 April 2022",5,2,10,Closed
+RSK-PP-000004,Project Management,Stakeholder,"Tidak mendapat kerjasama, sokongan dan persetujuan daripada Kerajaan Negeri (Sabah dan Sarawak) semasa pelaksanaan projek dan selepas projek disiapkan.","1. Mengadakan sesi libat urus bersama Setiausaha Kerajaan Negeri (SKN) Sabah dan Sarawak bagi mendapatkan persetujuan mengenai Policy-Policy tertentu dan menawarkan  bagi melaksana proses keimigresenan yang melibatkan yang melibatkan bidang kuasa Kerajaan Negeri masing-masing
+
+2.  Melantik focal point daripada pejabat SKN bagi tujuan perbincangan yang lebih terperinci dengan Pasukan Projek  (sekiranya dipersetujui di peringkat Policy) 
+
+3. Mengenalpasti busines process dalam pengurusan pekerja asing di Sabah dan Sarawak untuk diintegrasi atau dibangunkan dalam ",,3,5,15,Closed
+RSK-PP-000008,Project Management,Procurement,Kontrak yang tidak menyebelahi pihak Kerajaan.,"1. Semakan draf kontrak Bersama pihak berkepentingan bagi memastikan draf kontrak lengkap dan menyebelahi pihak Kerajaan
+
+2. Draft kontrak akan dikemukakan kepada  PUU KDN untuk semakan sebelum dikemukan kepada AGC bagi tujuan semakan dan kelulusan.","Tower Project Management Kontraktor 
+Tower Pengurusan Kerajaan
+Item1:  30 Mei 2022
+Item2:  30 Mei 2022
+",2,5,10,Closed
+RSK-STR-000003,Strategic,Technology,Sistem yang dibangunkan tidak boleh berintegrasi dengan perkakasan boleh guna semula,"1. Kontraktor perlu menyenaraikan senarai perkakasan / peralatan yang boleh guna semula dan berintegrasi dengan ; pakai berdasarkan kajian site assesment yang telah dilaksanakan.
+
+2. Kontraktor  hendaklah mencadangkan penggunaan perkakasan tidak boleh guna semula untuk tujuan lain ","BTMR
+Tower Infrastruktur Kontraktor 
+Item 1: 31 Mei 2022
+
+Tower Infrastruktur Kerajaan
+Item 2: 31 Mei 2022",4,5,20,Closed
+RSK-APT-000039,Application and Technical,System Development,Kelewatan dalam memuktamadkan rekabentuk sistem akibat dari kelewatan memuktamadkan Arkitektur Sistem Projek .,"1. Mengadakan dan mengenal pasti aktiviti dan kefungsian bisnes proses yang merangkumi end to end process
+
+2. Memastikan kandungan Dokumen Arkitektur Sistem memenuhi keperluan pengguna dan dipersetujui
+
+3. Menyediakan product backlog planning yang komprehensif untuk diguna pakai dalam fasa pembangunan
+
+4. Menambah Human Resource yang berpengalaman dan kompeten dalam membangunkan Solution Arkitektur .","Tower Aplikasi Kontraktor 
+Item 1: 28 Februari 2022
+Item 2: 30 April 2022
+Item 3: 30 April 2022
+Item 4: 30 April 2022",5,5,25,Closed
+RSK-APT-000014,Application and Technical,"Infrastructure (DC,DRC,NICC,Server)",Penyelenggaraan perisian dan perkakasan yang akan digunakan dalam projek  tidak dilakukan dengan baik serta tidak mengikut jadual.,"1. PPK/ IPM perlu menghantar peringatan dua minggu sebelum aktiviti penyelenggaraan dan pihak kontraktor perlu menyediakan laporan penyelenggaraan seminggu selepas aktiviti selenggara selesai. 
+
+2. Kontraktor  hendaklah menyediakan Laporan Penyelenggaraan Pencegahan (Preventive Maintenance) dalam tempoh 4 kali setahun sepanjang tempoh warranti. 
+
+3. PPK perlu mengadakan mesyuarat pemantauan berkala bagi memastikan penyelanggaraan, pembaikan dan pencegahan dilaksanakan. 
+
+4. Kontraktor  hendaklah menyediakan pasukan penyelenggaraan di setiap negeri/ regional dengan Human Resource yang mencukupi.
+
+5. PPK/ IPM hendaklah memasukkan klausa pembaikan/ penggantian di dalam kontrak jika berlaku vandalisme di lokasi/ cawangan.
+
+6. Kontraktor  hendaklah mengambil insurans untuk kerosakkan yang berpunca daripada vandalisme/ force majure.
+
+","M41 Sebelum Project Handover
+
+Tower Project Management Kerajaan & Tower Pengurusan Kontraktor 
+Item 1 & 3: sepanjang tempoh pelaksanaan penyelenggaraan projek 
+Item 5: M5
+
+Tower Project Management Kontraktor /Tower Aplikasi Kontraktor 
+Item 2: Sepanjang tempoh pelaksanaan penyelenggaraan projek
+Item 5: M42-M54 (Sepanjang tempoh pelaksanaan penyelenggaraan projek)
+Item 6: Sebelum Fasa Waranti bermula",2,4,8,Closed
+RSK-STR-000006,Strategic,Policy,"Halatuju, Policy dan polisi Kerajaan sering berubah mengikut keperluan semasa.","1. Pihak Kerajaan dan Kontraktor hendaklah membangunkan sistem yang configurable dan fleksible dan menggunakan work flow engine.
+
+2. Pihak kerajaan dan kontraktor hendaklah membangunkan keperluan sistem memenuhi keperluan dan polisi terkini.
+
+3. Sekiranya berlaku perubahan halatuju dan Policy kerajaan, pihak kerajaan dan kontraktor hendaklah :
+     a. Mengenalpasti modul-modul yang terkesan daripada perubahan Policy dan polisi Kerajaan.
+     b. Melakukan perubahan terhadap sistem supaya selaras dengan perubahan polisi.","Tower Aplikasi Kerajaan
+Item 2: 16 Mei 2022
+
+Tower Aplikasi Kontraktor 
+Item 1: 1 Ogos 2023
+Item 2: 16 Mei 2022
+
+Tower Policy Kerajaan
+Item 3: 31 Disember 2021",1,5,5,Closed
+RSK-OPS-000015,Operation,SOP/ Process,Business process yang memerlukan input dari agensi luar sebagai pengguna masih tidak muktamad dan belum dimaklumkan kepada agensi. ,Perbincangan bersama dengan agensi luar(Pengguna) perlu diadakan dengan kadar segera bagi mendapatkan input dan memuktamadkan proses bisnes yang terlibat (61 agensi);,,4,5,20,Closed
+RSK-PP-000007,Project Management,Scope,"Sistem dibangunkan tidak mengikut keperluan 
+pengguna.","1. Kontraktor , IPM dan IV&V perlu melantik BE yang sesuai dan mencukupi sepanjang tempoh projek (PM Kontraktor).
+
+2. Pihak Kerajaan dan Kontraktor  hendaklah melibatkan BE masing-masing dalam aktiviti pengujian.
+
+3. Kontraktor  hendaklah menyediakan ahli pasukan projek yang kompeten. 
+
+4. Kontraktor  akan mengadakan kajian keperluan bersama-sama KDN dan JIM dengan melaksanakan Bengkel BPR di dalam Fasa RDS.","Tower Project Management Kontraktor  
+Item 1: 30 April 2021
+Item4: 28 April 2021
+
+Tower Bisnes Kerajaan
+Item2: 30 April 2021
+
+Tower Aplikasi Kerajaan
+Item 3: 28 April 2021",2,4,8,Closed
+"RSK-APT-000009
+",Application and Technical,Deployment,Peralihan (Transition) daripada sistem lama kepada sistem baharu dimana kebarangkalian berlakunya ralat adalah sangat tinggi semasa pelaksanaan.,"1. Kontraktor  perlu menyediakan Pelan Migrasi Sistem yang komprehensif dan menyeluruh.
+
+2. Pelaksanaan migrasi sistem hendaklah mengikut Pelan Migrasi Sistem yang telah ditetapkan.
+
+3. Sistem yang dimigrasi hendaklah diuji secara menyeluruh.
+
+4. Menjalankan satu sesi khas tentang pemetaan bersama pihak Kerajaan termasuk pihak MyIMMS","Tower Teknikal Kontraktor 
+Item 1 dan 2: M7
+Item 3: M26, M30, M34 dan M38",4,5,20,Closed
+RSK-APT-000006,Application and Technical,System Development,Kontraktor  tidak menyerahkan source code yang boleh digunapakai.,"1. Pihak Kerajaan (PPK) dan Kontraktor  hendaklah meletakkan serahan source code dimasukkan dalam kontrak sebagai salah satu serahan mandatori.
+
+2. Pihak Kerajaan (Tower Aplikasi/IPM) hendaklah mewujudkan proses dalam serahan source code hendaklah dimasukkan di dalam kontrak sebelum projek bermula.  
+
+3. Kontraktor  hendaklah menyerahkan source code yang lengkap dan boleh diguna pakai disetiap penghujung release.
+
+4. Pihak Kerajaan (Tower Aplikasi) hendaklah melakukan pengujian terhadap source code yang diserahkan oleh Kontraktor  sebelum pengesahan penerimaan.","M39
+Sebelum project closer
+
+Tower Project Management Kerajaan
+Item1: M39
+
+Tower Aplikasi Kerajaan
+Item2 dan Item4: Sebelum Project Closure
+
+Tower Aplikasi Kontraktor 
+Item3: M39",3,5,15,Closed
+RSK-APT-000044,Application and Technical,System Development,Penghasilan dokumen keperluan reka bentuk (TDD) bagi modul Kawalan tidak merujuk kepada BPR & URS IBC terkini.,1. Dokumen yang dihasilkan perlu merujuk keperluan BPR & URS IBC yang terkini supaya mengikut spesifikasi yang telah ditetapkan,30/11/2022 0:00,4,5,20,Closed
+RSK-APT-000032,Application and Technical,System Development,Kesan atau gangguan di pangkalan data myIMMs serta penggunaan ruang (directory) di server pangkalan data myIMMs setelah proses Oracle Golder Gate dipasang (install).,"1. Kekangan terhadap pelan ini perlu dibincangkan dan dipersetujui oleh Kerajaan.
+(30 Jun 2022)
+
+2. Kenal pasti design alternative yang tidak menyebabkan Risk ini berlaku.
+(30 Jun 2022)
+
+3.Membentangkan serta mengemukakan Pelan Pembangunan/ Pemasangan OGG.
+(30 Jun 2022)","1.Tower Teknikal Kontraktor 
+
+2.Tower Teknikal Kontraktor 
+
+3.Tower Teknikal Kontraktor 
+",,4,12,Closed
+RSK-APT-000038,Application and Technical,ICT Security,Aspek keselamatan (security) tidak diambil kira dalam persekitaran (DevOps) pembangunan aplikasi,"1. DevSecOps yang mengutamakan aspek keselamatan bagi meningkatkan kod dan Continuous Integration (CI) and Continuous Delivery (CD) pipeline.
+(30 Jun 2022)
+
+2. Penggunaan Dynatrace (security tool) sebagai sebahagian DevSecOps pipeline perlu main peranan penting dalam membuat semakan bagi static dan dynamic API security testing.
+(30 Jun 2022)","1.Tower Teknikal Kontraktor 
+
+2.Tower Teknikal Kontraktor ",,4,12,Closed
+RSK-APT-000040,Application and Technical,System Development,Synchronization data biometric dari myIMMS ke  tidak diboleh dilakukan. ,"Kontraktor  perlu mencadangkan solusi bagaimana untuk semakan data biometric di myIMMS boleh dilaksanakan memandangkan data dari  tidak dapat di synchronize ke myIMMS.
+(31 Julai 2022) ","Tower Teknikal Kontraktor 
+",,4,12,Closed
+RSK-APT-000041,Application and Technical,ICT Security,Proses pengesahan biometric sebagai MFA (Multi Factor Authentication) proses pendaftaran masuk (login) pengguna dalaman tidak dilaksanakan oleh NEC dibawah skop ABIS.,"Kontraktor  perlu mencadangkan solusi dan melaksanakan pengesahan biometric sebagai MFA untuk proses pendaftaran masuk (login).
+(30 Mei 2022)
+(31 Julai 2022)",Tower Aplikasi Kontraktor ,,5,20,Closed
+RSK-PP-000032,Project Management,Scope,Peranan dan skop kerja sub-kontraktor AppFuxion Consulting Sdn. Bhd. yang baharu dilantik tidak jelas,"1. Memaklumkan skop kerja sub-kontraktor AppFuxion dengan jelas dalam Mesyuarat Workstream Kualiti dan Tower Pengurusan
+(31 Julai 2022)
+
+2. Memaklumkan secara rasmi kepada pihak Kerajaan skop kerja dan perjanjian yang telah dipersetujui antara Kontraktor  dan sub-kontraktor AppFuxion
+(31 Julai 2022)","1.Tower Project Management Kontraktor 
+
+2.Tower Project Management Kontraktor 
+",,5,20,Closed
+RSK-PP-000033,Project Management,Human Resource,Perancangan Human Resource core team Kontraktor dan sub Kontraktor yang tidak terperinci dan jelas bagi pembangunan 22 modul (16 + 6 tidak termasuk Common Module) sepanjang 12 sprint,"1. Mengemukakan anggaran story point yang tepat sebelum memulakan sprint.
+(31 Julai 2022)
+(31 Ogos 2022)
+(21  September 2022)
+
+2. Tower Pengurusan dan Tower Aplikasi hendaklah menyediakan matriks dalam peranan dan tanggungjawab ahli pasukan semasa fasa pembangunan
+(31 Julai 2022)
+(31 Ogos 2022)
+(21 September 2022)
+
+3. Menyediakan TOR dan RACI bagi setiap ahli pasukan.
+(31 Julai 2022)
+(31 Ogos 2022)
+(31 Disember 2022)
+
+4. Pengiraan mandays perlu disediakan sebelum dan semasa fasa pembangunan
+(31 Julai 2022)
+(31 Ogos 2022)
+(31 Disember 2022)
+
+5. Menggunakan SCRUM dalam memastikan objektif dalam pembangunan tercapai.
+(31 Julai 2022)","1.Tower Aplikasi Kontraktor 
+
+2.Tower Aplikasi Kontraktor 
+
+3.Tower Aplikasi Kontraktor 
+
+4.Tower Aplikasi Kontraktor 
+
+5.Tower Aplikasi Kontraktor 
+
+
+
+
+
+
+",,5,20,Closed
+RSK-APT-000045,Application and Technical,ICT Security,"Tiada Perancangan dan Pelaksanaan Kawalan keselamatan (security) bagi LMS, Portal  dan PMIS di Production Environment.","1. Pemasangan dan konfigurasi yang lengkap bagi external firewall, web application firewall dan SSL Certification.
+(31 Julai 2022)
+
+2. Melaksanakan Penetration Testing oleh pihak ketiga (third Party).
+(31 Julai 2022)
+
+3. Lain-lain tindakan yang dirasakan perlu untuk mengawal keselamatan.
+(31 Julai 2022)","1.Tower Infrastruktur Kontraktor 
+
+2.Tower Bisnes Kontraktor 
+
+3.Tower Infrastruktur Kontraktor 
+",,5,20,Closed
+"RSK-PP-000018
+",Project Management,Komunikasi,Kegagalan pengurusan komunikasi projek di setiap peringkat tadbir urus,"1. Penyediaan Pelan-pelan komunikasi
+a. Pelan pengurusan Perubahan (Kontraktor -30 Julai 21)
+b. Pelan pengurusan Komunikasi ( Kontraktor 30 September 2021)
+c. Pelan Project Management (IV&V- 13 Ogos 2021)
+d. Pelan Komunikasi dan kesedaran (Kontraktor -30 Julai 21)
+(30 September 2021)
+
+2. Menyediakan struktur organisasi yang seragam dan sama untuk ketiga-tiga pihak (Kontraktor , PPK dan IPM).
+(30 September 2021)
+
+3. Kontraktor  hendaklah menyediakan TOR dan RACI yang jelas di dalam Pelan Pengurusan Komunikasi.
+(30 September 2021)
+
+4. Menjalankan aktiviti Team Building. 
+(30 September 2021)
+
+5. Pemantauan Pelan
+(31 Mei 2024)","1. Tower Project Management Kontraktor 
+
+2.Tower Project Management Kontraktor 
+
+3.Tower Project Management Kontraktor 
+
+4.Tower Project Management Kontraktor 
+
+5.Tower Project Management Kerajaan
+",4,2,8,Closed
+RSK-APT-000022,Application and Technical,System Development,Ancaman Keselamatan Siber (Cyber Security Threat).,"1. Kontraktor  akan melaksanakan Security Posture Assessment dan Pen Test.
+(31 Oktober 2023)
+
+2. i. Kontraktor  hendaklah menyediakan perkhidmatan pemantauan di Command Center merangkumi:
+a) NOC 
+b) SOC,
+c) AOC
+ii. IPS dan IDS perlu dimasukkan ke dalam Pelan Pelaksanaan. Seperti : 
+a) IPS (TippingPoint 8400TX ÃƒƒÃ‚¢€“ Trendmicro) , 
+b)IDS (DD Inspector 4100 - Trendmicro)
+(31 Mei 2024)
+
+3. Kontraktor  hendaklah mewujudkan/ memasang perkhidmatan/ tools bagi mengesan serangan dan ancaman siber dalam fasa pemasangan.
+(31 Mei 2024)
+
+4.  Kontraktor  hendaklah membangunkan Pelan ISMS yang menyeluruh dan komprehensif sehingga mendapat pensijilan ISMS.
+(31 Ogos 2024)","1.BTMR
+Tower Infrastruktur
+Tower Teknikal Kontraktor 
+
+2.Tower Infrastruktur Kontraktor 
+
+3.Tower Infrastruktur Kontraktor 
+
+4.Tower Teknikal Kontraktor 
+",5,5,25,Closed
+RSK-OPS-000008,Operation,System,Kebergantungan sistem yang dibangunkan kepada OS tertentu.,"Kontraktor  hendaklah memilih tools/ teknologi bagi pembangunan Sistem yang tidak terikat kepada OS tertentu. 
+(30 September 2022)",Tower Aplikasi Kontraktor ,2,4,8,Closed
+"RSK-PP-000001
+",Project Management,Integration,"Kegagalan integrasi  dengan sistem agensi luar/ kontraktor. 
+
+","1. Kontraktor  hendaklah menyediakan pelan pengurusan integrasi yang terperinci dan terancang pada permulaan projek.
+(30 September 2021)
+
+2. Kontraktor  hendaklah menyediakan keperluan integrasi yang terperinci dan tepat. Keperluan integrasi perlu dipersetujui oleh semua pihak yang terlibat dan dilaksanakan pada permulaan projek.
+(30 September 2021)
+
+3. Pihak Kerajaan perlu menetapkan peranan dan tanggungjawab setiap pihak yang terlibat dalam integrasi sistem dinyatakan secara jelas dan terperinci.
+(30 April 2022)
+
+4. Kontraktor  dan agensi hendaklah melaksanakan pengujian integrasi sistem dengan teliti dan menyeluruh berserta penglibatan dari pihak kerajaan.
+(31 Mei 2022)
+(30 Ogos 2023)
+
+5. Kontraktor  hendaklah menyediakan Human Resource yang kompeten dan mahir dalam pembangunan integrasi.
+(30 September 2023)
+
+6. Engagement dengan pengurusan tertinggi agensi untuk mendapatkan kelulusan.
+(30 September 2023)","1.Tower Aplikasi Kontraktor 
+
+2.Tower Aplikasi Kontraktor 
+
+3.Tower Aplikasi Kerajaan
+
+4.Tower Aplikasi Kontraktor 
+
+5.Tower Aplikasi Kontraktor 
+
+6.Tower Aplikasi Kerajaan
+
+
+
+",3,4,12,Closed
+RSK-STR-000001,Strategic,Policy,"Perancangan pembangunan dan pelaksanaan  tidak selari/selaras dengan akta atau polisi semasa Kerajaan yang berkuatkuasa.
+","1. Pihak Kerajaan (Tower Policy) hendaklah mengenalpasti senarai akta-akta yang berkaitan yang akan digunapakai sebelum projek bermula.
+(31 Disember 2022)
+
+2. Pihak Kerajaan (Tower Policy) hendaklah menyemak semula semua akta yang berkuatkuasa, memberi cadangan dan mendapatkan persetujuan pihak pengurusan atasan sekiranya ada keperluan meminda akta-akta atau menyediakan SOP baru selaras dengan keperluan pembangunan  sebelum projek bermula
+(31 Disember 2022)
+
+3. Pihak Kerajaan (Tower Policy) hendaklah memberi cadangan dan mendapatkan persetujuan pihak pengurusan atasan sekiranya ada keperluan meminda akta-akta atau menyediakan SOP baru sebelum projek bermula.
+(31 Disember 2022)
+
+4. Menjalankan pemantauan dan memaklumkan dengan segera mengenai sebarang perubahan keputusan-keputusan Policy
+(31 Disember 2022)
+
+5. Pihak Kerajaan dan Kontraktor hendaklah membangunkan sistem yang configurable dan fleksible dan menggunakan work flow engine.
+(1 Ogos 2023)
+
+6. Pihak kerajaan dan kontraktor hendaklah membangunkan keper,luan sistem memenuhi keperluan dan polisi terkini.
+(16 Mei 2022)
+
+7. Sekiranya berlaku perubahan halatuju dan Policy kerajaan, pihak kerajaan dan kontraktor hendaklah :
+     a. Mengenalpasti modul-modul yang terkesan daripada perubahan Policy dan polisi Kerajaan.
+     b. Melakukan perubahan terhadap sistem supaya selaras dengan perubahan polisi.
+(31 Disember 2021)","1.Bahagian IM
+
+2.Bahagian IM
+
+3.Bahagian IM
+
+4.Bahagian IM
+
+5.Tower Aplikasi Kontraktor 
+Tower Aplikasi Kerajaan
+
+6.Tower Aplikasi Kontraktor 
+Tower Aplikasi Kerajaan
+
+7.Tower Policy Kerajaan
+
+
+
+",4,4,16,Closed
+RSK-STR-000004,Strategic,Technology,Perubahan Business Process di dalam  yang membabitkan agensi luar masih belum mendapat persetujuan dari agensi-agensi terlibat. ,"Perbincangan dan penerangan yang jelas mengenai Business Process  perlu diadakan dan diberi keutamaan kepada agensi-agensi berikut namun tidak terhad kepada senarai dibawah: 
+a. Education Malaysia Global Services (EMGS);
+b. Talent Corporation Malaysia Berhad (TalentCorp);
+c. Malaysia Digital Economy Corporation (MDEC);
+d. Unit Pusat Permohonan Penggambaran Filem Dan Persembahan Artis Luar Negara (PUSPAL);
+e. Kementerian Luar Negara (KLN);
+f. Biro Pengaduan Awam (BPA); dan
+g. Mahkamah Persekutuan
+(31 Julai 2022)",Bahagian IM,4,5,20,Closed
+RSK-OPS-000006,Operation,Training,Proses serah tugas yang tidak sempurna menyumbang kepada kelewatan pelaksanaan projek.,"1. Menetapkan tempoh untuk proses serah tugas dan senarai semak serah tugas.
+
+2. Mewujudkan program perkongsian maklumat.
+
+3. Mewujudkan shared folder.
+
+4. Semua pihak perlu menyediakan kaedah penggantian (succession planning) sekiranya terdapat  mana-mana pegawai yang bertukar.","Tower Pengurusan (Kerajaan, Kontraktor, IPM & IVV, JIM)",5,2,10,Closed
+RSK-STR-000011,Strategic,Technology, yang dibangunkan tidak boleh berintegrasi dengan sistem agensi,"1. Menyenaraikan agensi luar dan sub-sistem serta perincian bagi sub sistem tersebut (Sehala atau Dua Hala)
+(30 April 2022)
+
+2. Menyediakan Pelan Integrasi bagi menerangkan metodologi dan pelaksanaan integrasi  dengan semua sub-sistem
+(30 April 2022)
+
+3. Menyediakan dokumen Interface Control Document
+(31 Disember 2022)","1.Tower Aplikasi Kontraktor 
+
+2.Tower Aplikasi Kontraktor 
+
+3.Tower Aplikasi Kontraktor ",4,5,20,Closed
+RSK-APT-000043,Application and Technical,Tools,Kelewatan dalam memuktamadkan fungsi bagi 6 peralatan khas mengakibatkan pembangunan beberapa modul  yang terlibat tidak dapat dilaksanakan,"1. Memuktamadkan fungsi 6 peralatan khas:
+-Mobile Enrollment Unit (MEU)
+-Mbike 
+-Digital Landing Kiosk (DLC) 
+-EGate Pejalan Kaki
+-Kiosk Passport
+-Kiosk iKad
+
+2. Membangunkan prototype (e-gate, mbike, dlc)","1.Tower Infrastruktur
+Kontraktor 
+
+2.Tower Infrastruktur
+Kontraktor 
+
+",4,5,20,Closed
+RSK-APT-000047,Application and Technical,System Development,Pemuktamadan aliran proses modul ESD bagi negeri Sabah masih belum dilaksanakan disebabkan oleh kelewatan engagement untuk mendapatkan persetujuan daripada pihak Kerajaan Negeri Sabah mengakibatkan pembangunan modul ESD terjejas.,"1. Mengadakan libat urus dengan Kerajaan Negeri Sabah untuk memuktamadkan proses kerja. Persediaan pembentangan yang perlu dibuat ialah:
+         i. Menyediakan carta alir dan proses kerja yang terlibat. 
+         ii. Mendapatkan keputusan dari pihak 
+(30 Disember 2022)
+
+2. Menyediakan carta alir dan proses kerja yang terlibat bagi proses modul ESD serta mendapatkan keputusan bagi setiap aliran proses tersebut.
+(30 Disember 2022)
+
+3. Mengemas kini dokumen URS dan SRS bagi modul ESD sekiranya terdapat sebarang perubahan pada aliran proses
+i. Dokumen BPR
+ii. Dokumen URS
+iii. Dokumen SRS
+(30 Disember 2022)","1. Tower Aplikasi Kerajaan
+
+2. Tower Aplikasi Kerajaan
+Tower Aplikasi Kontraktor 
+
+3. Tower Aplikasi Kontraktor ",3,4,12,Closed
+PP019,Project Management,Procurement,Pihak Kerajaan melantik Kontraktor yang menggunakan kepakaran asing untuk pelaksanaan projek dan pembangunan aplikasi.,"1. PPK/ IPM hendaklah membuat penetapan melalui penguatkuasaan terma kontrak dalam penglibatan warga asing di dalam projek Kerajaan.
+
+2. PPK/ IPM hendaklah mewujudkan dan menguatkuasa proses pengurusan maklumat sulit supaya terkawal dan tidak jatuh ke pihak ketiga yang tidak berkenaan. 
+
+3. Risk ini dicadangkan menjadi Isu
+
+4. Kontraktor  menyenaraikan senarai nama warga asing yang terlibat
+
+5. Surat rasmi telah dikeluarkan kepada Kontraktor untuk mengemukakan senarai cadangan kakitangan bukan warga negara Malaysia yang terlibat di dalam projek.
+
+6. Perkara ini perlu dibawa ke Mesyuarat Pasukan Projek, Jawatankuasa Teknikal dan Jawatankuasa Pemandu",,3,5,15,Transfer
+PP017,Project Management,Procurement,Engagement antara Kontraktor  dan sub-kontraktor di luar pengetahuan dan kawalan Kerajaan.,"1. Kontraktor  perlu mengemukakan senarai sub kontraktor yang akan dilantik untuk persetujuan pihak Kerajaan.
+
+
+2. Kerajaan dan Kontraktor  hendaklah memastikan kontrak mengandungi  terma-terma berkenaan pelantikan, skop kerja dan penamatan sub kontraktor",,4,4,16,Transfer
+PP030,Project Management,Human Resource,Kontraktor gagal menyediakan Human Resource mengikut keperluan projek dalam tempoh masa yang ditetapkan.,"1. Kontraktor  hendaklah membuat persediaan Human Resource seawal mendapat surat pelantikan melalui SST. 
+
+2. Kontraktor  hendaklah menyediakan Pelan Pengurusan Sumber yang komprehensif dan 
+terperinci selari dengan penyediaan PMP.
+
+3. Kontraktor  hendaklah melaksanakan dan mematuhi kepada pelan pengurusan yang dipersetujui.
+
+4. PPK hendaklah menguatkuasakan terma dan klausa kontrak.
+",,4,4,16,Transfer
+PP034,Project Management,Human Resource,Kebocoran dan penyalahgunaan maklumat yang disalurkan kepada kontraktor dan sub kontraktor yang belum melepasi tapisan e-Vetting.,Kontraktor  telah mengemukakan maklumat e-Vetting untuk 54 orang Kontraktor  dan 11 orang Sub-Kontraktor  pada 17 dan 24 Mac 2021.,,5,5,25,Transfer
+APT026,Application and Technical,System Development,Pemetaan EPMPRo secara keseluruhan dengan modul-modul dan fungsi fungsi sedia ada di dalam URS PMIS tidak jelas.,"1.	Melaksanakan sistem demo & walkthrough berdasarkan fungsi-fungsi URS PMIS untuk mengenalpasti kehendak dan keperluan pengguna serta memberi keyakinan Go-Live pada Julai 2021. Kesediaan 70% keperluan URS PMIS berdasarkan EPMPRo boleh ditentukan untuk memberi keyakinan pennguna.
+2.	Pemetaan di antara EPMPRo dan fungsi-fungsi PMIS perlu didokumenkan sebagai traceability matrix bagi memudahkan pemantauan",,5,5,25,Transfer
+PP023,Project Management,Scope,"Kelewatan dalam melaksanakan obligasi oleh mana-mana pihak terlibat (Kontraktor, IPM dan IV&V) akan memberi kesan secara langsung kepada kontraktor lain yang berkaitan.","1. Menyediakan IPP yang terperinci merangkumi aktiviti- aktiviti bagi semua kontraktor dalam .
+
+2. Pasukan kerajaan menetapkan Critical Path projek dengan mewujudkan Integrated Project Plan (IPP) dengan kadar segera serta memastikan penghantaran dokumen mematuhi SDLC dan diserahkan secara berkala ","Tower Project Management Kontraktor ; 
+IPM,
+IV&V; dan
+Tower Project Management Kerajaan
+
+30 September 2021
+",4,4,16,Transfer
+PP021,Project Management,Scope,Kegagalan pihak kontraktor  untuk menyediakan Pelan-Pelan Project Management dalam tempoh tempoh yang ditetapkan.,"1. PPK/ IPM hendaklah memantau penyediaan PMP mengikut tempoh masa yang ditetapkan.
+
+2. PPK hendaklah menguatkuasakan terma kontrak dan penalti.","Tower Project Management Kerajaan 
+Item 1 dan 2: M4",3,4,12,Transfer
+APT020,Application and Technical,System Development,Proses kejuruteraan keperluan (requirement engineering process) kontraktor tidak menghasilkan spesifikasi keperluan pada tahap kualiti yang diperlukan dalam projek .,"1. Pihak Kontraktor mestilah menambah baik proses
+2. Pihak Kontraktor mestilah memantau penggunaan proses dan berupaya menyesuaikan proses tersebut secara efektif dalam masa yang singkat (iaitu dalam jangka masa bengkel RDS) 
+","Tower Aplikasi Kontraktor 
+30 Ogos 2021",3,3,9,Transfer
+APT030,Application and Technical,Deployment,Kelewatan dalam memuktamadkan SRS bagi modul Kawalan.,"1. DALAM TINDAKAN
+Dokumen remedi URS IBC telah dihantar pada 9 Mac 2022 dan sedang dalam semakan IPM dan IV&V; dan
+URS IBC akan dibentangkan dalam Mesyuarat JKKK pada sesi Mac 2022.
+
+2. DALAM TINDAKAN
+Dokumen SRS telah ditolak dalam Mesyuarat JKKK pada 17 Februari 2022; dan
+Akan diserahkan semula pada 3 Mac 2022.
+
+3. SELESAI
+Telah melantik SA bagi modul Kawalan untuk melaksanakan SRS.",,4,5,20,Active
+APT033,Application and Technical,System Development,"Tiada perincian tentang common module (modul guna sama) di dalam dokumen URS. Contoh common module ialah:
+1 . Dashboard Pengguna. Setiap aras pegawai mempunyai dashboard paparan E-reporting bagi melihat senarai, status dan agihan tugasan yang berikan.
+2.	Common Email Template bagi kandungan e-mel untuk segala jenis notifikasi e-mel yang perlu/akan dihantar kepada pegawai JIM dan pengguna sistem NIlSe. Contoh e-mel templat seperti e-mel permohonan ditolak.
+3.	Konfigurasi sistem oleh admin setiap modul yang boleh diakses oleh semua modul untuk melakukan kemas kini. Contoh konfigurasi awalan lalai (default value) sistem seperti tempoh tamat pasport/visa/pas dan senarai cawangan, unit/ bahagian.
+4.	Keperluan audit trail bagi semua modul adalah tergantung:
+a.	Modul Pengurusan ID hanya menguruskan audit trail bagi pengurusan ID sahaja di mana hanya merekodkan audit trail bagi proses daftar masuk dan daftar keluar sahaja.
+b.	Tiada modul spesifik yang menyelenggarakan keperluan audit trail","Dokumen Common Module yang merangkumi perincian keperluan common module, e-Services dan Mobile Application dijangka akan diselesaikan pada 16 Mei 2022",,4,5,20,Active
+APT035,Application and Technical,System Development,Modul RAE mempunyai tahap kebergantungan (dependency) yang tinggi dengan modul-modul lain,,,4,5,20,Active
+APT036,Application and Technical,System Development,Aplikasi bagi Data Analytic and Business Intelligent masih belum dimuktamadkan,"1. Penggunaan Spotlight BDA telah dipersetujui dalam Mesyuarat JKT pada 21 Februari 2022. 
+ Rekabentuk yang menggunakan Spotlight BDA juga telah dimasukkan dalam dokumen URS dan SRS dan akan dibawa ke Mesyuarat JKKK pada sesi seterusnya
+
+2. URS dan SRS bagi modul BDA/BI telah dihantar kepada pihak Kerajaan pada 5 April 2022",,4,5,20,Active
+APT039,Application and Technical,System Development,"1 Tiada perincian keperluan aplikasi Mobile.
+a.	Hybrid application
+b.	Native application
+2. Keperluan aplikasi Mobile tidak dinyatakan bagi menerangkan fungsi-fungsi yang boleh dicapai oleh Mobile.","Dokumen Common Module yang merangkumi perincian keperluan common module, e-Services dan Mobile Application dijangka akan diselesaikan pada 16 Mei 2022",,4,5,20,Active
+APT040,Application and Technical,Integration,Kelewatan dalam penyediaan development environment bagi tujuan pembangunan .,"1. Pemasangan telah bermula pada awal Mac 2022
+
+2. Konfigurasi telah bermula pada pertengahan Mac 2022 dan dijangka selesai sepenuhnya pada 30 Jun 2022
+
+SELESAI
+3. Pembentangan pelan deployment kepada pihak MAMPU telah dilaksanakan pada 30 Mac 2022",,4,5,20,Active
+"PP020
+",Project Management,Scope,Pertambahan skop / requirement kerap berubah.,"ITEM 1 - DALAM TINDAKAN
+ - BPR :  Diterima Mesyuarat JKKK 25 Januari 2022 dan telah ditandatangani pada 16 Februari 2022
+ - Documen URS: Diterima Mesyuarat JKKK 17 Februari 2022 (kecuali URS modul IBC)
+URS modul IBC: Ditolak Mesyuarat JKKK pada 25 Januari 2022 dan telah dihantar semula 8 Mac.
+ - Dokumen SRS: 
+     * Ditolak Mesyuarat JKKK pada 31 Mac 2022
+     * SRS bagi 9 modul telah dihantar semula setakat 15 April 2022. 
+ - Dokumen SDD: 
+     * Diserahkan 18 Februari 2022
+     * Ditolak Mesyuarat JKKK 21 April 2022
+ - Dokumen TDD: diserahkan pada 1 April 202 dan cuma akan dinilai selepas permuktamadan dokumen SDD.
+
+ITEM 2 - SELESAI
+Pelan Pengurusan Skop telah dibentangkan dalam Mesyuarat JKKK pada 17 Disember 2021 dan Mesyuarat Pasukan Projek pada 11 Januari 2022.
+
+ITEM 3 - DALAM TINDAKAN 
+Kontraktor  akan mengadakan perbincangan dengan pihak Kerajaan bagi mendapatkan objektif utama pembentangan  ",,2,10,,Active
+APT042,Application and Technical,System Development,Kelewatan dalam memuktamadkan rekabentuk sistem akibat dari kelewatan memuktamadkan Arkitektur Sistem Projek .,"ITEM 1 - SELESAI
+BPR2021 telah ditandatangani pada 15 Februari 2022
+
+ITEM 2 - DALAM TINDAKAN
+ - Dokumen Arkitektur Sistem telah diserahkan pada 31 Mac 2022.
+ - Bagaimanapun, pihak Kerajaan menyarankan dokumen tersebut ditambah baik
+ - Maklumbalas dari pihak Kerajaan telah diterima lanjutan daripada sesi pembentangan pada 8 April 2022
+ - Dokumen perlu dikemas kini dan dihantar semula pada 28 April 2022
+
+ITEM 3 - DALAM TINDAKAN
+Penyediaan product backlog dan user story sedang berlangsung dan dijangka akan siap pada 30 April 2022
+
+ITEM 4 - SELESAI
+Solution Architect (Chair Kok Beng) telah dilantik pada 1 April 2022 bagi memperkasa pasukan Solution yang diketuai oleh Khairul Anuar",,5,25,,Active

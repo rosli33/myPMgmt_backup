@@ -17,7 +17,7 @@ Including another URLconf
 # myPMgmt/urls.py
 from django.contrib import admin
 from django.urls import path, include
-from .views import home, visualization
+from .views import home, profile_analytics
 # from .views import visualization  # Import your views
 from . import views  # This will import views from the current app
 
@@ -26,7 +26,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),  # Home page
     path('upload/', include('upload.urls')),  # Include the upload app
-    path('visualization/', visualization, name='visualization'),  # New visualization page
+    path('resource_allocation/', views.resource_allocation, name='resource_allocation'),
+    path('visualization/', profile_analytics, name='visualization'),  # New visualization page
     path('task_prioritization/', views.task_prioritization, name='task_prioritization'),
 ]
 

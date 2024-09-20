@@ -19,6 +19,22 @@
             background-color: #f9f9f9;
         }
 
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: -999px;
+            background: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .skip-link:focus {
+            left: 10px;
+            top: 10px;
+            z-index: 100;
+        }
+
         header {
             display: flex;
             justify-content: space-between;
@@ -101,10 +117,35 @@
 
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #f4f4f4;
+            padding: 20px;
+            background-color: #e0e0e0; /* Slightly darker background for footer */
             border-top: 2px solid #ddd;
             margin-top: 20px;
+        }
+
+        footer .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        footer .footer-links a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        footer .footer-links a:hover {
+            color: #4a90e2; /* Same color as your active link hover */
+        }
+
+        footer p {
+            margin-top: 10px;
+        }
+
+        footer img {
+            width: 24px;
+            height: 24px;
         }
 
         /* Media Query for smaller screens */
@@ -138,16 +179,18 @@
 </head>
 <body>
 
-    <!-- Your content here -->
+    <!-- Skip link for keyboard navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header class="d-flex justify-content-between align-items-center">
         <div class="logo-left">
             <a href="{% url 'home' %}">
-                <img src="{% static 'images/crest.png' %}" class="img-fluid" alt="Logo 1" width="120" height="120">
+                <img src="{% static 'images/crest.png' %}" class="img-fluid" alt="Government Crest Logo" width="120" height="120">
             </a>
         </div>
         <h1 class="text-center flex-grow-1">AI-Enhanced Project Management System</h1>
         <div class="logo-right">
-            <img src="{% static 'images/niise.png' %}" class="img-fluid" alt="Logo 2" width="180" height="80">
+            <img src="{% static 'images/niise.png' %}" class="img-fluid" alt="NIIS Logo" width="180" height="80">
         </div>
     </header>
 
@@ -155,14 +198,16 @@
         <div class="sidebar">
             <ul>
                 <li><a href="{% url 'task_prioritization' %}">Task Prioritization</a></li>
-                <li><a href="#">Resource Allocation</a></li>
+                <li class="{% if request.path == '/resource_allocation/' %}active{% endif %}">
+                    <a href="{% url 'resource_allocation' %}">Resource Allocation</a>
+                </li>
                 <li><a href="#">Risk Management</a></li>
-                <li><a href="{% url 'upload' %}">Upload Files</a></li>
-                <li><a href="{% url 'visualization' %}">Visualization</a></li>
+                <li><a href="{% url 'upload' %}">Data Integration</a></li>
+                <li><a href="{% url 'visualization' %}">Data Analysis</a></li>
             </ul>
         </div>
 
-        <div class="content">
+        <div id="main-content" class="content"> <!-- Added main content ID for skip link -->
             {% block content %}
 
             <div class="objective-section">
@@ -172,11 +217,20 @@
 
             {% endblock %} 
         </div>
-
-
     </div>
 
     <footer>
+        <div class="footer-links">
+            <a href="#" aria-label="Follow us on Facebook">
+                <img src="{% static 'images/facebook-icon.png' %}" alt="Facebook Icon">
+            </a>
+            <a href="#" aria-label="Follow us on Twitter">
+                <img src="{% static 'images/twitter-icon.png' %}" alt="Twitter Icon">
+            </a>
+            <a href="#" aria-label="Follow us on LinkedIn">
+                <img src="{% static 'images/linkedin-icon.png' %}" alt="LinkedIn Icon">
+            </a>
+        </div>
         <p>© 2024 AI-Enhanced Project Management System</p>
     </footer>
 

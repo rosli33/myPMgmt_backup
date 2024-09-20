@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <style>
@@ -44,6 +44,22 @@
                 <img src="data:image/png;base64,{{ image3 }}" alt="Visualization 3" />
             </div>
         </div>
+    </body> -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task Data Analytics</title>
+    </head>
+    <body>
+        <h1>Data Analytics</h1>
+        <div>
+            <!-- Embed Pygwalker Visualization -->
+            {{ pygwalker|safe }}
+        </div>
     </body>
+    </html>
     
 {% endblock %}
