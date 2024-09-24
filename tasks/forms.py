@@ -1,5 +1,7 @@
 from django import forms
 from django.db import models
+from .models import ManualTask
+import datetime
 
 STATUS_CHOICES = [
     ('todo', 'To Do'),
@@ -7,11 +9,11 @@ STATUS_CHOICES = [
     ('completed', 'Completed'),
 ]
 
-PRIORITY_CHOICES = [
-    ('low', 'Low'),
-    ('medium', 'Medium'),
-    ('high', 'High'),
-]
+# PRIORITY_CHOICES = [
+#     ('low', 'Low'),
+#     ('medium', 'Medium'),
+#     ('high', 'High'),
+# ]
 
 TASK_TYPE_CHOICES = [
     ('coa', 'Certificate of Acceptance (CoA)'),
@@ -54,14 +56,32 @@ BUSINESS_IMPACT_CHOICES = [
         ('High', 'High'),
     ]
 
-class TaskInputForm(forms.Form):
-    task_title = forms.CharField(max_length=200, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    task_type = forms.ChoiceField(choices=TASK_TYPE_CHOICES, widget=forms.Select(attrs={'class': 'form-control'}))
-    current_status = forms.ChoiceField(choices=STATUS_CHOICES, widget=forms.Select(attrs={'class': 'form-control'}))
-    business_impact = forms.ChoiceField(choices=BUSINESS_IMPACT_CHOICES, widget=forms.Select(attrs={'class': 'form-control'}))
-    estimated_effort = forms.FloatField(widget=forms.NumberInput(attrs={'class': 'form-control'}))
-    priority = forms.ChoiceField(choices=PRIORITY_CHOICES, widget=forms.Select(attrs={'class': 'form-control'}))
-    deadline = forms.DateField(widget=forms.SelectDateWidget(attrs={'class': 'form-control'}))
+class TaskInputForm(forms.ModelForm):
+    class Meta:
+        model = ManualTask
+        fields = ['task_title', 'task_type', 'current_status', 'business_impact', 'estimated_effort', 'deadline']
+        widgets = {
+            'task_title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter Task Title'}),
+            'task_type': forms.Select(choices=TASK_TYPE_CHOICES, attrs={'class': 'form-control'}),
+            'current_status': forms.Select(choices=STATUS_CHOICES, attrs={'class': 'form-control'}),
+            'business_impact': forms.Select(choices=BUSINESS_IMPACT_CHOICES, attrs={'class': 'form-control'}),
+            'estimated_effort': forms.NumberInput(attrs={'class': 'form-control', 'placeholder': 'Estimated effort (hours)'}),
+            'deadline': forms.SelectDateWidget(attrs={'class': 'form-control'}),
+        }
+
+    # Custom validation for estimated_effort
+    def clean_estimated_effort(self):
+        effort = self.cleaned_data.get('estimated_effort')
+        if effort is None or effort <= 0:
+            raise forms.ValidationError("Estimated effort must be a positive number.")
+        return effort
+
+    # Custom validation for deadline
+    def clean_deadline(self):
+        deadline = self.cleaned_data.get('deadline')
+        if deadline and deadline < datetime.date.today():
+            raise forms.ValidationError("Deadline cannot be in the past.")
+        return deadline
 
 class UploadTaskForm(forms.Form):
     csv_file = forms.FileField(widget=forms.FileInput(attrs={'class': 'form-control'}))

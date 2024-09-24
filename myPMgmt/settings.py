@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+from django.contrib.messages import constants as messages
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -144,15 +145,22 @@ LOGGING = {
             'class': 'logging.StreamHandler',
         },
     },
-    'root': {
-        'handlers': ['console'],
-        'level': 'WARNING',
-    },
     'loggers': {
         'django': {
             'handlers': ['console'],
-            'level': 'DEBUG',
-            'propagate': True,
+            'level': 'WARNING',  # Adjust the level to WARNING or ERROR to reduce verbosity
+        },
+        'django.template': {
+            'handlers': ['console'],
+            'level': 'ERROR',  # Only log template errors
         },
     },
+}
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'debug',
+    messages.INFO: 'info',
+    messages.SUCCESS: 'success',
+    messages.WARNING: 'warning',
+    messages.ERROR: 'danger',
 }

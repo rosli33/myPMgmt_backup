@@ -1,56 +1,162 @@
 {% extends 'home.html' %}
 
 {% block content %}
+<div class="container mt-5">
+    <h2 class="mb-4">Task Prioritization Results</h2>
 
-<h2>Task Prioritization Results</h2>
+    <!-- Filtering and Sorting Options -->
+    <form method="get" action="{% url 'task_result' %}">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="task_type">Filter by Task Type:</label>
+                <select name="task_type" id="task_type" class="form-control">
+                    <option value="">All</option>
+                    <option value="coa">Certificate of Acceptance (CoA)</option>
+                    <option value="portal">Portal</option>
+                    <!-- Add more task types as options -->
+                </select>
+            </div>
 
-<!-- Check if 'df' (DataFrame) is available, which means it's a CSV upload -->
-{% if df %}
-    <h3>CSV Results</h3>
-    {{ df|safe }}
+            <div class="col-md-4">
+                <label for="priority">Filter by Priority:</label>
+                <select name="priority" id="priority" class="form-control">
+                    <option value="">All</option>
+                    <option value="0">Low</option>
+                    <option value="1">Medium</option>
+                    <option value="2">High</option>
+                </select>
+            </div> 
 
-    <!-- Add the note for task priority meanings -->
-    <p><strong>Note:</strong> Task Priority values represent the following:</p>
-    <ul>
-        <li><strong>0</strong> - Low Priority</li>
-        <li><strong>1</strong> - Medium Priority</li>
-        <li><strong>2</strong> - High Priority</li>
-    </ul>
+            <div class="col-md-4">
+                <label for="status">Filter by Status:</label>
+                <select name="status" id="status" class="form-control">
+                    <option value="">All</option>
+                    <option value="todo">To Do</option>
+                    <option value="progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+        </div> 
 
-    <!-- Visualization only appears for CSV uploads -->
-    <h3>Visualization 1: Distribution of Task Priorities</h3>
-    <img src="data:image/png;base64,{{ image4 }}" alt="Distribution of Task Priorities">
+        <!-- Sorting Options -->
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <label for="sort_by">Sort by:</label>
+                <select name="sort_by" id="sort_by" class="form-control">
+                    <option value="deadline">Deadline</option>
+                    <option value="priority_level">Priority</option>
+                    <option value="task_title">Task Title</option>
+                </select>
+            </div>
 
-    <h3>Visualization 2: Task Status vs. Business Impact</h3>
-    <img src="data:image/png;base64,{{ image5 }}" alt="Average Estimated Effort by Business Impact">
+            <div class="col-md-2 align-self-end">
+                <button type="submit" class="btn btn-primary mt-3">Apply Filters</button>
+            </div>
+        </div>
+    </form> 
 
-    <h3>Visualization 3: Estimated Effort by Priority Level</h3>
-    <img src="data:image/png;base64,{{ image6 }}" alt="Estimated Effort by Priority Level">
+    <!--Predicted Task Priority -->
+    <p><strong>Predicted Task Priority:</strong> {{ priority }}</p>
 
-<!-- This block will only be shown when a single task's priority is predicted -->
-{% elif priority %}
-    <p><strong>Predicted Task Priority</strong><br>
-    The predicted task priority is: {{ priority }}</p>
+    <!-- Insights Section with Cards -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Business Impact Insight</h5>
+                    <p>{{ insight }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title text-info">Task Status Insight</h5>
+                    <p>{{ status_insight }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">Effort Insight</h5>
+                    <p>{{ effort_insight }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <p><strong>Note:</strong> Task Priority values represent the following:</p>
-    <ul>
-        <li><strong>0</strong> - Low Priority</li>
-        <li><strong>1</strong> - Medium Priority</li>
-        <li><strong>2</strong> - High Priority</li>
-    </ul>
+    <!-- Display Results -->
+    <div class="row mt-5">
+        {% if df %}
+            <div class="col-12">
+                <h3>CSV Results</h3>
+                <div class="table-responsive mb-4">
+                    {{ df|safe }}
+                </div>
+                <p><strong>Note:</strong> Task Priority values represent the following:</p>
+                <ul>
+                    <li><strong>0</strong> - Low Priority</li>
+                    <li><strong>1</strong> - Medium Priority</li>
+                    <li><strong>2</strong> - High Priority</li>
+                </ul>
+            </div>
 
-    <!-- Display visualizations based on ManualTask data -->
-    <h3>Visualization 1: Distribution of Task Priorities</h3>
-    <img src="data:image/png;base64,{{ image4 }}" alt="Distribution of Task Priorities">
+            <!-- Visualizations -->
+            <div class="col-12 mt-4">
+                <h3>Visualization 1: Distribution of Task Priorities</h3>
+                <img src="data:image/png;base64,{{ image1 }}" alt="Distribution of Task Priorities" class="img-fluid">
+            </div>
 
-    <h3>Visualization 2: Business Impact vs Estimated Effort</h3>
-    <img src="data:image/png;base64,{{ image5 }}" alt="Average Estimated Effort by Business Impact">
+            <div class="col-12 mt-4">
+                <h3>Visualization 2: Business Impact vs Task Completion Status</h3>
+                <img src="data:image/png;base64,{{ image2 }}" alt="Business Impact vs Task Completion Status" class="img-fluid">
+            </div>
 
-    <h3>Visualization 3: Estimated Effort by Priority Level</h3>
-    <img src="data:image/png;base64,{{ image6 }}" alt="Estimated Effort by Priority Level">
+            <div class="col-12 mt-4">
+                <h3>Visualization 3: Distribution of Tasks by Task Type</h3>
+                <img src="data:image/png;base64,{{ image3 }}" alt="Distribution of Tasks by Task Type" class="img-fluid">
+            </div>
 
-{% else %}
-    <p>No task data available.</p>
-{% endif %}
+            <div class="col-12 mt-4">
+                <h3>Visualization 4: Estimated Effort by Task Completion Status</h3>
+                <img src="data:image/png;base64,{{ image4 }}" alt="Estimated Effort by Task Completion Status" class="img-fluid">
+            </div>
 
+        {% elif priority %}
+            <div class="col-12">
+                <p><strong>Predicted Task Priority:</strong> {{ priority }}</p>
+                <p><strong>Note:</strong> Task Priority values represent the following:</p>
+                <ul>
+                    <li><strong>0</strong> - Low Priority</li>
+                    <li><strong>1</strong> - Medium Priority</li>
+                    <li><strong>2</strong> - High Priority</li>
+                </ul>
+            </div>
+
+            <div class="col-12 mt-4">
+                <h3>Visualization 1: Distribution of Task Priorities</h3>
+                <img src="data:image/png;base64,{{ image1 }}" alt="Distribution of Task Priorities" class="img-fluid">
+            </div>
+
+            <div class="col-12 mt-4">
+                <h3>Visualization 2: Business Impact vs Task Completion Status</h3>
+                <img src="data:image/png;base64,{{ image2 }}" alt="Business Impact vs Task Completion Status" class="img-fluid">
+            </div>
+
+            <div class="col-12 mt-4">
+                <h3>Visualization 3: Distribution of Tasks by Task Type</h3>
+                <img src="data:image/png;base64,{{ image3 }}" alt="Distribution of Tasks by Task Type" class="img-fluid">
+            </div>
+
+            <div class="col-12 mt-4">
+                <h3>Visualization 4: Estimated Effort by Task Completion Status</h3>
+                <img src="data:image/png;base64,{{ image4 }}" alt="Estimated Effort by Task Completion Status" class="img-fluid">
+            </div>
+
+        {% else %}
+            <p>No task data available.</p>
+        {% endif %}
+    </div>
+</div>
 {% endblock %}
