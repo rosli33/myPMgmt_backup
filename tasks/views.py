@@ -23,7 +23,7 @@ from django.contrib import messages  # Import messages framework
 # Predict Task Priority
 def predict_task_priority(df_task):
     # Load the ANN model
-    MODEL_PATH = os.path.join(settings.BASE_DIR, 'tasks', 'model', 'best_ann_model.h5')
+    MODEL_PATH = os.path.join(settings.BASE_DIR, 'tasks', 'model', 'final_ann_model.h5')
     model = load_model(MODEL_PATH)
 
     # Compile the model to add metrics for evaluation
@@ -240,63 +240,66 @@ def task_prioritization(request):
 
 def generate_visualizations(df_task):
 
-    if df_task['priority_level'].isnull().sum() > 0:
-        logger.warning("Missing priority levels in task data.")
+    if isinstance(df_task, pd.DataFrame):  # Ensure df_task is a DataFrame
+        if df_task['priority_level'].isnull().sum() > 0:
+            logger.warning("Missing priority levels in task data.")
 
-    # Visualization 1: Distribution of Task Priorities
-    fig1, ax1 = plt.subplots(figsize=(10, 6))
-    df_task['priority_level'].value_counts().plot(kind='bar', ax=ax1, color='skyblue')
-    ax1.set_title('Distribution of Task Priorities')
-    ax1.set_xlabel('Priority')
-    ax1.set_ylabel('Number of Tasks')
+        # Visualization 1: Distribution of Task Priorities
+        fig1, ax1 = plt.subplots(figsize=(10, 6))
+        df_task['priority_level'].value_counts().plot(kind='bar', ax=ax1, color='skyblue')
+        ax1.set_title('Distribution of Task Priorities')
+        ax1.set_xlabel('Priority')
+        ax1.set_ylabel('Number of Tasks')
 
-    buffer1 = BytesIO()
-    plt.savefig(buffer1, format='png')
-    buffer1.seek(0)
-    image1_base64 = base64.b64encode(buffer1.read()).decode('utf-8')
-    plt.close(fig1)
+        buffer1 = BytesIO()
+        plt.savefig(buffer1, format='png')
+        buffer1.seek(0)
+        image1_base64 = base64.b64encode(buffer1.read()).decode('utf-8')
+        plt.close(fig1)
 
-    # Visualization 2: Business Impact vs Task Completion Status
-    fig2, ax2 = plt.subplots(figsize=(10, 6))
-    pd.crosstab(df_task['business_impact'], df_task['current_status']).plot(kind='bar', ax=ax2, color=['green', 'blue', 'red'])
-    ax2.set_title('Business Impact vs Task Completion Status')
-    ax2.set_xlabel('Business Impact')
-    ax2.set_ylabel('Number of Tasks')
-    ax2.legend(title='Current Status')
+        # Visualization 2: Business Impact vs Task Completion Status
+        fig2, ax2 = plt.subplots(figsize=(10, 6))
+        pd.crosstab(df_task['business_impact'], df_task['current_status']).plot(kind='bar', ax=ax2, color=['green', 'blue', 'red'])
+        ax2.set_title('Business Impact vs Task Completion Status')
+        ax2.set_xlabel('Business Impact')
+        ax2.set_ylabel('Number of Tasks')
+        ax2.legend(title='Current Status')
 
-    buffer2 = BytesIO()
-    plt.savefig(buffer2, format='png')
-    buffer2.seek(0)
-    image2_base64 = base64.b64encode(buffer2.read()).decode('utf-8')
-    plt.close(fig2)
+        buffer2 = BytesIO()
+        plt.savefig(buffer2, format='png')
+        buffer2.seek(0)
+        image2_base64 = base64.b64encode(buffer2.read()).decode('utf-8')
+        plt.close(fig2)
 
-    # Visualization 3: Distribution of Tasks by Task Type
-    fig3, ax3 = plt.subplots(figsize=(10, 6))
-    df_task['task_type'].value_counts().plot(kind='bar', ax=ax3, color='orange')
-    ax3.set_title('Distribution of Tasks by Task Type')
-    ax3.set_xlabel('Task Type')
-    ax3.set_ylabel('Number of Tasks')
+        # Visualization 3: Distribution of Tasks by Task Type
+        fig3, ax3 = plt.subplots(figsize=(10, 6))
+        df_task['task_type'].value_counts().plot(kind='bar', ax=ax3, color='orange')
+        ax3.set_title('Distribution of Tasks by Task Type')
+        ax3.set_xlabel('Task Type')
+        ax3.set_ylabel('Number of Tasks')
 
-    buffer3 = BytesIO()
-    plt.savefig(buffer3, format='png')
-    buffer3.seek(0)
-    image3_base64 = base64.b64encode(buffer3.read()).decode('utf-8')
-    plt.close(fig3)
+        buffer3 = BytesIO()
+        plt.savefig(buffer3, format='png')
+        buffer3.seek(0)
+        image3_base64 = base64.b64encode(buffer3.read()).decode('utf-8')
+        plt.close(fig3)
 
-    # Visualization 4: Estimated Effort vs Task Completion Status
-    fig4, ax4 = plt.subplots(figsize=(10, 6))
-    df_task.groupby('current_status')['estimated_effort'].mean().plot(kind='bar', ax=ax4, color='purple')
-    ax4.set_title('Estimated Effort by Task Completion Status')
-    ax4.set_xlabel('Task Completion Status')
-    ax4.set_ylabel('Average Estimated Effort')
+        # Visualization 4: Estimated Effort vs Task Completion Status
+        fig4, ax4 = plt.subplots(figsize=(10, 6))
+        df_task.groupby('current_status')['estimated_effort'].mean().plot(kind='bar', ax=ax4, color='purple')
+        ax4.set_title('Estimated Effort by Task Completion Status')
+        ax4.set_xlabel('Task Completion Status')
+        ax4.set_ylabel('Average Estimated Effort')
 
-    buffer4 = BytesIO()
-    plt.savefig(buffer4, format='png')
-    buffer4.seek(0)
-    image4_base64 = base64.b64encode(buffer4.read()).decode('utf-8')
-    plt.close(fig4)
+        buffer4 = BytesIO()
+        plt.savefig(buffer4, format='png')
+        buffer4.seek(0)
+        image4_base64 = base64.b64encode(buffer4.read()).decode('utf-8')
+        plt.close(fig4)
 
-    return image1_base64, image2_base64, image3_base64, image4_base64
+        return image1_base64, image2_base64, image3_base64, image4_base64
+    else:
+        raise TypeError("The argument passed to generate_visualizations is not a DataFrame.")
 
 def visualization(request):
     try:
