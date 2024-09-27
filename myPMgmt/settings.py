@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 from django.contrib.messages import constants as messages
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'resource',
     'visualization',
     # 'bootstrap5',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -65,7 +66,7 @@ ROOT_URLCONF = 'myPMgmt.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -127,11 +128,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+# Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 
+# Directory where 'collectstatic' will place all static files for production
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Optional: If you want to serve static files in development without collectstatic
 STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Ensure the path to the static folder is correct
+    BASE_DIR / "static",  # Your common static folder for development
 ]
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 

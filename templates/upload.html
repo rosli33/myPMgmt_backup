@@ -1,10 +1,35 @@
 {% extends 'home.html' %}
 
 {% block content %}
-    <h2>Upload a CSV File</h2>
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Upload</button>
-    </form>
+<div class="container mt-5">
+    <!-- Header -->
+    <div class="text-center mb-4">
+        <h2 class="display-5">Data Integration</h2>
+        <p>Upload your CSV file to integrate data into the system.</p>
+    </div>
+
+    <!-- CSV File Upload Form -->
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        
+                        <!-- File Upload Field -->
+                        <div class="form-group mb-3">
+                            <label for="csv_file" class="form-label">Upload CSV File</label>
+                            <input type="file" name="csv_file" class="form-control" id="csv_file">
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary">Upload File</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

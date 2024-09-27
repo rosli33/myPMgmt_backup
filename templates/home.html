@@ -6,185 +6,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI-Enhanced Project Management System</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
-
-        /* Skip link for accessibility */
-        .skip-link {
-            position: absolute;
-            left: -999px;
-            top: -999px;
-            background: #000;
-            color: #fff;
-            padding: 10px;
-        }
-
-        .skip-link:focus {
-            left: 10px;
-            top: 10px;
-            z-index: 100;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #ffffff;
-            border-bottom: 2px solid #ddd;
-        }
-
-        .logo {
-            background-color: #4a90e2;
-            color: white;
-            border-radius: 50%;
-            width: 80px;
-            height: 80px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        header h1 {
-            text-align: center;
-            flex: 1;
-            font-size: 24px;
-            color: #333;
-            margin: 0 20px;
-        }
-
-        .container {
-            display: flex;
-        }
-
-        .sidebar {
-            width: 250px;
-            background-color: #f4f4f4;
-            padding: 20px;
-            border-right: 2px solid #ddd;
-            height: 100vh;
-            position: sticky;
-            top: 0;
-        }
-
-        .sidebar ul {
-            list-style-type: none;
-        }
-
-        .sidebar ul li {
-            margin-bottom: 20px;
-            font-size: 18px;
-        }
-
-        .sidebar ul li a {
-            text-decoration: none;
-            color: #333;
-            padding: 10px 15px;
-            display: block;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .sidebar ul li a:hover {
-            background-color: #4a90e2;
-            color: white;
-        }
-
-        .content {
-            flex: 1;
-            padding: 40px;
-            background-color: #ffffff;
-            border-left: 2px solid #ddd;
-        }
-
-        .content h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #e0e0e0; /* Slightly darker background for footer */
-            border-top: 2px solid #ddd;
-            margin-top: 20px;
-        }
-
-        footer .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        footer .footer-links a {
-            text-decoration: none;
-            color: #333;
-            transition: color 0.3s;
-        }
-
-        footer .footer-links a:hover {
-            color: #4a90e2; /* Same color as your active link hover */
-        }
-
-        footer p {
-            margin-top: 10px;
-        }
-
-        footer img {
-            width: 24px;
-            height: 24px;
-        }
-
-        /* Media Query for smaller screens */
-        @media screen and (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-
-            .sidebar {
-                width: 100%;
-                border-right: none;
-                border-bottom: 2px solid #ddd;
-            }
-
-            .content {
-                margin-left: 0;
-                border-left: none;
-            }
-
-            header h1 {
-                font-size: 20px;
-            }
-
-            .logo {
-                width: 60px;
-                height: 60px;
-                font-size: 18px;
-            }
-        }
-    </style>
 </head>
 <body>
 
     <!-- Skip link for keyboard navigation -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="sr-only">Skip to main content</a>
 
-    <header class="d-flex justify-content-between align-items-center">
+    <header class="d-flex justify-content-between align-items-center bg-white border-bottom py-3 px-4">
         <div class="logo-left">
+            <!-- Ensure the logo link redirects to the homepage where the objective is displayed -->
             <a href="{% url 'home' %}">
                 <img src="{% static 'images/crest.png' %}" class="img-fluid" alt="Government Crest Logo" width="120" height="120">
             </a>
@@ -195,57 +28,72 @@
         </div>
     </header>
 
-    <div class="container">
-        <div class="sidebar">
-            <ul>
-                <li><a href="{% url 'task_prioritization' %}">Task Prioritization</a></li>
-                <li class="{% if request.path == '/resource_allocation/' %}active{% endif %}">
-                    <a href="{% url 'resource_allocation' %}">Resource Allocation</a>
+    <div class="d-flex">
+        <nav class="sidebar bg-light border-right p-4">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="{% url 'task_prioritization' %}" class="nav-link">Task Prioritization</a>
                 </li>
-                <li><a href="{% url 'risk_management' %}">Risk Management</a></li>
-                <li><a href="{% url 'upload' %}">Data Integration</a></li>
-                <li><a href="{% url 'visualization' %}">Data Analysis</a></li>
+                <li class="nav-item">
+                    <a href="{% url 'resource_allocation' %}" class="nav-link {% if request.path == '/resource_allocation/' %}active{% endif %}">Resource Allocation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'risk_management' %}" class="nav-link">Risk Management</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'upload' %}" class="nav-link">Data Integration</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'visualization' %}" class="nav-link">Data Analysis</a>
+                </li>
             </ul>
-        </div>
+        </nav>
 
-        <div id="main-content" class="content"> <!-- Added main content ID for skip link -->
+        <div id="main-content" class="content flex-grow-1 p-4">
             {% block content %}
-
-            <div class="objective-section">
-                <h2>Objective</h2>
-                <p>The primary objective of this project is to develop an AI-powered project management system that enhances productivity and efficiency by leveraging advanced machine learning and natural language processing technologies. This system aims to optimize task prioritization, resource allocation, risk management, and team collaboration, ultimately leading to more successful project outcomes and higher user satisfaction.</p>
+            
+            <!-- Objective Section -->
+            <div class="objective-section mt-4 p-3">
+                <h2 class="text-center">Objective</h2>
+                <p class="lead text-center">The primary objective of this project is to develop an AI-powered project management system that enhances productivity and efficiency by leveraging advanced machine learning and natural language processing technologies. This system aims to optimize task prioritization, resource allocation, risk management, and team collaboration, ultimately leading to more successful project outcomes and higher user satisfaction.</p>
             </div>
 
-            {% endblock %} 
+            <!-- Content block that will be overridden by other pages like task_prioritization.html -->
+            {% endblock %}
         </div>
     </div>
 
-    <footer>
-        <div class="footer-links">
-            <a href="#" aria-label="Follow us on Facebook">
-                <img src="{% static 'images/facebook-icon.png' %}" alt="Facebook Icon">
+    <footer class="text-center bg-light border-top py-4">
+        <div class="d-flex justify-content-center mb-2">
+            <a href="#" class="mx-2" aria-label="Follow us on Facebook">
+                <img src="{% static 'images/facebook-icon.png' %}" alt="Facebook Icon" width="24" height="24">
             </a>
-            <a href="#" aria-label="Follow us on Twitter">
-                <img src="{% static 'images/twitter-icon.png' %}" alt="Twitter Icon">
+            <a href="#" class="mx-2" aria-label="Follow us on Twitter">
+                <img src="{% static 'images/twitter-icon.png' %}" alt="Twitter Icon" width="24" height="24">
             </a>
-            <a href="#" aria-label="Follow us on LinkedIn">
-                <img src="{% static 'images/linkedin-icon.png' %}" alt="LinkedIn Icon">
+            <a href="#" class="mx-2" aria-label="Follow us on LinkedIn">
+                <img src="{% static 'images/linkedin-icon.png' %}" alt="LinkedIn Icon" width="24" height="24">
             </a>
         </div>
         <p>© 2024 AI-Enhanced Project Management System</p>
     </footer>
 
-    <script>
-        window.embeddedChatbotConfig = {
-        chatbotId: "Du7CLP5lXtXPc4notDG-4",
-        domain: "www.chatbase.co"
-        }
-        </script>
-        <script
-        src="https://www.chatbase.co/embed.min.js"
-        chatbotId="Du7CLP5lXtXPc4notDG-4"
-        domain="www.chatbase.co"
-        defer>
-        </script>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+<script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "Du7CLP5lXtXPc4notDG-4",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="Du7CLP5lXtXPc4notDG-4"
+    domain="www.chatbase.co"
+    defer>
+    </script>
 </html>

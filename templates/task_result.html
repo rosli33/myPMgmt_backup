@@ -4,159 +4,167 @@
 <div class="container mt-5">
     <h2 class="mb-4">Task Prioritization Results</h2>
 
-    <!-- Filtering and Sorting Options -->
-    <form method="get" action="{% url 'task_result' %}">
+    <!-- Show no data message if applicable -->
+    {% if no_data_message %}
+        <div class="alert alert-info" role="alert">
+            {{ no_data_message }}
+        </div>
+    {% endif %}
+
+    <!-- Display manual task result and insights -->
+    {% if is_manual_task %}
+        <p><strong>Predicted Task Priority:</strong> {{ priority }}</p>
+
         <div class="row">
             <div class="col-md-4">
-                <label for="task_type">Filter by Task Type:</label>
-                <select name="task_type" id="task_type" class="form-control">
-                    <option value="">All</option>
-                    <option value="coa">Certificate of Acceptance (CoA)</option>
-                    <option value="portal">Portal</option>
-                    <!-- Add more task types as options -->
-                </select>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Business Impact Insight</h5>
+                        <p>{{ insight }}</p>
+                    </div>
+                </div>
             </div>
-
             <div class="col-md-4">
-                <label for="priority">Filter by Priority:</label>
-                <select name="priority" id="priority" class="form-control">
-                    <option value="">All</option>
-                    <option value="0">Low</option>
-                    <option value="1">Medium</option>
-                    <option value="2">High</option>
-                </select>
-            </div> 
-
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-info">Task Status Insight</h5>
+                        <p>{{ status_insight }}</p>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-4">
-                <label for="status">Filter by Status:</label>
-                <select name="status" id="status" class="form-control">
-                    <option value="">All</option>
-                    <option value="todo">To Do</option>
-                    <option value="progress">In Progress</option>
-                    <option value="completed">Completed</option>
-                </select>
-            </div>
-        </div> 
-
-        <!-- Sorting Options -->
-        <div class="row mt-3">
-            <div class="col-md-4">
-                <label for="sort_by">Sort by:</label>
-                <select name="sort_by" id="sort_by" class="form-control">
-                    <option value="deadline">Deadline</option>
-                    <option value="priority_level">Priority</option>
-                    <option value="task_title">Task Title</option>
-                </select>
-            </div>
-
-            <div class="col-md-2 align-self-end">
-                <button type="submit" class="btn btn-primary mt-3">Apply Filters</button>
-            </div>
-        </div>
-    </form> 
-
-    <!--Predicted Task Priority -->
-    <p><strong>Predicted Task Priority:</strong> {{ priority }}</p>
-
-    <!-- Insights Section with Cards -->
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h5 class="card-title text-success">Business Impact Insight</h5>
-                    <p>{{ insight }}</p>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Effort Insight</h5>
+                        <p>{{ effort_insight }}</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h5 class="card-title text-info">Task Status Insight</h5>
-                    <p>{{ status_insight }}</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h5 class="card-title text-warning">Effort Insight</h5>
-                    <p>{{ effort_insight }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% endif %}
 
-    <!-- Display Results -->
-    <div class="row mt-5">
+    <!-- Filtering and Sorting Options for Upload CSV -->
+    {% if not is_manual_task %}
+        <form method="get" action="{% url 'task_result' %}">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="task_type">Filter by Task Type:</label>
+                    <select name="task_type" id="task_type" class="form-control">
+                        <option value="">All</option>
+                        <option value="coa">Certificate of Acceptance (CoA)</option>
+                        <option value="portal">Portal</option>
+                        <option value="auth_control">User Authentication and Access Control</option>
+                        <option value="finalization_integration">Finalization and Integration</option>
+                        <option value="crm">Customer Relationship Management (CRM)</option>
+                        <option value="data_storage">Data Management and Storage</option>
+                        <option value="comm_collab">Communication and Collaboration Tools</option>
+                        <option value="workflow_management">Workflow Management</option>
+                        <option value="contract_documentation">Contract Documentation</option>
+                        <option value="tok">Transfer of Knowledge (TOK)</option>
+                        <option value="training_management">Training Management</option>
+                        <option value="hrm">Human Resource Management (HRM)</option>
+                        <option value="inventory_management">Inventory Management</option>
+                        <option value="project_management">Project Management</option>
+                        <option value="reporting_analytics">Reporting and Analytics</option>
+                        <option value="tot">Transfer of Technology (TOT)</option>
+                        <option value="ea">Enterprise Architecture (EA)</option>
+                        <option value="payment_gateway">Payment Gateway Integration</option>
+                        <option value="change_management">Change Management</option>
+                        <option value="notification_system">Notification System</option>
+                        <option value="audit_compliance">Audit and Compliance</option>
+                        <option value="devops">DevOps</option>
+                        <option value="management_plans">Management Plans</option>
+                        <option value="monitoring_reports">Monitoring & Control Reports</option>
+                        <option value="ui_ux">User Interface and User Experience (UI/UX)</option>
+                        <option value="data_lake_warehouse">Data Lake & Data Warehouse Operation</option>
+                        <option value="data_services">Data Services & Management</option>
+                        <option value="closure_report">Project Closure Report</option>
+                        <option value="bcp">Business Continuity Plan (BCP)</option>
+                        <option value="office_renovation">Office Renovation</option>
+                        <option value="portal_lms">Portal Learning Management System (LMS)</option>
+                        <option value="pmis">Project Management Information System (PMIS)</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="priority">Filter by Priority:</label>
+                    <select name="priority" id="priority" class="form-control">
+                        <option value="">All</option>
+                        <option value="0">Low</option>
+                        <option value="1">Medium</option>
+                        <option value="2">High</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="status">Filter by Status:</label>
+                    <select name="status" id="status" class="form-control">
+                        <option value="">All</option>
+                        <option value="todo">To Do</option>
+                        <option value="progress">In Progress</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <label for="sort_by">Sort by:</label>
+                    <select name="sort_by" id="sort_by" class="form-control">
+                        <option value="deadline">Deadline</option>
+                        <option value="priority_level">Priority</option>
+                        <option value="task_title">Task Title</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2 align-self-end">
+                    <button type="submit" class="btn btn-primary mt-3">Apply Filters</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Display the filtered results -->
         {% if df %}
-            <div class="col-12">
-                <h3>CSV Results</h3>
-                <div class="table-responsive mb-4">
-                    {{ df|safe }}
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3>CSV Results</h3>
+                    <div class="table-responsive mb-4">
+                        {{ df|safe }}
+                    </div>
                 </div>
-                <p><strong>Note:</strong> Task Priority values represent the following:</p>
-                <ul>
-                    <li><strong>0</strong> - Low Priority</li>
-                    <li><strong>1</strong> - Medium Priority</li>
-                    <li><strong>2</strong> - High Priority</li>
-                </ul>
+            </div>
+
+            <!-- Export Options -->
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <a href="{% url 'export_csv' %}" class="btn btn-success">Export CSV</a>
+                    <a href="{% url 'export_pdf' %}" class="btn btn-info">Export PDF</a>
+                </div>
             </div>
 
             <!-- Visualizations -->
-            <div class="col-12 mt-4">
-                <h3>Visualization 1: Distribution of Task Priorities</h3>
-                <img src="data:image/png;base64,{{ image1 }}" alt="Distribution of Task Priorities" class="img-fluid">
-            </div>
+            <div class="row mt-5">
+                <div class="col-12 mt-4">
+                    <h3>Visualization 1: Distribution of Task Priorities</h3>
+                    <img src="data:image/png;base64,{{ image1 }}" alt="Distribution of Task Priorities" class="img-fluid">
+                </div>
 
-            <div class="col-12 mt-4">
-                <h3>Visualization 2: Business Impact vs Task Completion Status</h3>
-                <img src="data:image/png;base64,{{ image2 }}" alt="Business Impact vs Task Completion Status" class="img-fluid">
-            </div>
+                <div class="col-12 mt-4">
+                    <h3>Visualization 2: Business Impact vs Task Completion Status</h3>
+                    <img src="data:image/png;base64,{{ image2 }}" alt="Business Impact vs Task Completion Status" class="img-fluid">
+                </div>
 
-            <div class="col-12 mt-4">
-                <h3>Visualization 3: Distribution of Tasks by Task Type</h3>
-                <img src="data:image/png;base64,{{ image3 }}" alt="Distribution of Tasks by Task Type" class="img-fluid">
-            </div>
+                <div class="col-12 mt-4">
+                    <h3>Visualization 3: Distribution of Tasks by Task Type</h3>
+                    <img src="data:image/png;base64,{{ image3 }}" alt="Distribution of Tasks by Task Type" class="img-fluid">
+                </div>
 
-            <div class="col-12 mt-4">
-                <h3>Visualization 4: Estimated Effort by Task Completion Status</h3>
-                <img src="data:image/png;base64,{{ image4 }}" alt="Estimated Effort by Task Completion Status" class="img-fluid">
+                <div class="col-12 mt-4">
+                    <h3>Visualization 4: Estimated Effort by Task Completion Status</h3>
+                    <img src="data:image/png;base64,{{ image4 }}" alt="Estimated Effort by Task Completion Status" class="img-fluid">
+                </div>
             </div>
-
-        {% elif priority %}
-            <div class="col-12">
-                <p><strong>Predicted Task Priority:</strong> {{ priority }}</p>
-                <p><strong>Note:</strong> Task Priority values represent the following:</p>
-                <ul>
-                    <li><strong>0</strong> - Low Priority</li>
-                    <li><strong>1</strong> - Medium Priority</li>
-                    <li><strong>2</strong> - High Priority</li>
-                </ul>
-            </div>
-
-            <div class="col-12 mt-4">
-                <h3>Visualization 1: Distribution of Task Priorities</h3>
-                <img src="data:image/png;base64,{{ image1 }}" alt="Distribution of Task Priorities" class="img-fluid">
-            </div>
-
-            <div class="col-12 mt-4">
-                <h3>Visualization 2: Business Impact vs Task Completion Status</h3>
-                <img src="data:image/png;base64,{{ image2 }}" alt="Business Impact vs Task Completion Status" class="img-fluid">
-            </div>
-
-            <div class="col-12 mt-4">
-                <h3>Visualization 3: Distribution of Tasks by Task Type</h3>
-                <img src="data:image/png;base64,{{ image3 }}" alt="Distribution of Tasks by Task Type" class="img-fluid">
-            </div>
-
-            <div class="col-12 mt-4">
-                <h3>Visualization 4: Estimated Effort by Task Completion Status</h3>
-                <img src="data:image/png;base64,{{ image4 }}" alt="Estimated Effort by Task Completion Status" class="img-fluid">
-            </div>
-
-        {% else %}
-            <p>No task data available.</p>
         {% endif %}
-    </div>
+    {% endif %}
 </div>
 {% endblock %}
