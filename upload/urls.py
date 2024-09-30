@@ -1,7 +1,8 @@
 from django.urls import path
-from . import views
+from . import views  # assuming your views are in the current folder
 
 urlpatterns = [
-    path('file/', views.upload_file, name='upload'),  # Changed 'upload/' to 'file/' for clarity
-    path('success/', views.upload_success, name='upload_success'),
+    # Other URLs
+    path('upload/', views.upload_file, name='upload'),  # This ensures that 'upload' is a valid URL name
+    path('upload/success/', views.upload_success, name='upload_success'),  # Ensure this is also included
 ]

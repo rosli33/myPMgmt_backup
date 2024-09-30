@@ -183,6 +183,20 @@ def task_prioritization(request):
                 predictions = predict_task_priority(df)
                 df['Predicted Priority'] = predictions
 
+                # Save each row to the database
+                for index, row in df.iterrows():
+                    task_data = {
+                        'task_title': row['task_title'],
+                        'task_type': row['task_type'],
+                        'current_status': row['current_status'],
+                        'business_impact': row['business_impact'],
+                        'estimated_effort': row['estimated_effort'],
+                        'priority_level': row['Predicted Priority'],
+                        'deadline': row['deadline']
+                    }
+                    # Save the task to the ManualTask table
+                    ManualTask.objects.create(**task_data)
+
                 # Convert deadline to string to be stored in session
                 df['deadline'] = df['deadline'].dt.strftime('%Y-%m-%d')
 

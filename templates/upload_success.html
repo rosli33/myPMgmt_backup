@@ -1,6 +1,9 @@
 {% extends 'home.html' %}
 
 {% block content %}
-    <h2>File Uploaded Successfully!</h2>
-    <p>Your file has been uploaded.</p>
+<div class="container mt-5">
+    <h2>Upload Successful!</h2>
+    <p>Your CSV file has been uploaded and processed successfully.</p>
+    <a href="{% url 'upload' %}" class="btn btn-primary">Upload Another File</a>
+</div>
 {% endblock %}

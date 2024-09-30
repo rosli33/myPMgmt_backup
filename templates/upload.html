@@ -8,6 +8,17 @@
         <p>Upload your CSV file to integrate data into the system.</p>
     </div>
 
+    <!-- Display success or error messages -->
+    {% if messages %}
+        <div>
+            {% for message in messages %}
+                <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
     <!-- CSV File Upload Form -->
     <div class="row justify-content-center">
         <div class="col-md-6">
@@ -15,11 +26,10 @@
                 <div class="card-body">
                     <form method="post" enctype="multipart/form-data">
                         {% csrf_token %}
-                        
                         <!-- File Upload Field -->
                         <div class="form-group mb-3">
-                            <label for="csv_file" class="form-label">Upload CSV File</label>
-                            <input type="file" name="csv_file" class="form-control" id="csv_file">
+                            <label for="file" class="form-label">Upload CSV File</label>
+                            <input type="file" name="file" class="form-control" id="file">
                         </div>
 
                         <!-- Submit Button -->

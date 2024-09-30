@@ -5,7 +5,8 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .forms import UploadFileForm
 from tasks.models import Task
-from django.db.utils import IntegrityError 
+from django.db.utils import IntegrityError
+from django.contrib import messages
 
 # Helper function to convert date format
 def convert_date(date_str):
@@ -20,8 +21,11 @@ def upload_file(request):
         if form.is_valid():
             file = request.FILES['file']
             decoded_file = file.read().decode('utf-8').splitlines()
-            reader = csv.DictReader(decoded_file)
 
+            # Debugging the contents of the uploaded CSV file
+            print(decoded_file[:5])  # Print the first 5 rows of the file
+            
+            reader = csv.DictReader(decoded_file)
             for row in reader:
                 # Convert the date fields to the correct format
                 creation_date = convert_date(row['Creation Date'])
@@ -44,12 +48,15 @@ def upload_file(request):
                         }
                     )
                 except IntegrityError as e:
-                    print(f"Error inserting row: {row['Task ID']} - {e}")
+                    messages.error(request, f"Error inserting row: {row['Task ID']} - {e}")
 
+            messages.success(request, 'File uploaded and data processed successfully.')
             return HttpResponseRedirect(reverse('upload_success'))
+        else:
+            messages.error(request, 'Form is not valid. Please upload a valid CSV file.')
     else:
         form = UploadFileForm()
-    
+
     return render(request, 'upload.html', {'form': form})
 
 # Add the missing upload_success view

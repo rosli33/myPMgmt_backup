@@ -1,0 +1,51 @@
+Task ID,Task Title,Task Type,Creation Date,Deadline,Current Status,Resource_ID,Assignee Name,Estimated Effort (Hours),Business Impact,Priority Level
+T001,Develop Contract Management Plan,Certificate of Acceptance (CoA),20/7/2024,14/9/2024,To Do,R035,Pamela Jones,13,Medium,1
+T002,Present Control Reports to Stakeholders,Portal,8/8/2024,10/9/2024,In Progress,R025,Megan Hernandez,38,Low,1
+T003,Design the data backup strategy.,User Authentication and Access Control,29/7/2024,27/9/2024,In Progress,R099,David Burnett,25,Medium,1
+T004,Develop asset lifecycle management features.,Finalization and Integration,23/8/2024,1/11/2024,To Do,R015,Anthony Patterson,9,Low,1
+T005,Conduct integration testing to ensure seamless operation.,Customer Relationship Management (CRM),20/7/2024,16/10/2024,In Progress,R009,Dana Knight,23,High,1
+T006,Monitor Contract Compliance Across Projects,Finalization and Integration,10/7/2024,28/10/2024,In Progress,R174,Julie Robinson,6,High,1
+T007,Develop asset lifecycle management features.,Data Management and Storage,12/7/2024,20/9/2024,Completed,R083,Amy Hill,26,High,2
+T008,Test the risk management module for completeness and usability.,Communication and Collaboration Tools,6/7/2024,17/10/2024,Completed,R029,Curtis Diaz,24,High,2
+T009,Develop Project Monitoring Templates,Data Management and Storage,5/7/2024,22/10/2024,Completed,R171,Tina Hill,28,Low,0
+T010,Compile detailed documentation for each module.,Workflow Management,6/8/2024,9/10/2024,In Progress,R078,David Cunningham,31,Medium,1
+T011,Develop Enterprise Architecture Roadmap,Contract Documentation,28/8/2024,26/10/2024,In Progress,R178,Eric Jones,8,Medium,0
+T012,Develop payment processing for multiple gateways.,Transfer of Knowledge (TOK),2/8/2024,6/10/2024,Completed,R200,David Harris,31,Medium,1
+T013,"Develop CRUD (Create, Read, Update, Delete) operations for data entities.",Training Management,26/8/2024,25/9/2024,Completed,R014,Kathy Tyler,13,Low,0
+T014,Implement task assignment and progress tracking.,Human Resource Management (HRM),21/7/2024,16/10/2024,In Progress,R090,Claire Peterson MD,29,Medium,0
+T015,Design the payment gateway integration architecture.,Inventory Management,15/7/2024,24/10/2024,To Do,R074,Shane Bentley,21,Medium,0
+T016,Implement Change Communication Strategies,Project Management,12/8/2024,13/10/2024,In Progress,R028,Carrie Thomas,34,Low,2
+T017,Develop Project Closure Report Template,Reporting and Analytics,31/7/2024,12/9/2024,To Do,R071,Gina Bolton,39,High,1
+T018,Schedule and Conduct User Training Sessions,Certificate of Acceptance (CoA),28/8/2024,28/10/2024,In Progress,R173,David Higgins,14,High,1
+T019,Develop subscription upgrade and cancellation workflows.,Workflow Management,27/8/2024,5/9/2024,To Do,R063,Paul Thomas,29,High,2
+T020,Design the overall UI framework and components.,Training Management,15/7/2024,12/10/2024,Completed,R007,Jacob Williams,5,Low,2
+T021,Integrate messaging with user profiles.,Data Management and Storage,11/8/2024,7/9/2024,Completed,R120,Ashley Smith,9,Medium,1
+T022,Design the CRM architecture and data model.,Human Resource Management (HRM),15/8/2024,30/10/2024,In Progress,R194,Candace Griffin,4,Medium,0
+T023,Integrate permissions with the access control system.,Transfer of Technology (TOT),21/8/2024,30/10/2024,To Do,R069,Christine Taylor,17,High,1
+T024,Develop report export and submission features.,Workflow Management,24/8/2024,10/9/2024,To Do,R069,Christine Taylor,4,High,1
+T025,Train Staff on PMIS Usage,Data Management and Storage,18/7/2024,8/9/2024,In Progress,R047,Carlos Herring,28,Medium,2
+T026,Test the performance evaluation system for fairness and accuracy.,User Authentication and Access Control,21/7/2024,16/10/2024,To Do,R003,Meagan Morrow,39,Medium,2
+T027,Integrate the workflow engine with other modules.,Human Resource Management (HRM),26/7/2024,6/10/2024,In Progress,R087,Wayne Davis,16,High,2
+T028,Develop Technology Transfer Plan,Enterprise Architecture (EA),20/8/2024,1/10/2024,In Progress,R036,Jose Matthews,32,Medium,2
+T029,Integrate HRM with finance and accounting systems.,Payment Gateway Integration,28/8/2024,31/10/2024,Completed,R126,Nichole Bowman,28,Low,2
+T030,Implement Data Archiving and Retrieval Processes,Finalization and Integration,21/8/2024,5/9/2024,In Progress,R080,Joseph Hayes,27,Medium,2
+T031,"Implement ticket creation, assignment, and tracking.",Change Management,18/7/2024,7/9/2024,In Progress,R074,Shane Bentley,25,Medium,1
+T032,Integrate CRM with marketing and support tools.,User Authentication and Access Control,1/8/2024,1/10/2024,Completed,R073,Sherry Lewis,20,High,2
+T033,Conduct Usability Testing for Portal,User Authentication and Access Control,9/7/2024,19/10/2024,To Do,R051,Angel Jones,25,Medium,2
+T034,Test the dashboard for performance and usability.,Data Management and Storage,19/7/2024,3/10/2024,To Do,R085,Cynthia Brown,36,Low,0
+T035,Conduct Post-Renovation Quality Checks,Notification System,9/8/2024,25/10/2024,To Do,R194,Candace Griffin,14,Medium,1
+T036,Document Technology Transfer Processes,Inventory Management,4/8/2024,5/9/2024,In Progress,R194,Candace Griffin,13,Medium,2
+T037,Monitor Project Deliverables Against CoA Criteria,Inventory Management,15/7/2024,15/10/2024,To Do,R054,Courtney Spears,35,Low,0
+T038,Design the HRM architecture and workflows.,Audit and Compliance,1/9/2024,4/10/2024,To Do,R012,Jennifer Kennedy,4,Low,0
+T039,Develop responsive layouts for different devices.,DevOps,10/7/2024,15/10/2024,Completed,R195,Lori Martin,25,Medium,1
+T040,Review and finalize all project documentation.,Management Plans,26/7/2024,19/9/2024,Completed,R164,Andrew Parsons,34,Low,0
+T041,Monitor Contract Compliance Across Projects,Monitoring & Control Reports,14/8/2024,14/9/2024,Completed,R150,David Carrillo,28,Medium,1
+T042,Implement DevOps Best Practices for Collaboration,Workflow Management,24/7/2024,8/10/2024,Completed,R055,Bryan Clements,15,High,2
+T043,Implement reorder levels and alerts.,Change Management,1/8/2024,24/10/2024,Completed,R094,Nathan Tate,8,Medium,2
+T044,Implement recurring billing and payment features.,Notification System,12/7/2024,13/10/2024,Completed,R151,Nancy French,12,Medium,2
+T045,Implement data validation and integrity checks.,User Interface and User Experience (UI/UX),23/7/2024,1/10/2024,To Do,R093,Daniel Foster,29,Low,1
+T046,Conduct Change Impact Assessments,Human Resource Management (HRM),16/8/2024,13/9/2024,Completed,R058,William Freeman,5,Low,0
+T047,Design the user permissions management interface.,User Interface and User Experience (UI/UX),1/9/2024,12/9/2024,Completed,R085,Cynthia Brown,37,Medium,1
+T048,Integrate permissions with the access control system.,Data Lake & Data Warehouse Operation,2/9/2024,9/10/2024,Completed,R189,Julie Acosta,12,Medium,0
+T049,Implement password recovery and reset features.,Change Management,15/8/2024,17/9/2024,Completed,R077,Amber Smith,28,Medium,1
+T050,Monitor BCP Compliance Across the Organization,DevOps,8/8/2024,7/9/2024,Completed,R035,Pamela Jones,35,Medium,2
