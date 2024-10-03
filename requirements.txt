@@ -13,3 +13,4 @@ gunicorn
 whitenoise
 django-widget-tweaks
 tensorflow
+gevent
