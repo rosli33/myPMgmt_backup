@@ -1,0 +1,5 @@
+task_title,task_type,current_status,business_impact,estimated_effort,priority_level,deadline
+Develop Contract Management Plan,Certificate of Acceptance (CoA),To Do,Medium,13,Medium,a
+Present Control Reports to Stakeholders,Certificate of Acceptance (CoA),In Progress,Low,38,Medium,10/9/2024
+Design the data backup strategy.,User Authentication and Access Control,In Progress,Medium,25,Medium,27/9/2024
+Develop asset lifecycle management features.,Finalization and Integration,To Do,Low,9,Medium,1/11/2024

@@ -5,7 +5,9 @@ pandas
 numpy
 matplotlib
 imbalanced-learn
-bootstrap
+# bootstrap
 django-pandas
 pygwalker
-reportlab 
+reportlab
+gunicorn
+whitenoise
