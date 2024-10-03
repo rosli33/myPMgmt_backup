@@ -12,3 +12,4 @@ reportlab
 gunicorn
 whitenoise
 django-widget-tweaks
+tensorflow
