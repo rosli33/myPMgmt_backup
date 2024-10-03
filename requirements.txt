@@ -11,3 +11,4 @@ pygwalker
 reportlab
 gunicorn
 whitenoise
+django-widget-tweaks
